@@ -4,6 +4,7 @@ project:
   render:
     - "*.qmd"
     - "slides/*.qmd"
+    - "resources/*.qmd"
 
 website:
   title: "PSY 548"

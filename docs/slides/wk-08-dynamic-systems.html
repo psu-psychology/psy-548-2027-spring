@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.37">
+
+  <meta name="author" content="Rick Gilmore">
+  <title>PSY 548 – Dynamic(al) systems</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-445e7e3b1c5f75a9ba11066bf069e70f.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Dynamic(al) systems</h1>
+  <p class="subtitle">2025-10-17</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Rick Gilmore 
+</div>
+        <p class="quarto-title-affiliation">
+            Department of Psychology
+          </p>
+    </div>
+</div>
+
+</section>
+<section>
+<section id="prelude" class="title-slide slide level1 center">
+<h1>Prelude</h1>
+
+</section>
+<section class="slide level2">
+
+<iframe data-external="1" src="https://www.youtube.com/embed/VTNmLt7QX8E" width="100%" height="70%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<p>– <span class="citation" data-cites="Kenjirou2010-eq">Kenjirou (<a href="#/references" role="doc-biblioref" onclick="">2010</a>)</span> video of <span class="citation" data-cites="Heider1944-lw">Heider &amp; Simmel (<a href="#/references" role="doc-biblioref" onclick="">1944</a>)</span> animation</p>
+</section>
+<section id="todays-topics" class="slide level2">
+<h2>Today’s topics</h2>
+<ul>
+<li>Risks of generalization</li>
+<li>Dynamic systems</li>
+</ul>
+</section></section>
+<section>
+<section id="risks-of-overgeneralization" class="title-slide slide level1 center">
+<h1>Risks of overgeneralization</h1>
+
+</section>
+<section class="slide level2">
+
+<iframe data-external="1" src="https://www.youtube.com/embed/VTNmLt7QX8E" width="100%" height="70%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<p>– <span class="citation" data-cites="Kenjirou2010-eq">Kenjirou (<a href="#/references" role="doc-biblioref" onclick="">2010</a>)</span> video of <span class="citation" data-cites="Heider1944-lw">Heider &amp; Simmel (<a href="#/references" role="doc-biblioref" onclick="">1944</a>)</span> animation</p>
+</section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:30%;">
+<p>– Cited in <span class="citation" data-cites="Kominsky2022-we">Kominsky, Lucca, Thomas, Frank, &amp; Hamlin (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span>. Animation created by Brian Scholl, inspired by <span class="citation" data-cites="Heider1944-lw">Heider &amp; Simmel (<a href="#/references" role="doc-biblioref" onclick="">1944</a>)</span></p>
+</div><div class="column" style="width:70%;">
+<video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://perception.yale.edu/DemoFiles/Animacy-Basics/HS-Blocks-QT.mp4"></video>
+</div></div>
+</section>
+<section id="hamlin2007-ff" class="slide level2 scrollable">
+<h2><span class="citation" data-cites="Hamlin2007-ff">Hamlin, Wynn, &amp; Bloom (<a href="#/references" role="doc-biblioref" onclick="">2007</a>)</span></h2>
+
+<img data-src="../include/img/hamlin-2007-fig-01.png" class="r-stretch quarto-figure-center"><p class="caption">Figure 1 from <span class="citation" data-cites="Hamlin2007-ff">Hamlin et al. (<a href="#/references" role="doc-biblioref" onclick="">2007</a>)</span></p></section>
+<section id="hamlin2007-ff-1" class="slide level2 scrollable">
+<h2><span class="citation" data-cites="Hamlin2007-ff">Hamlin et al. (<a href="#/references" role="doc-biblioref" onclick="">2007</a>)</span></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://static-content.springer.com/esm/art%3A10.1038%2Fnature06288/MediaObjects/41586_2007_BFnature06288_MOESM207_ESM.mov"></video>
+</div><div class="column" style="width:50%;">
+<video id="video_shortcode_videojs_video3" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://static-content.springer.com/esm/art%3A10.1038%2Fnature06288/MediaObjects/41586_2007_BFnature06288_MOESM208_ESM.mov"></video>
+</div></div>
+</section>
+<section id="hamlin2007-ff-2" class="slide level2">
+<h2><span class="citation" data-cites="Hamlin2007-ff">Hamlin et al. (<a href="#/references" role="doc-biblioref" onclick="">2007</a>)</span></h2>
+<blockquote>
+<p>Here we show that 6- and 10-month-old infants take into account an individual’s actions towards others in evaluating that individual as appealing or aversive: infants prefer an individual who helps another to one who hinders another, prefer a helping individual to a neutral individual, and prefer a neutral individual to a hindering individual.</p>
+</blockquote>
+</section>
+<section id="hamlin2007-ff-3" class="slide level2">
+<h2><span class="citation" data-cites="Hamlin2007-ff">Hamlin et al. (<a href="#/references" role="doc-biblioref" onclick="">2007</a>)</span></h2>
+<blockquote>
+<p>Here we show that 6- and 10-month-old infants take into account an individual’s actions towards others in evaluating that individual as appealing or aversive: <strong>infants prefer an individual who helps another to one who hinders another</strong>, prefer a helping individual to a neutral individual, and prefer a neutral individual to a hindering individual.</p>
+</blockquote>
+</section>
+<section id="hamlin2007-ff-4" class="slide level2">
+<h2><span class="citation" data-cites="Hamlin2007-ff">Hamlin et al. (<a href="#/references" role="doc-biblioref" onclick="">2007</a>)</span></h2>
+<blockquote>
+<p>Our findings indicate that humans engage in social evaluation far earlier in development than previously thought, and support the view that the capacity to evaluate individuals on the basis of their social interactions is universal and unlearned.</p>
+</blockquote>
+</section>
+<section id="hamlin2007-ff-5" class="slide level2">
+<h2><span class="citation" data-cites="Hamlin2007-ff">Hamlin et al. (<a href="#/references" role="doc-biblioref" onclick="">2007</a>)</span></h2>
+<blockquote>
+<p>Our findings indicate that humans engage in social evaluation far earlier in development than previously thought, and support the view that <strong>the capacity to evaluate individuals on the basis of their social interactions is universal and unlearned</strong>.</p>
+</blockquote>
+</section>
+<section class="slide level2">
+
+
+<img data-src="../include/img/lucca-2025-title.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Lucca2025-gy">Lucca et al. (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span></p></section>
+<section id="lucca2025-gy" class="slide level2">
+<h2><span class="citation" data-cites="Lucca2025-gy">Lucca et al. (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span></h2>
+<blockquote>
+<p>A seminal study by Hamlin and colleagues in 2007 suggested that the ability to form social evaluations based on third-party interactions emerges within the first year of life: infants preferred a character who helped, over hindered, another who tried but failed to climb a hill.</p>
+</blockquote>
+</section>
+<section id="lucca2025-gy-1" class="slide level2">
+<h2><span class="citation" data-cites="Lucca2025-gy">Lucca et al. (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span></h2>
+<blockquote>
+<p>This sparked a new line of inquiry into the origins of social evaluations; however, replication attempts have yielded mixed results.</p>
+</blockquote>
+</section>
+<section id="lucca2025-gy-2" class="slide level2">
+<h2><span class="citation" data-cites="Lucca2025-gy">Lucca et al. (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span></h2>
+<blockquote>
+<p>We present a preregistered, multi-laboratory, standardized study aimed at replicating infants’ preference for Helpers over Hinderers.</p>
+</blockquote>
+</section>
+<section id="lucca2025-gy-3" class="slide level2">
+<h2><span class="citation" data-cites="Lucca2025-gy">Lucca et al. (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span></h2>
+<blockquote>
+<p>Using the ManyBabies framework for big team-based science, <strong>we tested 1,018 infants (567 included, 5.5–10.5 months) from 37 labs across five continents</strong>…</p>
+</blockquote>
+</section>
+<section id="ns-in-hamlin2007-ff" class="slide level2">
+<h2><em>n</em>’s in <span class="citation" data-cites="Hamlin2007-ff">Hamlin et al. (<a href="#/references" role="doc-biblioref" onclick="">2007</a>)</span></h2>
+<ul>
+<li>Ex 1: <em>n</em>=12 6-mo-olds, <em>n</em>=16 10-mo-olds</li>
+<li>Ex 2: <em>n</em>=12 6-mo-olds, <em>n</em>=12 10-mo-olds</li>
+<li>Ex 3: <em>n</em>=8 6-mo-olds, <em>n</em>=8 10-mo-olds</li>
+</ul>
+</section>
+<section id="lucca2025-gy-4" class="slide level2">
+<h2><span class="citation" data-cites="Lucca2025-gy">Lucca et al. (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span></h2>
+<blockquote>
+<p>Overall, <strong>49.34% of infants preferred Helpers over Hinderers in the social condition, and 55.85% preferred characters who pushed up, versus down, an inanimate object in the nonsocial condition; neither proportion differed from chance or from each other</strong>.</p>
+</blockquote>
+</section>
+<section id="lucca2025-gy-5" class="slide level2">
+<h2><span class="citation" data-cites="Lucca2025-gy">Lucca et al. (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span></h2>
+<blockquote>
+<p>This study provides <strong>evidence against infants’ prosocial preferences in the hill paradigm</strong>, suggesting the effect size is weaker, absent, and/or develops later than previously estimated.</p>
+</blockquote>
+</section>
+<section id="yes-and" class="slide level2">
+<h2>Yes, and…</h2>
+
+<img data-src="../include/img/packer-2022.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Packer2022-gn">Packer &amp; Moreno-Dulcey (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span></p></section>
+<section id="packer2022-gn" class="slide level2">
+<h2><span class="citation" data-cites="Packer2022-gn">Packer &amp; Moreno-Dulcey (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span></h2>
+<blockquote>
+<p>A ’social stimulus’ is one introduced by the behavior of another person. But the stimuli described in this paper are produced not by another person but by a facsimile thereof. Hence they are identified as ‘symbolic’ social stimuli.</p>
+</blockquote>
+<p>– <span class="citation" data-cites="Lovaas1965-ny">Lovaas, Baer, &amp; Bijou (<a href="#/references" role="doc-biblioref" onclick="">1965</a>)</span> cited in <span class="citation" data-cites="Packer2022-gn">Packer &amp; Moreno-Dulcey (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span></p>
+</section>
+<section id="packer2022-gn-1" class="slide level2">
+<h2><span class="citation" data-cites="Packer2022-gn">Packer &amp; Moreno-Dulcey (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span></h2>
+<ul>
+<li>Are abstract shapes, puppets, etc. <em>social stimuli</em> to children?</li>
+<li>Do researchers assume children are willing to pretend that they are?</li>
+<li>Consequences vs.&nbsp;studying social cognition using real people?</li>
+</ul>
+</section>
+<section id="packer2022-gn-2" class="slide level2">
+<h2><span class="citation" data-cites="Packer2022-gn">Packer &amp; Moreno-Dulcey (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span></h2>
+<blockquote>
+<p>…treating symbolic social stimuli as though they are real can cause problems. It may be unfair to suggest that such research amounts to the study of children’s “theory of puppets…”</p>
+</blockquote>
+<div class="fragment">
+<blockquote>
+<p>but it seems equally inaccurate to say that it is an adequate study of either children’s theory of mind or their understanding of the deontology of the social world.</p>
+</blockquote>
+</div>
+</section>
+<section id="kominsky2022-we" class="slide level2">
+<h2><span class="citation" data-cites="Kominsky2022-we">Kominsky et al. (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span></h2>
+<blockquote>
+<p>Simplified stimuli allow for stronger experimental control and therefore more precise inferences compared to more complex, uncontrolled, naturally occurring events…</p>
+</blockquote>
+</section>
+<section id="kominsky2022-we-1" class="slide level2">
+<h2><span class="citation" data-cites="Kominsky2022-we">Kominsky et al. (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span></h2>
+<blockquote>
+<p>Ultimately, we conclude that while concerns about the validity of experiments using simplified stimuli are founded, results from such studies should not be dismissed purely on ecological grounds.</p>
+</blockquote>
+</section>
+<section class="slide level2">
+
+
+<img data-src="../include/img/yarkoni-generalizability-crisis.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Yarkoni2020-se">Yarkoni (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span></p></section></section>
+<section>
+<section id="dynamical-systems" class="title-slide slide level1 center">
+<h1>Dynamic(al) systems</h1>
+
+</section>
+<section id="what-are-they" class="slide level2">
+<h2>What are they?</h2>
+<ul>
+<li>Mathematical models</li>
+<li>Systems of differential equations (equations involving derivatives)</li>
+<li>Describe changes of a state space over time</li>
+</ul>
+</section>
+<section id="lorenz-system" class="slide level2">
+<h2>Lorenz system</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[\dot{x} = \sigma(y-x) \]</span> <span class="math display">\[\dot{y} = \rho x - y - xz \]</span> <span class="math display">\[\dot{z} = -\beta z + xy \]</span></p>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/1/13/A_Trajectory_Through_Phase_Space_in_a_Lorenz_Attractor.gif"></p>
+<figcaption><span class="citation" data-cites="Wikipedia-contributors2025-ew">Wikipedia contributors (<a href="#/references" role="doc-biblioref" onclick="">2025d</a>)</span></figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="double-pendulum" class="slide level2">
+<h2>Double pendulum</h2>
+<iframe data-external="1" src="https://www.youtube.com/embed/_i3WqnejOQk" width="100%" height="50%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<p>– <span class="citation" data-cites="Brockmann2014-qx">Brockmann (<a href="#/references" role="doc-biblioref" onclick="">2014</a>)</span>; see also <span class="citation" data-cites="Wikipedia-contributors2025-oy">Wikipedia contributors (<a href="#/references" role="doc-biblioref" onclick="">2025a</a>)</span></p>
+</section>
+<section id="double-pendulum-1" class="slide level2">
+<h2>Double pendulum</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[x_1=(l/2)sin{\theta_1}\]</span> <span class="math display">\[y_1=(-l/2)cos(\theta_1)\]</span></p>
+<p><span class="math display">\[x_2=l(sin(\theta_1)+1/2*sin(\theta_2))\]</span> <span class="math display">\[y_2=-l(cos(\theta_1)+1/2*cos(\theta_2))\]</span></p>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Double-compound-pendulum-dimensioned.svg"></p>
+<figcaption><span class="citation" data-cites="Wikipedia-contributors2025-oy">Wikipedia contributors (<a href="#/references" role="doc-biblioref" onclick="">2025a</a>)</span></figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="aspects-of-dynamical-systems" class="slide level2">
+<h2>Aspects of dynamical systems</h2>
+<ul>
+<li>Self-organization</li>
+<li>Attractors
+<ul>
+<li>Stable</li>
+<li>Unstable</li>
+</ul></li>
+</ul>
+<p>– <span class="citation" data-cites="Wikipedia-contributors2025-ga">Wikipedia contributors (<a href="#/references" role="doc-biblioref" onclick="">2025e</a>)</span></p>
+</section>
+<section id="aspects-of-dynamical-systems-1" class="slide level2">
+<h2>Aspects of dynamical systems</h2>
+<ul>
+<li>Sensitivity to initial conditions</li>
+<li>Non-linearity</li>
+<li>Bifurcation points
+<ul>
+<li>Change in behavior with change in parameter</li>
+</ul></li>
+</ul>
+</section>
+<section id="motivation" class="slide level2">
+<h2>Motivation</h2>
+<blockquote>
+<p>[T]he induction of novel behavioral forms may be the single most important unresolved problem for all of the developmental sciences.</p>
+</blockquote>
+<p>– <span class="citation" data-cites="Wolff1987-mb">Wolff (<a href="#/references" role="doc-biblioref" onclick="">1987</a>)</span> cited in <span class="citation" data-cites="Thelen1063-vk">Thelen &amp; Smith (<a href="#/references" role="doc-biblioref" onclick="">1998</a>)</span></p>
+</section>
+<section id="inspirations" class="slide level2">
+<h2>Inspirations</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li><em>On Growth and Form</em></li>
+<li><span class="citation" data-cites="Thompson1917-ea">Thompson (<a href="#/references" role="doc-biblioref" onclick="">1917</a>)</span>; <span class="citation" data-cites="Wikipedia-contributors2025-za">Wikipedia contributors (<a href="#/references" role="doc-biblioref" onclick="">2025c</a>)</span></li>
+<li>Biological forms arise from physical and chemical laws</li>
+<li>Mathematical approach to biology</li>
+</ul>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:55%;">
+<iframe data-external="1" src="https://www.youtube.com/embed/saJWk8d2-lU" width="100%" height="70%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<p><span class="citation" data-cites="Tibees22023-cc">Tibees (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span></p>
+</div></div>
+</section>
+<section id="inspirations-1" class="slide level2">
+<h2>Inspirations</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../include/img/thelen-smith-2007-fig-6.1.png"></p>
+<figcaption>C.H. Waddington <span class="citation" data-cites="Waddington2014-rh">(<a href="#/references" role="doc-biblioref" onclick="">Waddington, 2014</a>)</span> reprinted in <span class="citation" data-cites="Thelen1063-vk">Thelen &amp; Smith (<a href="#/references" role="doc-biblioref" onclick="">1998</a>)</span></figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../include/img/thelen-smith-2007-fig-6.2.png"></p>
+<figcaption>C.H. Waddington <span class="citation" data-cites="Waddington2014-rh">(<a href="#/references" role="doc-biblioref" onclick="">Waddington, 2014</a>)</span> reprinted in <span class="citation" data-cites="Thelen1063-vk">Thelen &amp; Smith (<a href="#/references" role="doc-biblioref" onclick="">1998</a>)</span></figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="inspirations-2" class="slide level2">
+<h2>Inspirations</h2>
+
+<img data-src="../include/img/thelen-smith-2007-fig-6.5.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Ford1992-et">Ford &amp; Lerner (<a href="#/references" role="doc-biblioref" onclick="">1992</a>)</span> reprinted in <span class="citation" data-cites="Thelen1063-vk">Thelen &amp; Smith (<a href="#/references" role="doc-biblioref" onclick="">1998</a>)</span></p></section>
+<section id="dynamic-systems-theory-dst" class="slide level2">
+<h2>Dynamic Systems Theory (DST)</h2>
+<ul>
+<li><span class="citation" data-cites="Perone2017-qb">Perone &amp; Simmering (<a href="#/references" role="doc-biblioref" onclick="">2017</a>)</span></li>
+<li>Multi-causality</li>
+<li>Self-organization</li>
+<li>Nested time-scales</li>
+</ul>
+</section>
+<section id="perone2017-qb" class="slide level2">
+<h2><span class="citation" data-cites="Perone2017-qb">Perone &amp; Simmering (<a href="#/references" role="doc-biblioref" onclick="">2017</a>)</span></h2>
+<ul>
+<li>Describe measurable behavior</li>
+<li>Dynamic Field Theory (DFT) extends DST to neural fields</li>
+</ul>
+</section>
+<section id="approach-thelen2007-df-pp.-289-292" class="slide level2">
+<h2>Approach <span class="citation" data-cites="Thelen2007-df">(<a href="#/references" role="doc-biblioref" onclick="">Thelen &amp; Smith, 2007, pp. 289–292</a>)</span></h2>
+<ul>
+<li>Identify collective variable of interest</li>
+<li>Characterize behavioral attractor states</li>
+<li>Describe the dynamic trajectory of the collective variable</li>
+</ul>
+</section>
+<section id="approach-thelen2007-df-pp.-289-292-1" class="slide level2">
+<h2>Approach <span class="citation" data-cites="Thelen2007-df">(<a href="#/references" role="doc-biblioref" onclick="">Thelen &amp; Smith, 2007, pp. 289–292</a>)</span></h2>
+<ul>
+<li>Identify points of transition</li>
+<li>Identify potential control parameters</li>
+<li>Manipulate putative control parameters to experimentally generate transitions</li>
+</ul>
+</section>
+<section id="an-illustrative-df-model" class="slide level2">
+<h2>An illustrative DF model</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li>Fixation system</li>
+<li>Perceptual field
+<ul>
+<li>Excitatory layer</li>
+<li>Inhibitory layer</li>
+</ul></li>
+<li>Working memory field</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../include/img/perone-2013-fig-01.png" style="width:60.0%"></p>
+<figcaption>Figure 1 from <span class="citation" data-cites="Perone2013-ez">Perone &amp; Spencer (<a href="#/references" role="doc-biblioref" onclick="">2013</a>)</span>; The fixation system has four states: <em>L</em>eft, <em>R</em>ight, <em>C</em>enter, and <em>A</em>way.</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="model-dynamics-perceptual-field" class="slide level2">
+<h2>Model dynamics: Perceptual field</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li>Past states influence future</li>
+<li>Excitatory input (Gaussian-weighted)</li>
+<li>Inhibition: Local (Gaussian-weighted) + global</li>
+<li>Memory (Hebbian)</li>
+<li>Noise</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="../include/img/perrone-2013-eqn-pf.png"></p>
+<figcaption>Appendix from <span class="citation" data-cites="Perone2013-ez">Perone &amp; Spencer (<a href="#/references" role="doc-biblioref" onclick="">2013</a>)</span></figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="model-equations" class="slide level2">
+<h2>Model equations</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../include/img/perone-2013-table-a1.png"></p>
+<figcaption>Appendix from <span class="citation" data-cites="Perone2013-ez">Perone &amp; Spencer (<a href="#/references" role="doc-biblioref" onclick="">2013</a>)</span></figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="../include/img/perone-2013-eqn-pf.png"></p>
+<figcaption>Appendix from <span class="citation" data-cites="Perone2013-ez">Perone &amp; Spencer (<a href="#/references" role="doc-biblioref" onclick="">2013</a>)</span></figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="model-behavior" class="slide level2">
+<h2>Model behavior</h2>
+
+<img data-src="https://www.frontiersin.org/files/Articles/60190/fpsyg-04-00648-HTML/image_m/fpsyg-04-00648-g002.jpg" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Perone2013-ez">Perone &amp; Spencer (<a href="#/references" role="doc-biblioref" onclick="">2013</a>)</span></p></section>
+<section id="challenges" class="slide level2">
+<h2>Challenges</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>How quantitative should (must? can?) we be?</li>
+<li>Weaker vs.&nbsp;stronger predictions based on level of measure</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="https://www.statology.org/wp-content/uploads/2020/01/levels_measurement.jpg" class="quarto-figure quarto-figure-right"></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="challenges-1" class="slide level2">
+<h2>Challenges</h2>
+<ul>
+<li>Measure with sufficient temporal density?</li>
+<li>Degrees of freedom: In data, in models<sup>1</sup></li>
+<li>Model robustness to variations in parameters</li>
+<li>Virtues of “neural-like” models? Flaws?</li>
+</ul>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>I counted 41 in <span class="citation" data-cites="Perone2013-ez">Perone &amp; Spencer (<a href="#/references" role="doc-biblioref" onclick="">2013</a>)</span></p></li></ol></aside></section>
+<section id="all-models-are-wrong" class="slide level2">
+<h2>All models are wrong…</h2>
+<ul>
+<li>but some are useful <span class="citation" data-cites="Wikipedia-contributors2025-yf">(<a href="#/references" role="doc-biblioref" onclick="">Wikipedia contributors, 2025b</a>)</span></li>
+<li>Explanatory power of vs.&nbsp;parsimony</li>
+</ul>
+</section>
+<section id="challenges-2" class="slide level2">
+<h2>Challenges</h2>
+<ul>
+<li>Metaphor or model?
+<ul>
+<li>Rhythmic motor behaviors in different domains <span class="citation" data-cites="Iverson2010-kr">Perone &amp; Spencer (<a href="#/references" role="doc-biblioref" onclick="">2013</a>)</span></li>
+<li>Shape biases in word learning</li>
+<li>Locomotor milestones are rarely stage-like <span class="citation" data-cites="Adolph2008-br">Perone &amp; Spencer (<a href="#/references" role="doc-biblioref" onclick="">2013</a>)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="future-prospects" class="slide level2">
+<h2>Future prospects</h2>
+<blockquote>
+<p>On the basis of history, current proclivities of active researchers, and current quantitative training of psychology students, my bet would have to be that this approach will probably fade from the scene or at best remain a little island of activity restricted to a small group of interested parties. (This is the kind of remark that gets quoted and snickered at 20 years later when the approach is flourishing) (p.&nbsp;314).</p>
+</blockquote>
+<p>– <span class="citation" data-cites="Bogartz1994-ta">Bogartz (<a href="#/references" role="doc-biblioref" onclick="">1994</a>)</span> cited in <span class="citation" data-cites="Perone2013-ez">Perone &amp; Spencer (<a href="#/references" role="doc-biblioref" onclick="">2013</a>)</span></p>
+</section>
+<section id="thelen2003-tt" class="slide level2">
+<h2><span class="citation" data-cites="Thelen2003-tt">Thelen &amp; Bates (<a href="#/references" role="doc-biblioref" onclick="">2003</a>)</span></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://s.hdnux.com/photos/10/11/55/2136942/6/ratio3x4_960.webp" style="width:70.0%"></p>
+<figcaption>Esther Thelen</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://crl.ucsd.edu/bates/images/liz-256.jpg" style="width:70.0%"></p>
+<figcaption>Elizabeth Bates</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="core-question" class="slide level2">
+<h2>Core question:</h2>
+
+<img data-src="../include/img/thelen-2003-title.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Thelen2003-tt">Thelen &amp; Bates (<a href="#/references" role="doc-biblioref" onclick="">2003</a>)</span></p></section>
+<section class="slide level2">
+
+
+<img data-src="../include/img/thelen-2003-tbl-01.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Thelen2003-tt">Thelen &amp; Bates (<a href="#/references" role="doc-biblioref" onclick="">2003</a>)</span></p></section>
+<section id="connectionism-dynamic-systems" class="slide level2">
+<h2>Connectionism == Dynamic systems?</h2>
+<blockquote>
+<p>Based on the theoretical taxonomy in Table 1, and our own discussions of it, we have reached the conclusion that connectionism and dynamic systems are not competing theories of development.</p>
+</blockquote>
+<p>– <span class="citation" data-cites="Thelen2003-tt">Thelen &amp; Bates (<a href="#/references" role="doc-biblioref" onclick="">2003</a>)</span></p>
+</section>
+<section id="conclusion" class="slide level2">
+<h2>Conclusion</h2>
+<blockquote>
+<p>But at a more general theoretical level, there are far more shared assumptions than real differences. They are both really two aspects of a new, synthetic theory of development…</p>
+</blockquote>
+<p>– <span class="citation" data-cites="Thelen2003-tt">Thelen &amp; Bates (<a href="#/references" role="doc-biblioref" onclick="">2003</a>)</span></p>
+</section>
+<section id="next-time" class="slide level2">
+<h2>Next time…</h2>
+<ul>
+<li>Emergentism &amp; dynamic systems: Deep dive
+<ul>
+<li><em>Student Presentation G</em>: A connectionist model to explain why infants seem so smart
+<ul>
+<li><em>Read</em>: <span class="citation" data-cites="Munakata1997-zx">Munakata, McClelland, Johnson, &amp; Siegler (<a href="#/references" role="doc-biblioref" onclick="">1997</a>)</span> (<em>Presenter</em>: Zeynep Sülün; <em>Discussant</em>: Caesar Liu)</li>
+</ul></li>
+<li><em>Student Presentation H</em>: Emergentism and variants of the A-not-B task
+<ul>
+<li><em>Read</em>: <span class="citation" data-cites="Smith1999-xz">Smith, Thelen, Titzer, &amp; McLin (<a href="#/references" role="doc-biblioref" onclick="">1999</a>)</span> (<em>Presenter</em>: Natalie Byrd; <em>Discussant</em>: Jiayi Fan)</li>
+</ul></li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="resources" class="title-slide slide level1 center">
+<h1>Resources</h1>
+
+</section>
+<section id="about" class="slide level2">
+<h2>About</h2>
+<p>This talk was produced using <a href="https://quarto.org">Quarto</a>, using the <a href="https://posit.co/products/open-source/rstudio/">RStudio</a> Integrated Development Environment (IDE), version 2025.5.1.513.</p>
+<p>The source files are in R and R Markdown, then rendered to HTML using the <a href="https://revealjs.com">revealJS</a> framework. The HTML slides are hosted in a <a href="https://github.com/psu-psychology/psy-548-fall">GitHub repo</a> and served by GitHub pages: <a href="https://psu-psychology.github.io/psy-548-fall/" class="uri">https://psu-psychology.github.io/psy-548-fall/</a></p>
+</section>
+<section id="references" class="slide level2 smaller scrollable">
+<h2>References</h2>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-Adolph2008-br" class="csl-entry" role="listitem">
+Adolph, K. E., Robinson, S. R., Young, J. W., &amp; Gill-Alvarez, F. (2008). What is the shape of developmental change? <em>Psychological Review</em>, <em>115</em>, 527–543. <a href="https://doi.org/10.1037/0033-295X.115.3.527">https://doi.org/10.1037/0033-295X.115.3.527</a>
+</div>
+<div id="ref-Bogartz1994-ta" class="csl-entry" role="listitem">
+Bogartz, R. S. (1994). The future of dynamic systems models in developmental psychology in the light of the past. <em>Journal of Experimental Child Psychology</em>, <em>58</em>, 289–319. <a href="https://doi.org/10.1006/jecp.1994.1036">https://doi.org/10.1006/jecp.1994.1036</a>
+</div>
+<div id="ref-Brockmann2014-qx" class="csl-entry" role="listitem">
+Brockmann, D. (2014). <em>Double pendulum</em>. You<span>T</span>ube. Retrieved from <a href="https://www.youtube.com/watch?v=_i3WqnejOQk">https://www.youtube.com/watch?v=_i3WqnejOQk</a>
+</div>
+<div id="ref-Ford1992-et" class="csl-entry" role="listitem">
+Ford, D. H., &amp; Lerner, R. M. (1992). <em>Developmental systems theory: An integrative approach</em>. Sage Publications, Inc. Retrieved from <a href="https://psycnet.apa.org/record/1992-98053-000">https://psycnet.apa.org/record/1992-98053-000</a>
+</div>
+<div id="ref-Hamlin2007-ff" class="csl-entry" role="listitem">
+Hamlin, J. K., Wynn, K., &amp; Bloom, P. (2007). Social evaluation by preverbal infants. <em>Nature</em>, <em>450</em>, 557–559. <a href="https://doi.org/10.1038/nature06288">https://doi.org/10.1038/nature06288</a>
+</div>
+<div id="ref-Heider1944-lw" class="csl-entry" role="listitem">
+Heider, F., &amp; Simmel, M. (1944). An experimental study of apparent behavior. <em>The <span>A</span>merican <span>J</span>ournal of <span>P</span>sychology</em>, <em>57</em>, 243. <a href="https://doi.org/10.2307/1416950">https://doi.org/10.2307/1416950</a>
+</div>
+<div id="ref-Iverson2010-kr" class="csl-entry" role="listitem">
+Iverson, J. M. (2010). Developing language in a developing body: The relationship between motor development and language development. <em>Journal of Child Language</em>, <em>37</em>, 229–261. <a href="https://doi.org/10.1017/S0305000909990432">https://doi.org/10.1017/S0305000909990432</a>
+</div>
+<div id="ref-Kenjirou2010-eq" class="csl-entry" role="listitem">
+Kenjirou. (2010). <em>Heider and <span>S</span>immel (1944) animation</em>. You<span>T</span>ube. Retrieved from <a href="https://www.youtube.com/watch?v=VTNmLt7QX8E">https://www.youtube.com/watch?v=VTNmLt7QX8E</a>
+</div>
+<div id="ref-Kominsky2022-we" class="csl-entry" role="listitem">
+Kominsky, J. F., Lucca, K., Thomas, A. J., Frank, M. C., &amp; Hamlin, J. K. (2022). Simplicity and validity in infant research. <em>Cognitive Development</em>, <em>63</em>, 101213. <a href="https://doi.org/10.1016/j.cogdev.2022.101213">https://doi.org/10.1016/j.cogdev.2022.101213</a>
+</div>
+<div id="ref-Lovaas1965-ny" class="csl-entry" role="listitem">
+Lovaas, O. I., Baer, D. M., &amp; Bijou, S. W. (1965). Experimental procedures for analyzing the interaction of symbolic social stimuli and children’s behavior. <em>Child Development</em>, <em>36</em>, 237. <a href="https://doi.org/10.2307/1126794">https://doi.org/10.2307/1126794</a>
+</div>
+<div id="ref-Lucca2025-gy" class="csl-entry" role="listitem">
+Lucca, K., Yuen, F., Wang, Y., Alessandroni, N., Allison, O., Alvarez, M., … Hamlin, J. K. (2025). Infants’ social evaluation of helpers and hinderers: A large-scale, multi-lab, coordinated replication study. <em>Developmental Science</em>, <em>28</em>, e13581. <a href="https://doi.org/10.1111/desc.13581">https://doi.org/10.1111/desc.13581</a>
+</div>
+<div id="ref-Munakata1997-zx" class="csl-entry" role="listitem">
+Munakata, Y., McClelland, J. L., Johnson, M. H., &amp; Siegler, R. S. (1997). Rethinking infant knowledge: Toward an adaptive process account of successes and failures in object permanence tasks. <em>Psychological Review</em>, <em>104</em>, 686–713. <a href="https://doi.org/10.1037/0033-295x.104.4.686">https://doi.org/10.1037/0033-295x.104.4.686</a>
+</div>
+<div id="ref-Packer2022-gn" class="csl-entry" role="listitem">
+Packer, M. J., &amp; Moreno-Dulcey, F. A. (2022). Theory of puppets?: A critique of the use of puppets as stimulus materials in psychological research with young children. <em>Cognitive Development</em>, <em>61</em>, 101146. <a href="https://doi.org/10.1016/j.cogdev.2021.101146">https://doi.org/10.1016/j.cogdev.2021.101146</a>
+</div>
+<div id="ref-Perone2017-qb" class="csl-entry" role="listitem">
+Perone, S., &amp; Simmering, V. R. (2017). Applications of dynamic systems theory to cognition and development: New frontiers. <em>Advances in Child Development and Behavior</em>, <em>52</em>, 43–80. <a href="https://doi.org/10.1016/bs.acdb.2016.10.002">https://doi.org/10.1016/bs.acdb.2016.10.002</a>
+</div>
+<div id="ref-Perone2013-ez" class="csl-entry" role="listitem">
+Perone, S., &amp; Spencer, J. P. (2013). Autonomous visual exploration creates developmental change in familiarity and novelty seeking behaviors. <em>Frontiers in Psychology</em>, <em>4</em>, 648. <a href="https://doi.org/10.3389/fpsyg.2013.00648">https://doi.org/10.3389/fpsyg.2013.00648</a>
+</div>
+<div id="ref-Smith1999-xz" class="csl-entry" role="listitem">
+Smith, L. B., Thelen, E., Titzer, R., &amp; McLin, D. (1999). Knowing in the context of acting: The task dynamics of the a-not-<span>B</span> error. <em>Psychological Review</em>, <em>106</em>, 235–260. <a href="https://doi.org/10.1037/0033-295X.106.2.235">https://doi.org/10.1037/0033-295X.106.2.235</a>
+</div>
+<div id="ref-Thelen2003-tt" class="csl-entry" role="listitem">
+Thelen, E., &amp; Bates, E. (2003). Connectionism and dynamic systems: Are they really different? <em>Developmental Science</em>, <em>6</em>, 378–391. <a href="https://doi.org/10.1111/1467-7687.00294">https://doi.org/10.1111/1467-7687.00294</a>
+</div>
+<div id="ref-Thelen1063-vk" class="csl-entry" role="listitem">
+Thelen, E., &amp; Smith, L. B. (1998). Dynamic systems theories. In R. M. Lerner (Ed.), <em>Handbook of child psychology: Theoretical models of human development, vol</em> (Vol. 1, pp. 258–312). John Wiley &amp; Sons, Inc., xx. Retrieved from <a href="https://psycnet.apa.org/record/2006-08774-006">https://psycnet.apa.org/record/2006-08774-006</a>
+</div>
+<div id="ref-Thelen2007-df" class="csl-entry" role="listitem">
+Thelen, E., &amp; Smith, L. B. (2007). Dynamic systems theories. In R. M. Lerner (Ed.), <em>Handbook of <span>C</span>hild <span>P</span>sychology</em> (Vol. 1, pp. 563–634). Hoboken, NJ, USA: John Wiley &amp; Sons, Inc. <a href="https://doi.org/10.1002/9780470147658.chpsy0106">https://doi.org/10.1002/9780470147658.chpsy0106</a>
+</div>
+<div id="ref-Thompson1917-ea" class="csl-entry" role="listitem">
+Thompson, D. W. (1917). On growth and form. Cambridge [Eng.]: University press. Retrieved from <a href="https://openlibrary.org/books/OL6604798M/On_growth_and_form.">https://openlibrary.org/books/OL6604798M/On_growth_and_form.</a>
+</div>
+<div id="ref-Tibees22023-cc" class="csl-entry" role="listitem">
+Tibees. (2023). <em>The book biologists hate to read but love to cite</em>. You<span>T</span>ube. Retrieved from <a href="https://www.youtube.com/watch?v=saJWk8d2-lU&amp;t=456s">https://www.youtube.com/watch?v=saJWk8d2-lU&amp;t=456s</a>
+</div>
+<div id="ref-Waddington2014-rh" class="csl-entry" role="listitem">
+Waddington, C. H. (2014). <em>The strategy of the genes</em>. London, England: Routledge. <a href="https://doi.org/10.4324/9781315765471">https://doi.org/10.4324/9781315765471</a>
+</div>
+<div id="ref-Wikipedia-contributors2025-oy" class="csl-entry" role="listitem">
+Wikipedia contributors. (2025a, June 18). Double pendulum. Retrieved from <a href="https://en.wikipedia.org/wiki/Double_pendulum">https://en.wikipedia.org/wiki/Double_pendulum</a>
+</div>
+<div id="ref-Wikipedia-contributors2025-yf" class="csl-entry" role="listitem">
+Wikipedia contributors. (2025b, July 23). All models are wrong. Retrieved from <a href="https://en.wikipedia.org/wiki/All_models_are_wrong">https://en.wikipedia.org/wiki/All_models_are_wrong</a>
+</div>
+<div id="ref-Wikipedia-contributors2025-za" class="csl-entry" role="listitem">
+Wikipedia contributors. (2025c, September 27). On growth and form. Retrieved from <a href="https://en.wikipedia.org/wiki/On_Growth_and_Form">https://en.wikipedia.org/wiki/On_Growth_and_Form</a>
+</div>
+<div id="ref-Wikipedia-contributors2025-ew" class="csl-entry" role="listitem">
+Wikipedia contributors. (2025d, October 6). Lorenz system. Retrieved from <a href="https://en.wikipedia.org/wiki/Lorenz_system">https://en.wikipedia.org/wiki/Lorenz_system</a>
+</div>
+<div id="ref-Wikipedia-contributors2025-ga" class="csl-entry" role="listitem">
+Wikipedia contributors. (2025e, October 15). Dynamical system. Retrieved from <a href="https://en.wikipedia.org/wiki/Dynamical_system">https://en.wikipedia.org/wiki/Dynamical_system</a>
+</div>
+<div id="ref-Wolff1987-mb" class="csl-entry" role="listitem">
+Wolff, P. H. (1987). <em>The development of behavioral states and the expression of emotions in early infancy: New proposals for investigation</em>. Chicago: University of Chicago Press. Retrieved from <a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=4xtPEjWzaQcC&amp;oi=fnd&amp;pg=PA1&amp;dq=The+development+of+behavioral+states+and+the+ex-+pression+of+emotions+in+early+infancy:+New+proposals+for+investiga-+tion&amp;ots=4xuOlTBxCd&amp;sig=mxFpzuQ4BIz74HgwMM8m8ifQkos">https://books.google.com/books?hl=en&amp;lr=&amp;id=4xtPEjWzaQcC&amp;oi=fnd&amp;pg=PA1&amp;dq=The+development+of+behavioral+states+and+the+ex-+pression+of+emotions+in+early+infancy:+New+proposals+for+investiga-+tion&amp;ots=4xuOlTBxCd&amp;sig=mxFpzuQ4BIz74HgwMM8m8ifQkos</a>
+</div>
+<div id="ref-Yarkoni2020-se" class="csl-entry" role="listitem">
+Yarkoni, T. (2020). The generalizability crisis. <em>The Behavioral and Brain Sciences</em>, <em>45</em>, e1. <a href="https://doi.org/10.1017/S0140525X20001685">https://doi.org/10.1017/S0140525X20001685</a>
+</div>
+</div>
+</section></section>
+
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="https://brand.psu.edu/images/backgrounds/penn-state-shield.jpg" class="slide-logo"></p>
+<div class="footer footer-default">
+<p><a href="https://psu-psychology.github.io/psy-548-2025-fall">PSY 548</a> | © Rick Gilmore under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+                // default icon
+                link.classList.add("external");
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    <script>videojs(video_shortcode_videojs_video1);</script>
+    <script>videojs(video_shortcode_videojs_video2);</script>
+    <script>videojs(video_shortcode_videojs_video3);</script>
+    
+
+</body></html>

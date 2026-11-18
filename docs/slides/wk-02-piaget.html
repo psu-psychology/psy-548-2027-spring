@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.37">
+
+  <meta name="author" content="Rick Gilmore">
+  <title>PSY 548 – On Piaget</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-445e7e3b1c5f75a9ba11066bf069e70f.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">On Piaget</h1>
+  <p class="subtitle">2025-09-05</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Rick Gilmore 
+</div>
+        <p class="quarto-title-affiliation">
+            Department of Psychology
+          </p>
+    </div>
+</div>
+
+</section>
+<section>
+<section id="prelude" class="title-slide slide level1 center">
+<h1>Prelude</h1>
+
+</section>
+<section class="slide level2">
+
+<iframe data-external="1" src="https://www.youtube.com/embed/6p-lDYPR2P8" width="100%" height="70%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<p>– <span class="citation" data-cites="Madonna2017-bv">Madonna (<a href="#/references" role="doc-biblioref" onclick="">2017</a>)</span></p>
+</section>
+<section id="todays-topics" class="slide level2">
+<h2>Today’s topics</h2>
+<ul>
+<li>Check-in on hierarchical task analyses (HTA)</li>
+<li>Presentation <a href="../resources/presentations.html">schedule</a></li>
+<li>Background ideas</li>
+<li>Theoretical foundations: Piaget
+<ul>
+<li><em>General Readings</em>: <span class="citation" data-cites="Siegler2021-py">Siegler &amp; Alibali (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span> Chapter 2; <span class="citation" data-cites="Piaget1952-dm">Piaget (<a href="#/references" role="doc-biblioref" onclick="">1953</a>)</span>; <span class="citation" data-cites="Newcombe2013-qy">Newcombe (<a href="#/references" role="doc-biblioref" onclick="">2013</a>)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="check-in-on-hta" class="slide level2">
+<h2>Check-in on HTA</h2>
+<ul>
+<li>Relevance?</li>
+<li>Utility?</li>
+<li>Do task demands/abilities change across development?</li>
+<li>What are the tasks of the infant, toddler, pre-schooler, etc.?</li>
+</ul>
+</section></section>
+<section>
+<section id="background-ideas" class="title-slide slide level1 center">
+<h1>Background ideas</h1>
+
+</section>
+<section id="gilmores-influences" class="slide level2">
+<h2>Gilmore’s influences</h2>
+<ul>
+<li class="fragment">Chomsky <span class="citation" data-cites="Chomsky1959-ef">(<a href="#/references" role="doc-biblioref" onclick="">Chomsky, 1959</a>)</span>: nativist psycholinguistics</li>
+<li class="fragment">Marr <span class="citation" data-cites="Marr1980-cu">(<a href="#/references" role="doc-biblioref" onclick="">Marr, 1980</a>)</span>: neurally inspired computational modeling</li>
+<li class="fragment">Gibson <span class="citation" data-cites="Gibson1966-qo Gibson1986-ya">(<a href="#/references" role="doc-biblioref" onclick="">J. J. Gibson, 1966</a>; <a href="#/references" role="doc-biblioref" onclick="">James J. Gibson, 1986</a>)</span>: Perception &amp; action, ecological approach</li>
+<li class="fragment">Johnson <span class="citation" data-cites="Johnson2001-yy">(<a href="#/references" role="doc-biblioref" onclick="">Johnson, 2001</a>)</span>: Developmental cognitive neuroscience</li>
+<li class="fragment">Ph.D.&nbsp;Committee members: Bob Siegler, Jay McClelland, Marlene Behrmann, Daniel Simons</li>
+</ul>
+</section>
+<section id="gilmores-influences-1" class="slide level2">
+<h2>Gilmore’s influences</h2>
+
+<img data-src="../include/img/newcombe-2013-tbl-1.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Newcombe2013-qy">Newcombe (<a href="#/references" role="doc-biblioref" onclick="">2013</a>)</span> Table 1</p></section>
+<section id="on-mechanism" class="slide level2">
+<h2>On mechanism</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://m.media-amazon.com/images/I/71ls8e3DCTL._SY522_.jpg" class="quarto-figure quarto-figure-center" style="width:60.0%"></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://mitp.silverchair-cdn.com/mitp/content_public/books/1824/book/4/m_9780262256650-cover.jpeg?Expires=1758980052&amp;Signature=3d03CUSSrOXiniGR3x5Yu6OzLfM1qAf8P7PNcAdcRKGmf2Y2lARDacOkm4z7WeCLGY5RrY9PUXU1miFocE8XZyzaEwDoTKQi7mwZCRInzFviNCRNv07W6wjdvZ5OvNeG8q-HZ-H83oQrs4MnzXJRDkJkDhuBD9YRVp1UO7CgQuyyt4qqx5uYl2n2koF3rOht3CtUys6VkFzOIzbAOGM3SVwbx4Vb7jMYaZ2rwtgbmwZ3JAMXvB-lilApd9r-YH41dsVYQGa9HAURT8CI-FdBf4~BBhwLdMeXu~Nh0gcAPB6stP9gPtj7g1oZeLPRAgXYjd23VIhQ1pIAJM-D92JmVg__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" class="quarto-figure quarto-figure-center" style="width:60.0%"></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="on-mechanism-1" class="slide level2">
+<h2>On mechanism</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Physical devices subject to physical laws</li>
+<li>The automata <span class="citation" data-cites="Wikipedia-contributors2025-sa">(<a href="#/references" role="doc-biblioref" onclick="">Wikipedia contributors, 2025f</a>)</span> metaphor in psychology</li>
+<li>Mind, brain, body problem <span class="citation" data-cites="Wikipedia-contributors2025-ww">(<a href="#/references" role="doc-biblioref" onclick="">Wikipedia contributors, 2025a</a>)</span></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Digesting_Duck.jpg"></p>
+<figcaption><span class="citation" data-cites="Wikipedia-contributors2025-ww">Wikipedia contributors (<a href="#/references" role="doc-biblioref" onclick="">2025a</a>)</span></figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="on-mechanism-2" class="slide level2">
+<h2>On mechanism</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Is the human mind/brain/body a machine?</li>
+<li>What are the parts?</li>
+<li>How do they connect and interact?</li>
+<li>What do they do?</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg/500px-Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg" style="width:60.0%"></p>
+<figcaption><span class="citation" data-cites="Descartes2001-ma">Wikipedia contributors (<a href="#/references" role="doc-biblioref" onclick="">2001</a>)</span></figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="on-state-spaces" class="slide level2">
+<h2>On state spaces</h2>
+<blockquote>
+<p>…a mathematical model of a physical system that uses state variables to track how inputs shape system behavior over time.</p>
+</blockquote>
+<blockquote>
+<p>…These state variables change based on their current values and inputs, while outputs depend on the states and sometimes the inputs too.</p>
+</blockquote>
+<p>– <span class="citation" data-cites="Wikipedia-contributors2025-hc">Wikipedia contributors (<a href="#/references" role="doc-biblioref" onclick="">2025g</a>)</span></p>
+</section>
+<section id="on-state-spaces-1" class="slide level2">
+<h2>On state spaces</h2>
+<blockquote>
+<p>…The internal state variables are the smallest possible subset of system variables that can represent the entire state of the system at any given time…</p>
+</blockquote>
+
+<img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Typical_State_Space_model.svg/944px-Typical_State_Space_model.svg.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Wikipedia-contributors2025-hc">Wikipedia contributors (<a href="#/references" role="doc-biblioref" onclick="">2025g</a>)</span></p></section>
+<section id="on-state-spaces-2" class="slide level2">
+<h2>On state spaces</h2>
+<blockquote>
+<p>In computer science, a state space is a discrete space representing the set of all possible configurations of a system…State spaces are useful in computer science as a simple model of machines.</p>
+</blockquote>
+<p>– <span class="citation" data-cites="Wikipedia-contributors2025-zs">Wikipedia contributors (<a href="#/references" role="doc-biblioref" onclick="">2025h</a>)</span></p>
+</section>
+<section id="on-state-spaces-3" class="slide level2">
+<h2>On state spaces</h2>
+<ul>
+<li>Representations <span class="math inline">\(\rightarrow\)</span> states (<span class="math inline">\(s\)</span>)</li>
+<li>Processes <span class="math inline">\(\rightarrow\)</span> changes in state across time
+<ul>
+<li><span class="math inline">\(s_{next}=s_{now}+\delta s\)</span>, where <span class="math inline">\(\delta s\)</span> is a change in state.</li>
+</ul></li>
+<li>Time scale of states, changes?
+<ul>
+<li><span class="math inline">\(s(t+1)=F(s(t))\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="on-state-spaces-4" class="slide level2">
+<h2>On state spaces</h2>
+<ul>
+<li>What is the state of the child’s mind/brain/body at time <em>t</em>?</li>
+<li>How does that state change over some time interval?
+<ul>
+<li>Short term: behavior</li>
+<li>Longer term: learning or adaptation or development</li>
+<li><em>Really</em> long term: evolution</li>
+</ul></li>
+</ul>
+</section>
+<section id="on-state-spaces-5" class="slide level2">
+<h2>On state spaces</h2>
+<div class="cell" data-reveal="true" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-body-nervous-system-simplest" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-body-nervous-system-simplest-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-body-nervous-system-simplest">flowchart LR
+  A(Body) --&gt;|Sensation| B(Nervous System)
+  B --&gt;|Response| A
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-body-nervous-system-simplest-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: A simple state space for the nervous system
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-reveal="true" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-body-nervous-system" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-body-nervous-system-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-body-nervous-system">flowchart LR
+  A(Body) --&gt;|Sensation| B(Nervous System)
+  B --&gt; B
+  B --&gt;|Response| A
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-body-nervous-system-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: A slightly more complicated state space for the nervous system.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="on-state-spaces-6" class="slide level2">
+<h2>On state spaces</h2>
+<div class="cell" data-reveal="true" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-body-nervous-system" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-body-nervous-system-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-body-nervous-system">flowchart TD
+  W(World) --&gt; W
+  W --&gt;|Experience| B(Body)
+  B --&gt;|Behavior| W
+  B --&gt; B
+  B --&gt;|Sensation| N(Nervous system)
+  N --&gt;|Response| B
+  N --&gt;|Cognition| N
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-body-nervous-system-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: A more complete state space for the nervous system
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="on-state-spaces-7" class="slide level2">
+<h2>On state spaces</h2>
+
+<img data-src="https://larrywswanson.com/wp-content/uploads/2015/06/4-systems-network.jpg" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Swanson2025-ke">Swanson (<a href="#/references" role="doc-biblioref" onclick="">n.d.</a>)</span></p><div class="fragment">
+<ul>
+<li>Separable but interacting neural pathways</li>
+<li>Input (from world and body state)</li>
+<li>Output (to body and world)</li>
+</ul>
+</div>
+</section>
+<section id="on-reflexes" class="slide level2">
+<h2>On reflexes</h2>
+<blockquote>
+<p>In biology, a reflex, or reflex action, is an involuntary, unplanned sequence or action and nearly instantaneous response to a stimulus…</p>
+</blockquote>
+<blockquote>
+<p>A reflex occurs via neural pathways in the nervous system called reflex arcs…</p>
+</blockquote>
+<p>– <span class="citation" data-cites="Wikipedia-contributors2025-cf">Wikipedia contributors (<a href="#/references" role="doc-biblioref" onclick="">2025j</a>)</span></p>
+</section>
+<section id="on-reflexes-1" class="slide level2">
+<h2>On reflexes</h2>
+<blockquote>
+<p>These neural signals do not always travel to the brain, so many reflexes are an automatic response to a stimulus that does not receive or need conscious thought.</p>
+</blockquote>
+<p>– <span class="citation" data-cites="Wikipedia-contributors2025-cf">Wikipedia contributors (<a href="#/references" role="doc-biblioref" onclick="">2025j</a>)</span></p>
+<div class="fragment">
+<ul>
+<li>“Reflect” events from the world to the nervous system</li>
+<li>Idea credited to Descartes <span class="citation" data-cites="Descartes2001-ma">(<a href="#/references" role="doc-biblioref" onclick="">Wikipedia contributors, 2001</a>)</span> and Hall <span class="citation" data-cites="Wikipedia-contributors2025-xl">(<a href="#/references" role="doc-biblioref" onclick="">Wikipedia contributors, 2025d</a>)</span></li>
+<li>Earliest to emerge behaviors</li>
+</ul>
+</div>
+</section>
+<section id="on-reflexes-2" class="slide level2">
+<h2>On reflexes</h2>
+<iframe data-external="1" src="https://www.youtube.com/embed/rHYk1sYsge0" width="100%" height="70%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<p>– <span class="citation" data-cites="RegisteredNurseRN2020-ny">RegisteredNurseRN (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span></p>
+</section>
+<section id="on-reflexes-3" class="slide level2">
+<h2>On reflexes</h2>
+<ul>
+<li>What is the input? What is the output?</li>
+<li>What purpose(s) do reflexes serve?</li>
+</ul>
+</section>
+<section id="the-vestibulo-ocular-reflex-vor" class="slide level2">
+<h2>The vestibulo-ocular reflex (VOR)</h2>
+<iframe data-external="1" src="https://www.youtube.com/embed/j_R0LcPnZ_w" width="100%" height="70%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<p>– <span class="citation" data-cites="Castilla2007-cq">Castilla (<a href="#/references" role="doc-biblioref" onclick="">2007</a>)</span></p>
+</section>
+<section id="the-vestibulo-ocular-reflex-vor-1" class="slide level2">
+<h2>The vestibulo-ocular reflex (VOR)</h2>
+
+<img data-src="https://upload.wikimedia.org/wikipedia/commons/5/58/Simple_vestibulo-ocular_reflex.PNG" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Wikipedia-contributors2025-lq">Wikipedia contributors (<a href="#/references" role="doc-biblioref" onclick="">2025i</a>)</span></p><ul>
+<li>Stabilizes gaze in allocentric coordinates</li>
+<li>Within ~10 ms</li>
+</ul>
+</section>
+<section id="on-reflexes-4" class="slide level2">
+<h2>On reflexes</h2>
+<ul>
+<li class="fragment">Sensations and responses temporally linked
+<ul>
+<li class="fragment">Causally (mechanically) linked via</li>
+<li class="fragment">Specialized neural circuits</li>
+</ul></li>
+<li class="fragment">Sensation <span class="math inline">\(\rightarrow\)</span> Response <span class="math inline">\(\rightarrow\)</span> (New) Sensation</li>
+<li class="fragment">Imagine a mechanism that “records” these links</li>
+<li class="fragment">(Random) Response <span class="math inline">\(\rightarrow\)</span> Sensation
+<ul>
+<li class="fragment">Sensation <span class="math inline">\(\sim\)</span> (Recorded prior) Sensation</li>
+</ul></li>
+</ul>
+</section>
+<section id="aside-vestibulo-ocular-reflex-vor" class="slide level2">
+<h2>Aside: Vestibulo-ocular reflex (VOR)</h2>
+<ul>
+<li>One of many behavior systems that reduce “noise”, improve reliability in input</li>
+<li>Input “reliability” improves over long time span</li>
+</ul>
+</section>
+<section id="visual-acuity-in-young-children-not-adult-like" class="slide level2">
+<h2>Visual acuity in young children <em>not</em> adult-like</h2>
+
+<img data-src="https://github.com/gilmore-lab/vss-2025-poster/blob/main/include/generated/fig-typical-group-by-age-paper-group-trend-scaled-weight-n-no-classic-1.png?raw=true" style="width:70.0%" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Gilmore2025-fz">Gilmore, DiFulvio, Beamer, &amp; Cruz (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span></p></section>
+<section id="background-ideas-summary" class="slide level2">
+<h2>Background ideas: Summary</h2>
+<ul>
+<li class="fragment">Mind/brain/body as a mechanism</li>
+<li class="fragment">State space formalism aids specifying states and transitions</li>
+<li class="fragment">Reflexes as simple, early emerging sensorimotor behaviors</li>
+<li class="fragment">Reflex arcs <span class="citation" data-cites="Wikipedia-contributors2025-xl">(<a href="#/references" role="doc-biblioref" onclick="">Wikipedia contributors, 2025d</a>)</span> <span class="math inline">\(\rightarrow\)</span> Piaget’s “circular reactions”</li>
+<li class="fragment">Perceiving “sameness” of sensations &amp; actions critical</li>
+</ul>
+</section></section>
+<section>
+<section id="on-piaget" class="title-slide slide level1 center">
+<h1>On Piaget</h1>
+
+</section>
+<section id="link-to-student-commentary" class="slide level2">
+<h2>Link to student commentary</h2>
+<ul>
+<li><a href="https://docs.google.com/document/d/1eAo1FqM-WRg73ascICbfRFNu7pLBvF_s0GGzHIYzSck/edit?tab=t.0#heading=h.mqmwmakspm4l">Comments &amp; questions</a></li>
+</ul>
+</section>
+<section class="slide level2">
+
+
+<img data-src="https://upload.wikimedia.org/wikipedia/commons/6/67/Jean_Piaget_in_Ann_Arbor.png" class="r-stretch quarto-figure-center"><p class="caption">Jean Piaget from <span class="citation" data-cites="Wikipedia-contributors2025-cq">Wikipedia contributors (<a href="#/references" role="doc-biblioref" onclick="">2025c</a>)</span></p></section>
+<section id="core-ideas" class="slide level2">
+<h2>Core ideas</h2>
+<ul>
+<li>Origins of knowledge (epistemology)</li>
+<li>Categories of knowledge
+<ul>
+<li>Space, time, classes/categories, causality</li>
+</ul></li>
+<li>Reflexes innate</li>
+<li>Child as “scientist”, solving “problems”</li>
+</ul>
+</section>
+<section id="core-ideas-1" class="slide level2">
+<h2>Core ideas</h2>
+<ul>
+<li>Stages (and sub-stages)
+<ul>
+<li>Sensorimotor (0-24 mos)</li>
+<li>Preoperational (2 - 6 or 7 years)</li>
+<li>Concrete operations (6 or 7 - 11 or 12 years)</li>
+<li>Formal operations (11 or 12 - 14 or 15 years)</li>
+</ul></li>
+</ul>
+</section>
+<section id="core-ideas-2" class="slide level2">
+<h2>Core ideas</h2>
+<ul>
+<li><em>Schema</em> <span class="citation" data-cites="Wikipedia-contributors2025-ad">(<a href="#/references" role="doc-biblioref" onclick="">Wikipedia contributors, 2025b</a>)</span></li>
+</ul>
+<blockquote>
+<p>…describes a pattern of thought or behavior that organizes categories of information and the relationships among them. It can also be described as a mental structure of preconceived ideas, a framework representing some aspect of the world, or a system of organizing and perceiving new information.</p>
+</blockquote>
+</section>
+<section id="core-ideas-3" class="slide level2">
+<h2>Core ideas</h2>
+<ul>
+<li><em>Assimilation</em></li>
+</ul>
+<blockquote>
+<p>fitting new information into pre-existing cognitive schemas <span class="citation" data-cites="Wikipedia-contributors2025-cq">(<a href="#/references" role="doc-biblioref" onclick="">Wikipedia contributors, 2025c</a>)</span></p>
+</blockquote>
+<div class="fragmewnt">
+<ul>
+<li><em>Accommodation</em></li>
+</ul>
+<blockquote>
+<p>taking new information in one’s environment and altering pre-existing schemas in order to fit in the new information <span class="citation" data-cites="Wikipedia-contributors2025-cq">(<a href="#/references" role="doc-biblioref" onclick="">Wikipedia contributors, 2025c</a>)</span></p>
+</blockquote>
+</div>
+</section>
+<section id="core-ideas-4" class="slide level2">
+<h2>Core ideas</h2>
+<ul>
+<li><em>Equilibration</em></li>
+</ul>
+<blockquote>
+<p>integrating individual pieces of knowledge into a unified whole. <span class="citation" data-cites="Siegler2021-py">(<a href="#/references" role="doc-biblioref" onclick="">Siegler &amp; Alibali, 2021, p. 24</a>)</span></p>
+</blockquote>
+</section>
+<section id="core-ideas-5" class="slide level2">
+<h2>Core ideas</h2>
+<ul>
+<li>Means (how to do/actions)</li>
+<li>Ends (what to do/goals)</li>
+<li>Means-ends analysis central to AI and the science of problem solving <span class="citation" data-cites="Wikipedia-contributors2023-nd">(<a href="#/references" role="doc-biblioref" onclick="">Wikipedia contributors, 2023</a>)</span></li>
+</ul>
+</section>
+<section id="core-ideas-6" class="slide level2">
+<h2>Core ideas</h2>
+<ul>
+<li><a href="https://dictionary.apa.org/primary-circular-reaction" data-preview-link="true"><em>Primary circular reactions</em></a>
+<ul>
+<li>Repetition of a volitional, non-reflexive act <span class="citation" data-cites="APAdictionary-vt">(<a href="#/references" role="doc-biblioref" onclick=""><span>“<span>APA</span> dictionary of psychology,”</span> n.d.</a>)</span></li>
+</ul></li>
+<li><a href="https://dictionary.apa.org/secondary-circular-reaction" data-preview-link="true"><em>Secondary circular reactions</em></a>
+<ul>
+<li>Actions taken for their effects on the environment <span class="citation" data-cites="APAdictionary-vt">(<a href="#/references" role="doc-biblioref" onclick=""><span>“<span>APA</span> dictionary of psychology,”</span> n.d.</a>)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="core-approach" class="slide level2">
+<h2>Core approach</h2>
+
+<img data-src="../include/img/siegler-alibali-fig-2-1.png" class="r-stretch quarto-figure-center"><p class="caption">Figure 2-1 from <span class="citation" data-cites="Siegler2021-py">Siegler &amp; Alibali (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span></p></section>
+<section id="core-ideas-7" class="slide level2">
+<h2>Core ideas</h2>
+<ul>
+<li>Detecting “sameness”</li>
+</ul>
+<blockquote>
+<p>To be able to recognize the same thing again as it evidences itself to one’s senses in a multiplicity of ways, thus affording multiple opportunities to accumulate and apply information about it is, I believe, the most central challenge there is for cognition – <span class="citation" data-cites="Millikan2017-to">Millikan (<a href="#/references" role="doc-biblioref" onclick="">2017</a>)</span></p>
+</blockquote>
+</section>
+<section id="core-ideas-8" class="slide level2">
+<h2>Core ideas</h2>
+<ul>
+<li>Tasks that require the detection of some sort of sameness
+<ul>
+<li>Object permanence</li>
+<li>Conservation of number, solid &amp; liquid quantity</li>
+<li>Perspective taking</li>
+<li>Number</li>
+</ul></li>
+</ul>
+</section>
+<section id="core-approach-1" class="slide level2">
+<h2>Core approach</h2>
+<ul>
+<li>Qualitative observations of behavior</li>
+<li>In experimenter-chosen situations or tasks</li>
+<li>Observations <span class="math inline">\(\rightarrow\)</span> inferences about unseen mental processes</li>
+<li>Inductive reasoning <span class="citation" data-cites="Wikipedia-contributors2025-wz">(<a href="#/references" role="doc-biblioref" onclick="">Wikipedia contributors, 2025e</a>)</span></li>
+<li>Inspired by semiotics <span class="citation" data-cites="Wikipedia-contributors2025-ej">(<a href="#/references" role="doc-biblioref" onclick="">Wikipedia contributors, 2025k</a>)</span>?</li>
+</ul>
+</section>
+<section id="questions" class="slide level2">
+<h2>Questions</h2>
+<ul>
+<li>How does Piaget view the question of cognitive continuity vs.&nbsp;discontinuity?</li>
+<li>Are the relations among sensations and actions described in <span class="citation" data-cites="Piaget1952-dm">Piaget (<a href="#/references" role="doc-biblioref" onclick="">1953</a>)</span> clearly specified that you could write out the schema?</li>
+<li>Gilmore’s attempt to unpack the <a href="../resources/causal-relations.html">causal relations</a> at work in the situation of the infant in the bassinet
+<ul>
+<li>Do developmental scientists need to “complexify” our phenomena before we simplify them?</li>
+</ul></li>
+</ul>
+</section>
+<section id="notable-comments" class="slide level2">
+<h2>Notable comments</h2>
+<blockquote>
+<p>To assimilate a sensorial image or an object, whether through simple assimilation, recognition, or generalizing extension, is to insery it in a system of schemata, in other words, to give it a “meaning”.</p>
+</blockquote>
+<p>– <span class="citation" data-cites="Piaget1952-dm">Piaget (<a href="#/references" role="doc-biblioref" onclick="">1953</a>)</span>, p.&nbsp;189</p>
+</section>
+<section id="notable-comments-1" class="slide level2">
+<h2>Notable comments</h2>
+<blockquote>
+<p>Secondary circular reaction, in so far as it is a reproduction of an interesting result fortuitously obtained, is, effect, far from constituting a behavior pattern peculiar to the child. An adult, unacquainted with machinery, does not behave differently from the baby when, having by chance touched part of a motor, he does not understand the effect produced and repeats the action which set it in motion.</p>
+</blockquote>
+<p>– <span class="citation" data-cites="Piaget1952-dm">Piaget (<a href="#/references" role="doc-biblioref" onclick="">1953</a>)</span>, p.&nbsp;207</p>
+</section>
+<section id="evaluating-piaget" class="slide level2">
+<h2>Evaluating Piaget</h2>
+<blockquote>
+<p>There are several problems with Piaget’s approach to cognitive development…the various capabilities did not cohere in the way that Piaget’s stage theory had envisioned…children frequently achieved competence in some of the stage-relevant tasks while lagging behind on other stage-relevant tasks…</p>
+</blockquote>
+<p>– <span class="citation" data-cites="Newcombe2013-qy">Newcombe (<a href="#/references" role="doc-biblioref" onclick="">2013</a>)</span> p.&nbsp;481</p>
+</section>
+<section id="evaluating-piaget-1" class="slide level2">
+<h2>Evaluating Piaget</h2>
+<blockquote>
+<p>…Piaget seriously underestimated the cognitive competence of infants and young children…A large amount of research beginning in the 1970s and proceeding apace to this day has shown…that infants and young children have far more substantial abilities than Piaget had observed.</p>
+</blockquote>
+<p>– <span class="citation" data-cites="Newcombe2013-qy">Newcombe (<a href="#/references" role="doc-biblioref" onclick="">2013</a>)</span> p.&nbsp;481</p>
+</section>
+<section id="piaget" class="slide level2">
+<h2>Piaget</h2>
+<blockquote>
+<p>…Piaget talke in general terms about the process of developmental change as being the operation of equilibration…Many investigators argued that a more detailed specification of the mechanisms of change was needed.</p>
+</blockquote>
+<p>– <span class="citation" data-cites="Newcombe2013-qy">Newcombe (<a href="#/references" role="doc-biblioref" onclick="">2013</a>)</span> p.&nbsp;481</p>
+</section>
+<section id="evaluating-piaget-2" class="slide level2">
+<h2>Evaluating Piaget</h2>
+<blockquote>
+<p>Piaget’s theory is…‘too monumental to embrace, and at the same time, too omnipresent to detect (Beilin, 1992)’</p>
+</blockquote>
+<p>– <span class="citation" data-cites="Siegler2021-py">Siegler &amp; Alibali (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span> p.&nbsp;48</p>
+<div class="fragment">
+<blockquote>
+<p>Some of the reasons for its influence and its lasting appeal are the important acquisitions it describes, the large span of childhood it encompasses, and the reliability and charm of many of its observations.</p>
+</blockquote>
+<p>– <span class="citation" data-cites="Siegler2021-py">Siegler &amp; Alibali (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span> p.&nbsp;48</p>
+</div>
+</section>
+<section id="evaluating-piaget-3" class="slide level2">
+<h2>Evaluating Piaget</h2>
+<blockquote>
+<p>[Piaget’s] trait descriptions thus seem to be in the right ballpark, but to gloss over exceptions. More generally, Piaget’s theory continues to be of interest because it communicates a good feel for children’s thinking and it asks the right questions.</p>
+</blockquote>
+<p>– <span class="citation" data-cites="Siegler2021-py">Siegler &amp; Alibali (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span> p.&nbsp;49</p>
+</section></section>
+<section>
+<section id="wrap-up" class="title-slide slide level1 center">
+<h1>Wrap-up</h1>
+
+</section>
+<section id="next-time" class="slide level2">
+<h2>Next time…</h2>
+<ul>
+<li>Piaget: Deep dive
+<ul>
+<li><em>Student presentation A</em>: How robust is the evidence for Piaget’s trajectories?
+<ul>
+<li><em>Skim</em>: <span class="citation" data-cites="Elkind1961-ns">Elkind (<a href="#/references" role="doc-biblioref" onclick="">1961</a>)</span>; <span class="citation" data-cites="Gelman1972-we">Gelman (<a href="#/references" role="doc-biblioref" onclick="">1972</a>)</span></li>
+</ul></li>
+<li><em>Student presentation B</em>: When does object permanence emerge?
+<ul>
+<li><em>Skim</em>: <span class="citation" data-cites="Baillargeon1985-vl">R. Baillargeon, Spelke, &amp; Wasserman (<a href="#/references" role="doc-biblioref" onclick="">1985</a>)</span>; <span class="citation" data-cites="Baillargeon2008-gz">Renée Baillargeon (<a href="#/references" role="doc-biblioref" onclick="">2008</a>)</span></li>
+</ul></li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="resources" class="title-slide slide level1 center">
+<h1>Resources</h1>
+
+</section>
+<section id="about" class="slide level2">
+<h2>About</h2>
+<p>This talk was produced using <a href="https://quarto.org">Quarto</a>, using the <a href="https://posit.co/products/open-source/rstudio/">RStudio</a> Integrated Development Environment (IDE), version 2025.5.1.513.</p>
+<p>The source files are in R and R Markdown, then rendered to HTML using the <a href="https://revealjs.com">revealJS</a> framework. The HTML slides are hosted in a <a href="https://github.com/psu-psychology/psy-548-fall">GitHub repo</a> and served by GitHub pages: <a href="https://psu-psychology.github.io/psy-548-fall/" class="uri">https://psu-psychology.github.io/psy-548-fall/</a></p>
+</section>
+<section id="references" class="slide level2 smaller scrollable">
+<h2>References</h2>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-APAdictionary-vt" class="csl-entry" role="listitem">
+<span>APA</span> dictionary of psychology. (n.d.). Retrieved September 1, 2025, from <a href="https://dictionary.apa.org/">https://dictionary.apa.org/</a>
+</div>
+<div id="ref-Baillargeon2008-gz" class="csl-entry" role="listitem">
+Baillargeon, Renée. (2008). Innate ideas revisited: <span>F</span>or a principle of persistence in infants’ physical reasoning. <em>Perspectives on Psychological Science: A Journal of the Association for Psychological Science</em>, <em>3</em>, 2–13. <a href="https://doi.org/10.1111/j.1745-6916.2008.00056.x">https://doi.org/10.1111/j.1745-6916.2008.00056.x</a>
+</div>
+<div id="ref-Baillargeon1985-vl" class="csl-entry" role="listitem">
+Baillargeon, R., Spelke, E. S., &amp; Wasserman, S. (1985). Object permanence in five-month-old infants. <em>Cognition</em>, <em>20</em>, 191–208. <a href="https://doi.org/10.1016/0010-0277(85)90008-3">https://doi.org/10.1016/0010-0277(85)90008-3</a>
+</div>
+<div id="ref-Castilla2007-cq" class="csl-entry" role="listitem">
+Castilla, V. (2007). <em>Vestibulo-ocular reflex 13/25</em>. You<span>T</span>ube. Retrieved from <a href="https://www.youtube.com/watch?v=j_R0LcPnZ_w">https://www.youtube.com/watch?v=j_R0LcPnZ_w</a>
+</div>
+<div id="ref-Chomsky1959-ef" class="csl-entry" role="listitem">
+Chomsky, N. (1959). A review of <span>B</span>. <span>F</span>. <span>S</span>kinner’s verbal behavior. <em>Language</em>, <em>35</em>, 26–58. Retrieved from <a href="http://cogprints.org/1148/">http://cogprints.org/1148/</a>
+</div>
+<div id="ref-Elkind1961-ns" class="csl-entry" role="listitem">
+Elkind, D. (1961). Children’s discovery of the conservation of mass, weight, and volume: Piaget replication study. <span>II</span>. <em>The <span>J</span>ournal of <span>G</span>enetic <span>P</span>sychology</em>, <em>98</em>, 219–227. <a href="https://doi.org/10.1080/00221325.1961.10534372">https://doi.org/10.1080/00221325.1961.10534372</a>
+</div>
+<div id="ref-Gelman1972-we" class="csl-entry" role="listitem">
+Gelman, R. (1972). Logical capacity of very young children: Number invariance rules. <em>Child Development</em>, <em>43</em>, 75. <a href="https://doi.org/10.2307/1127873">https://doi.org/10.2307/1127873</a>
+</div>
+<div id="ref-Gibson1966-qo" class="csl-entry" role="listitem">
+Gibson, J. J. (1966). <em>The senses considered as perceptual systems</em>. doi.apa.org. Retrieved from <a href="http://doi.apa.org/psycinfo/1966-35026-000">http://doi.apa.org/psycinfo/1966-35026-000</a>
+</div>
+<div id="ref-Gibson1986-ya" class="csl-entry" role="listitem">
+Gibson, James J. (1986). <em>The ecological approach to visual perception</em> (1 edition). Boston: Psychology Press. Retrieved from <a href="http://www.amazon.com/The-Ecological-Approach-Visual-Perception/dp/0898599598">http://www.amazon.com/The-Ecological-Approach-Visual-Perception/dp/0898599598</a>
+</div>
+<div id="ref-Gilmore2025-fz" class="csl-entry" role="listitem">
+Gilmore, R., DiFulvio, J., Beamer, B., &amp; Cruz, N. (2025). Synthesizing evidence about developmental patterns in human visual acuity as measured by teller acuity cards. <em>Journal of <span>V</span>ision</em>, <em>25</em>, 2456. <a href="https://doi.org/10.1167/jov.25.9.2456">https://doi.org/10.1167/jov.25.9.2456</a>
+</div>
+<div id="ref-Johnson2001-yy" class="csl-entry" role="listitem">
+Johnson, M. H. (2001). Functional brain development in humans. <em>Nature Reviews. Neuroscience</em>, <em>2</em>, 475–483. <a href="https://doi.org/10.1038/35081509">https://doi.org/10.1038/35081509</a>
+</div>
+<div id="ref-Madonna2017-bv" class="csl-entry" role="listitem">
+Madonna. (2017). <em>Madonna - material girl (official video) [HD]</em>. You<span>T</span>ube. Retrieved from <a href="https://www.youtube.com/watch?v=6p-lDYPR2P8&amp;list=RD6p-lDYPR2P8&amp;start_radio=1">https://www.youtube.com/watch?v=6p-lDYPR2P8&amp;list=RD6p-lDYPR2P8&amp;start_radio=1</a>
+</div>
+<div id="ref-Marr1980-cu" class="csl-entry" role="listitem">
+Marr, D. (1980). <em>Vision</em>. Retrieved from <a href="https://mitpress.mit.edu/books/vision">https://mitpress.mit.edu/books/vision</a>
+</div>
+<div id="ref-Millikan2017-to" class="csl-entry" role="listitem">
+Millikan, R. (2017). <em>Beyond concepts: Unicepts, language, and natural information</em>. Oxford, England: Oxford University Press. Retrieved from <a href="https://books.google.com/books/about/Beyond_Concepts.html?id=s3QzDwAAQBAJ">https://books.google.com/books/about/Beyond_Concepts.html?id=s3QzDwAAQBAJ</a>
+</div>
+<div id="ref-Newcombe2013-qy" class="csl-entry" role="listitem">
+Newcombe, N. S. (2013). Cognitive development: <span>C</span>hanging views of cognitive change. <em>Wiley <span>I</span>nterdisciplinary <span>R</span>eviews. <span>C</span>ognitive <span>S</span>cience</em>, <em>4</em>, 479–491. <a href="https://doi.org/10.1002/wcs.1245">https://doi.org/10.1002/wcs.1245</a>
+</div>
+<div id="ref-Piaget1952-dm" class="csl-entry" role="listitem">
+Piaget, J. (1953). <em>The <span>O</span>rigins of <span>I</span>ntelligence in <span>C</span>hildren</em>. New York: Routledge. <a href="https://doi.org/10.1037/11494-000">https://doi.org/10.1037/11494-000</a>
+</div>
+<div id="ref-RegisteredNurseRN2020-ny" class="csl-entry" role="listitem">
+RegisteredNurseRN. (2020). <em>Newborn reflexes assessment (infant) nursing pediatric <span>NCLEX</span> review</em>. You<span>T</span>ube. Retrieved from <a href="https://www.youtube.com/watch?v=rHYk1sYsge0&amp;t=62s">https://www.youtube.com/watch?v=rHYk1sYsge0&amp;t=62s</a>
+</div>
+<div id="ref-Siegler2021-py" class="csl-entry" role="listitem">
+Siegler, R., &amp; Alibali, M. (2021). <em>Children’s <span>T</span>hinking</em> (5th ed.). Pearson.
+</div>
+<div id="ref-Swanson2025-ke" class="csl-entry" role="listitem">
+Swanson, L. W. (n.d.). Brain <span>A</span>rchitecture. Retrieved September 1, 2025, from <a href="https://larrywswanson.com/?page_id=1523">https://larrywswanson.com/?page_id=1523</a>
+</div>
+<div id="ref-Descartes2001-ma" class="csl-entry" role="listitem">
+Wikipedia contributors. (2001, October 30). René <span>D</span>escartes. Retrieved September 1, 2025, from <a href="https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes">https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes</a>
+</div>
+<div id="ref-Wikipedia-contributors2023-nd" class="csl-entry" role="listitem">
+Wikipedia contributors. (2023, October 2). Means–ends analysis. Retrieved from <a href="https://en.wikipedia.org/wiki/Means%E2%80%93ends_analysis">https://en.wikipedia.org/wiki/Means%E2%80%93ends_analysis</a>
+</div>
+<div id="ref-Wikipedia-contributors2025-ww" class="csl-entry" role="listitem">
+Wikipedia contributors. (2025a, April 8). Digesting duck. Retrieved from <a href="https://en.wikipedia.org/wiki/Digesting_Duck">https://en.wikipedia.org/wiki/Digesting_Duck</a>
+</div>
+<div id="ref-Wikipedia-contributors2025-ad" class="csl-entry" role="listitem">
+Wikipedia contributors. (2025b, July 10). Schema (psychology). Retrieved from <a href="https://en.wikipedia.org/wiki/Schema_(psychology)">https://en.wikipedia.org/wiki/Schema_(psychology)</a>
+</div>
+<div id="ref-Wikipedia-contributors2025-cq" class="csl-entry" role="listitem">
+Wikipedia contributors. (2025c, July 16). Piaget’s theory of cognitive development. Retrieved from <a href="https://en.wikipedia.org/wiki/Piaget%27s_theory_of_cognitive_development">https://en.wikipedia.org/wiki/Piaget%27s_theory_of_cognitive_development</a>
+</div>
+<div id="ref-Wikipedia-contributors2025-xl" class="csl-entry" role="listitem">
+Wikipedia contributors. (2025d, July 20). Marshall <span>H</span>all (physiologist). Retrieved from <a href="https://en.wikipedia.org/wiki/Marshall_Hall_(physiologist)">https://en.wikipedia.org/wiki/Marshall_Hall_(physiologist)</a>
+</div>
+<div id="ref-Wikipedia-contributors2025-wz" class="csl-entry" role="listitem">
+Wikipedia contributors. (2025e, August 1). Inductive reasoning. Retrieved from <a href="https://en.wikipedia.org/wiki/Inductive_reasoning">https://en.wikipedia.org/wiki/Inductive_reasoning</a>
+</div>
+<div id="ref-Wikipedia-contributors2025-sa" class="csl-entry" role="listitem">
+Wikipedia contributors. (2025f, August 3). Automaton. Retrieved from <a href="https://en.wikipedia.org/wiki/Automaton">https://en.wikipedia.org/wiki/Automaton</a>
+</div>
+<div id="ref-Wikipedia-contributors2025-hc" class="csl-entry" role="listitem">
+Wikipedia contributors. (2025g, August 6). State-space representation. Retrieved from <a href="https://en.wikipedia.org/wiki/State-space_representation">https://en.wikipedia.org/wiki/State-space_representation</a>
+</div>
+<div id="ref-Wikipedia-contributors2025-zs" class="csl-entry" role="listitem">
+Wikipedia contributors. (2025h, August 24). State space (computer science). Retrieved from <a href="https://en.wikipedia.org/wiki/State_space_(computer_science)">https://en.wikipedia.org/wiki/State_space_(computer_science)</a>
+</div>
+<div id="ref-Wikipedia-contributors2025-lq" class="csl-entry" role="listitem">
+Wikipedia contributors. (2025i, August 25). Vestibulo-ocular reflex. Retrieved from <a href="https://en.wikipedia.org/wiki/Vestibulo-ocular_reflex">https://en.wikipedia.org/wiki/Vestibulo-ocular_reflex</a>
+</div>
+<div id="ref-Wikipedia-contributors2025-cf" class="csl-entry" role="listitem">
+Wikipedia contributors. (2025j, August 27). Reflex. Retrieved from <a href="https://en.wikipedia.org/wiki/Reflex">https://en.wikipedia.org/wiki/Reflex</a>
+</div>
+<div id="ref-Wikipedia-contributors2025-ej" class="csl-entry" role="listitem">
+Wikipedia contributors. (2025k, August 28). Semiotics. Retrieved from <a href="https://en.wikipedia.org/wiki/Semiotics">https://en.wikipedia.org/wiki/Semiotics</a>
+</div>
+</div>
+</section></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="https://brand.psu.edu/images/backgrounds/penn-state-shield.jpg" class="slide-logo"></p>
+<div class="footer footer-default">
+<p><a href="https://psu-psychology.github.io/psy-548-2025-fall">PSY 548</a> | © Rick Gilmore under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+                // default icon
+                link.classList.add("external");
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

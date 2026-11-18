@@ -1,6 +1,7 @@
 ---
 title: "Cognitive Development"
-subtitle: "PSY 548 Fall 2025"
+subtitle: "PSY 548 Spring 2027"
+author: "Rick Gilmore"
 date: last-modified
 format: pdf
 bibliography:
