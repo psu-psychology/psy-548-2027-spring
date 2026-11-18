@@ -1,0 +1,449 @@
+---
+title: "Course Introduction"
+subtitle: 2025-08-29
+---
+
+# Prelude
+
+## Today's topics
+
+- Course introduction
+- A cognitive sensibility
+- On cognitive development
+- Your turn
+
+# Course introduction
+
+## Introductions all around
+
+## PSY 548
+
+- Structure
+  - Group discussion (Gilmore leads)
+  - Student presentation and student-led discussion
+- Material
+  - Theoretical & empirical
+  - Classic & modern
+- [Schedule](../schedule.qmd){preview-link="true"}
+- [Evaluation](../evaluation.qmd){preview-link="true"}
+
+# A cognitive sensibility
+
+---
+
+:::: {.columns}
+::: {.column width=50%}
+- On cognition
+- On computation
+- On representation
+- On modeling
+- On explicating behavior
+:::
+::: {.column width=50%}
+![](../include/img/sensibility.png)
+:::
+::::
+
+
+# On cognition
+
+---
+
+![@Bayne2019-ot](../include/img/bayne-2019.png)
+
+## Common themes
+
+- Processes, concepts, representations (Bayne)
+- Perception vs. cognition (Brainerd)
+- "acquisition, storage, retrieval and processing of information" (Byrne)
+- cognition vs. learning theory (Byrne)
+- representations and how coded in the brain (Byrne)
+
+## Common themes
+
+- mental processes; biological problem-solving; knowing about knowing; more complex than associative learning (Chittka)
+- thinking, knowing, understanding; non-human animal cognition (Clayton)
+- conservative, e.g., related to human thought vs. liberal, adaptive information handling and can be modelled as computation; attention; categorization (Heyes)
+
+## Common themes
+
+- how sensory input "is transformed, reduced, elaborated, stored, recovered and used"; animal umwelt (Mather)
+- less vs. more introspection/deliberation; "“requires
+learning”; “isn’t a reflex”; “depends on internally generated brain dynamics”; “needs access to stored models and relationships”; “relies on spatial maps” (Ölveczky)
+- "flexibility, contingency and freedom from immediacy" (Shadlen)
+
+## Common themes
+
+- not uniquely human; intentional vs. unintentional, conscious vs. unconscious, effortful vs. automatic, slow vs. fast processes (Suddendorf)
+- "I know that I am cognizing, but I can only surmise that cognition has occurred in other animals by observing their actions."; "behaviours in which an animal performs an action directed towards a goal it cannot currently perceive" (Webb)
+
+## Student insights
+
+- [Link to questions](https://docs.google.com/document/d/1eAo1FqM-WRg73ascICbfRFNu7pLBvF_s0GGzHIYzSck/edit?tab=t.0#heading=h.45jgqiof2cy4)
+ 
+# On computation
+
+## Is the brain a digital computer?
+
+:::: {.columns}
+::: {.column width=50%}
+- From neuronal action potentials to [Boolean](https://en.wikipedia.org/wiki/Boolean_algebra) logic
+:::
+::: {.column width=50%}
+![@McCulloch1943-ud](../include/img/mcculloch-pitts-1943.png)
+:::
+::::
+
+## How do digital computers compute?
+
+- Strings of binary digits (bits) *represent* information
+  - `0001`: the number one; `1111`: the number 15 (in base 2)
+  - `00110001`: the character symbol '1' in ASCII [@Wikipedia-contributors2025-aa]
+  - (some other binary 'word'): symbol meaning 'add', or 'store', etc.
+
+## How do digital computers compute?
+
+- Sequences of binary commands can be data or a program
+- Computer has Central Processing Unit (CPU), addressable memory (addresses are also binary words), interfaces (move info in and out), etc.
+
+
+## High-level computer languages
+
+```r
+x <- 3
+y <- 4
+h <- sqrt(x^2 + y^2)
+h
+```
+
+- Represent
+  - data as variables, e.g. `h`, `x`, and `y`
+  - functions or operators as character or strings, e.g., `<-`, `sqrt()`, `^`
+  - Convert to binary, then back again to give human-readable output
+  
+## High-level computer languages
+
+```{r}
+#| echo: true
+x <- 3
+y <- 4
+h <- sqrt(x^2 + y^2)
+h
+```
+
+## "What might cognition be, If not computation?"
+
+:::: {.columns}
+::: {.column width=50%}
+Analog 
+
+![](../include/img/van-gelder-speed-regulator.png){width="50%"}
+:::
+::: {.column width=50%}
+Algorithmic
+
+![](../include/img/van-gelder-algorithm.png)
+:::
+::::
+
+@Van_Gelder1995-so
+
+# On representation
+
+## Surface forms
+
+![](https://blog.adobe.com/en/publish/2017/06/11/media_159bde3b0a9324b8e3cc00d1e478e8000c7e056e9.png?width=2000&format=webply&optimize=medium)
+
+## Deep forms
+
+- Map (relate) multiple surface forms to
+  - A single deep form $\rightarrow$ the letters "A" and "G"
+- "Re-presentation"
+- Why? Some forms more easily "computable", more efficiently stored, less "lossy" 
+
+---
+
+![https://twiistedmedia.com/bitmap-vs-vector-printing](https://twiistedmedia.com/wp-content/uploads/2017/09/Bitmap_vs_vector.svg_.png)
+
+## A cognitive sensibility
+
+:::: {.columns}
+::: {.column width=50%}
+- Asks what info is available
+  - In the world
+  - In the mind
+- In what form(s)
+- Representations all the way down^[@Wikipedia-contributors2025-td]
+:::
+::: {.column width=50%}
+![https://commons.wikimedia.org/w/index.php?curid=2747463](https://upload.wikimedia.org/wikipedia/commons/4/47/River_terrapin.jpg)
+:::
+::::
+
+# On modeling
+
+## All models are wrong...
+
+:::: {.columns}
+::: {.column width=50%}
+"...but some are useful."
+
+@Wikipedia-contributors2025-yf
+:::
+::: {.column width=50%}
+![George Box (Wikipedia)](https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/GeorgeEPBox_%28cropped%29.jpg/500px-GeorgeEPBox_%28cropped%29.jpg){width="50%"}
+:::
+::::
+
+## @Simmering2010-ba
+
+- Mathematical vs. verbal models
+- Are verbal models poorly specified?
+- Do mathematical models "just move the ambiguity to the next level"?
+
+## @Simmering2010-ba
+
+>Phil: That’s an interesting point—in a way, all researchers use
+mathematical models when they apply statistical methods.
+
+>Mira: Hm, I suppose that’s true. I wouldn’t normally include
+statistics in my definition of computational models. I’m thinking
+about models that emphasize the processes underlying behavior
+and development.
+
+## What do statistics model?
+
+- What does a correlation (*r*) mean?
+
+```{r}
+#| echo: true
+x <- rnorm(n = 500, mean = 0, sd = 1)
+y <- x + rnorm(n = 500, mean = 0, sd = 1)
+cor.test(x, y)
+```
+
+## What do statistics model?
+
+```{r}
+#| include: false
+suppressPackageStartupMessages(library(dplyr))
+suppressPackageStartupMessages(library(ggplot2))
+```
+
+```{r}
+#| label: fig-corr-scatterplot
+df <- data.frame(x = x, y = y)
+df |>
+  ggplot() +
+  aes(x = x, y = y) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  coord_fixed(ratio = 1)
+```
+
+## Plot your data!
+
+![@datasaurus2019-us; @Matejka2017-xi](https://blog.revolutionanalytics.com/downloads/DataSaurus%20Dozen.gif)
+
+## Aside...
+
+- *Simulating* your data can help reveal hidden assumptions about what your statistical model actually means, what kind of plots will best show predicted effects, etc.
+- *Plotting* your data can reveal patterns that the statistics alone obscure.
+- So, do statistical models inform us about *processes*?
+
+## @Simmering2010-ba
+
+>Phil: ...Lewis Thomas once wrote an essay listing the seven wonders of
+the modern world—it was a challenge put to him in the form of a
+dinner invitation which he, interestingly, declined. Do you know
+what his Seventh Wonder of the modern world was?
+
+>Phil: Thomas’s Seventh Wonder was the development of a
+human child. How, my brilliant companions, are you going to
+explain that?
+
+## Cognitive models
+
+- @Wikipedia-contributors2025-ph
+- Many types
+
+## Box and Arrow
+
+```{mermaid}
+%%| label: simple-box
+%%| fig-caption: "A simple box and arrow diagram"
+
+flowchart LR
+  A[Stimulus] --> B[Sensation]
+  B --> C[Perception]
+  C --> D[Cognition]
+  D --> E[Action]
+```
+
+::: {.fragment}
+```{mermaid}
+%%| label: complex-box
+%%| fig-caption: "A more complex box and arrow diagram"
+
+flowchart LR
+  A[Stimulus] --> B[Sensation]
+  B --> C[Perception]
+  C --> D[Cognition]
+  D --> E[Action]
+  B --> F[Memory]
+  F --> C
+  D --> G[Attention]
+  G --> C
+  G --> F
+```
+:::
+
+- See also Figures 3.1 and 3.4 in @Siegler2021-py
+
+## A computer program...
+
+- That simulates some complex behavior
+- Is one type of model
+- Production systems (pp. 59-64 in @Siegler2021-py)
+
+## Unified Theories of Cognition [@Wikipedia-contributors2025-uo]
+
+![@Newell1990-qr](../include/img/newell-1990-quotation.png)
+
+## Why a unified theory?
+
+![Fig 1-6 from @Newell1990-qr](../include/img/newell-90-fig-1.6.png)
+
+## Constraints on minds
+
+:::: {.columns}
+::: {.column width=48%}
+1. Behave flexibly as a function of the environment
+2. Exhibit adaptive (rational, goal-oriented) behavior
+3. Operate in real time
+4. Operate in a rich, complex, detailed environment
+:::
+::: {.column width=4%}
+:::
+::: {.column width=48%}
+5. Use symbols and abstractions
+6. Use language, both natural and artificial
+7. Learn from the environment and from experience
+8. Acquire capabilities through development
+:::
+::::
+
+[@Newell1990-qr]
+
+## Constraints on minds 
+
+:::: {.columns}
+::: {.column width=48%}
+9. Operate autonomously \
+ but within a social community
+10. Be self-aware and have a sense of self
+11. Be realizable as a neural system
+:::
+::: {.column width=4%}
+:::
+::: {.column width=48%}
+12. Be constructable by an embryological growth process
+13. Arise through evolution
+:::
+::::
+
+[@Newell1990-qr]
+
+# On explicating behavior
+
+## The cognitive revolution [^1]
+
+:::: {.columns}
+::: {.column width=50%}
+![B.F. Skinner](https://hips.hearstapps.com/hmg-prod/images/gettyimages-83956845.jpg?resize=1200:*){width="60%"}
+
+::: {.fragment}
+- Can't (rigorously) look inside the mind.
+:::
+:::
+::: {.column width=50%}
+![Noam Chomsky](https://hips.hearstapps.com/hmg-prod/images/noam-chomsky.jpg?crop=1xw:1.0xh;center,top&resize=1200:*){width="60%"}
+
+::: {.fragment}
+- Must (rigorously) look inside the mind.
+:::
+:::
+::::
+
+[^1]: @Wikipedia-contributors2025-gi
+
+## @Ritter2014-eq
+
+- Task Analysis (TA) as a tool for designing "user-centered systems"
+- What do (people, e.g. children) have to *do*?
+- Often the basis of creating a computational cognitive model
+
+## @Ritter2014-eq
+
+![Figure 11.1 from @Ritter2014-eq](../include/img/ritter-fig-11.1.png)
+
+# On cognitive development
+
+## Big questions
+
+- Are some capabilities innate?
+- Does children's thinking progress through qualitatively different stages?
+- How do changes in children's thinking occur?
+- Why do individual children differ so much from each other in their thinking?
+
+Chapter 1 in @Siegler2021-py
+
+## Big questions
+
+- How does development of the brain contribute to cognitive development?
+- How does the social world contribute to cognitive development?
+
+Chapter 1 in @Siegler2021-py
+
+## Big questions (condensed)
+
+- Starting (or current at age X) state
+- Patterns of change
+- Causes of change
+
+# Your turn
+
+## Let's do a hierarchical task analysis!
+
+- Pick a task you know well, use in your research
+- What is required to perform it?
+- (Later) what cognitive components are associated with the task?
+
+## Is the analysis useful?
+
+## Take homes
+
+- A "cognitive" sensibility is about...
+- Information, representations, operations/processes
+- Sequences, hierarchical structures
+- Solving real-world problems
+- Inspired by computational systems
+
+## Next time...
+
+- Theoretical foundations: Piaget
+  - *General Readings*: @Siegler2021-py Chapter 2; @Piaget1952-dm; @Newcombe2013-qy
+
+# Resources
+
+## About
+
+This talk was produced using [Quarto](https://quarto.org), using the [RStudio](https://posit.co/products/open-source/rstudio/)
+Integrated Development Environment (IDE), version 2025.5.1.513.
+
+The source files are in R and R Markdown, then rendered to HTML using the
+[revealJS](https://revealjs.com) framework.
+The HTML slides are hosted in a [GitHub repo](https://github.com/psu-psychology/psy-548-fall) and served by GitHub pages:
+<https://psu-psychology.github.io/psy-548-fall/>
+
+## References

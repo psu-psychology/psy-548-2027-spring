@@ -1,0 +1,153 @@
+---
+title: "Constructivism"
+format: html
+---
+
+## About
+
+This page provides some supplemental resources pertaining to the [Week 7 Constructivism: Deep Dive](https://psu-psychology.github.io/psy-548-2025-fall/schedule.html#friday-october-10-2025) class discussion.
+
+## Supplemental videos from @Hamlin2007-ff
+
+:::: {.columns}
+::: {.column width=50%}
+{{< video https://static-content.springer.com/esm/art%3A10.1038%2Fnature06288/MediaObjects/41586_2007_BFnature06288_MOESM207_ESM.mov >}}
+
+This movie shows the Helper habituation event in Experiments 1 and 3, in which the Climber attempts but fails to get up the hill and is helped to the top by the Helper (in this case the yellow triangle).
+:::
+::: {.column width=50%}
+{{< video https://static-content.springer.com/esm/art%3A10.1038%2Fnature06288/MediaObjects/41586_2007_BFnature06288_MOESM208_ESM.mov >}}
+
+This movie shows the Hinderer habituation event in Experiments 1 and 3, in which the Climber attempts but fails to get up the hill and is pushed to the bottom by the Hinderer (in this case the blue square).
+:::
+::::
+
+See <https://www.nature.com/articles/nature06288>
+
+## Supplemental videos from @Hamlin2007-ff
+
+:::: {.columns}
+::: {.column width=50%}
+{{< video https://static-content.springer.com/esm/art%3A10.1038%2Fnature06288/MediaObjects/41586_2007_BFnature06288_MOESM209_ESM.mov >}}
+
+This movie shows the test event in Experiments 1 and 3 in which the Climber looks around and moves to sit next to the yellow triangle.
+:::
+::: {.column width=50%}
+{{< video https://static-content.springer.com/esm/art%3A10.1038%2Fnature06288/MediaObjects/41586_2007_BFnature06288_MOESM210_ESM.mov >}}
+
+This file contains Supplementary Video 4. This movie shows the test event in Experiments 1 and 3 in which the Climber looks around and moves to sit next to the blue square.
+:::
+::::
+
+See <https://www.nature.com/articles/nature06288>
+
+## Animacy animations
+
+### @Heider1944-lw animation
+
+{{< video https://www.youtube.com/watch?v=VTNmLt7QX8E >}}
+
+-- @Kenjirou2010-eq
+
+### Simulation cited in @Kominsky2022-we. 
+
+Simulation of abstract shape movement patterns that can trigger explanations in terms of animacy.
+
+{{< video https://perception.yale.edu/DemoFiles/Animacy-Basics/HS-Blocks-QT.mp4 >}}
+
+-- Animation created by H.G. Nevarez and Brian Scholl, inspired by @Heider1944-lw
+
+## Supplemental videos from @Rakoczy2008-mk
+
+:::: {.columns}
+::: {.column width=30%}
+{{< video https://supp.apa.org/psycarticles/supplemental/0012-1649.44.3.875/1a.mpg >}}
+:::
+::: {.column width=5%}
+:::
+::: {.column width=30%}
+{{< video https://supp.apa.org/psycarticles/supplemental/0012-1649.44.3.875/1b.mpg >}}
+:::
+::: {.column width=5%}
+:::
+::: {.column width=30%}
+{{< video https://supp.apa.org/psycarticles/supplemental/0012-1649.44.3.875/1c.mpg >}}
+:::
+::::
+
+:::: {.columns}
+::: {.column width=30%}
+{{< video https://supp.apa.org/psycarticles/supplemental/0012-1649.44.3.875/2a.mpg >}}
+:::
+::: {.column width=5%}
+:::
+::: {.column width=30%}
+{{< video https://supp.apa.org/psycarticles/supplemental/0012-1649.44.3.875/2b.mpg >}}
+:::
+::: {.column width=5%}
+:::
+::: {.column width=30%}
+{{< video https://supp.apa.org/psycarticles/supplemental/0012-1649.44.3.875/2c.mpg >}}
+:::
+::::
+
+:::: {.columns}
+::: {.column width=30%}
+{{< video https://supp.apa.org/psycarticles/supplemental/0012-1649.44.3.875/3a.mpg >}}
+:::
+::: {.column width=5%}
+:::
+::: {.column width=30%}
+{{< video https://supp.apa.org/psycarticles/supplemental/0012-1649.44.3.875/3b.mpg >}}
+:::
+::: {.column width=5%}
+:::
+::: {.column width=30%}
+{{< video https://supp.apa.org/psycarticles/supplemental/0012-1649.44.3.875/3c.mpg >}}
+:::
+::::
+
+:::: {.columns}
+::: {.column width=30%}
+{{< video https://supp.apa.org/psycarticles/supplemental/0012-1649.44.3.875/4a.mpg >}}
+:::
+::: {.column width=5%}
+:::
+::: {.column width=30%}
+{{< video https://supp.apa.org/psycarticles/supplemental/0012-1649.44.3.875/4b.mpg >}}
+:::
+::: {.column width=5%}
+:::
+::: {.column width=30%}
+{{< video https://supp.apa.org/psycarticles/supplemental/0012-1649.44.3.875/4c.mpg >}}
+:::
+::::
+
+:::: {.columns}
+::: {.column width=45%}
+{{< video https://supp.apa.org/psycarticles/supplemental/0012-1649.44.3.875/5a.mpg >}}
+:::
+::: {.column width=5%}
+:::
+::: {.column width=45%}
+{{< video https://supp.apa.org/psycarticles/supplemental/0012-1649.44.3.875/5b.mpg >}}
+:::
+::::
+
+:::: {.columns}
+::: {.column width=45%}
+{{< video https://supp.apa.org/psycarticles/supplemental/0012-1649.44.3.875/6a.mpg >}}
+:::
+::: {.column width=5%}
+:::
+::: {.column width=45%}
+{{< video https://supp.apa.org/psycarticles/supplemental/0012-1649.44.3.875/6b.mpg >}}
+:::
+::::
+
+-- @Rakoczy2008-aa
+
+## Supplemental videos from @Lucca2025-gy
+
+- OSF Project: <https://osf.io/qntyd/>
+- Databrary volume: <https://databrary.org/volume/1308>

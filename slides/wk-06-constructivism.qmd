@@ -1,0 +1,514 @@
+---
+title: "(Neo) Constructivism"
+subtitle: 2025-10-03
+fig-align: "center"
+---
+
+# Prelude
+
+## Today's topics
+
+- Background ideas
+- Constructivism & its variants
+  - *General Readings*: @Newcombe2011-wd; @Mareschal2011-fw; @Karmiloff-Smith2009-zs; @Spencer2011-fp; @Newcombe2011-pn
+  
+# Background ideas
+
+## @Hull1935-bx
+
+>One of the most striking things about the present state of the theory of learning and of psychological theory in general is the wide disagreement among individual psychologists.
+
+>...if all of these twelve psychologies should be in specific disagreement on a given point,
+then at least eleven of them must be wrong...
+
+## @Hull1935-bx
+
+>The obvious implication of this general situation has recently called out a timely little book by Grace Adams (i) entitled, 'Psychology: Science or superstition?...
+
+>...we are divided into sects, too many of which show emotional and other signs of religious fervor. This emotionalism and this inability to progress materially toward agreement obviously do not square with the ideals of objectivity and certainty which we associate with scientific investigation...
+
+## @Hull1935-bx
+
+>Somehow we have permitted ourselves to fall into essentially unscientific practices. Surely all psychologists truly interested in the welfare of psychology as a science, whatever their theoretical bias may be, should cooperate actively to correct this.
+
+## @Hull1935-bx
+
+- Four typical scientific procedures
+  - "Random observation"
+  - "Systematic exploration"
+  - "Experimental testing of isolated hypotheses"
+  - "Experiments...directed by systematic and integrated theory"
+  
+## @Hull1935-bx
+
+>this fourth type of investigation, in addition to yielding facts of intrinsic importance, has the great virtue of indicating the truth or falsity of the theoretical system from which the phenomena were originally deduced...
+
+## Four "essentials of sound scientific theory" 
+
+>The definitions and postulates of a scientific system should be stated in a clear and unambiguous manner, they should be consistent with one another, and they should be of such a nature that they permit rigorous deductions.
+
+-- @Hull1935-bx
+
+## Four "essentials of sound scientific theory"
+
+>The labor of deducing the potential implications of the postulates of the system should be performed with meticulous care and exhibited, preferably step by step and in full detail. It is these deductions which constitute the substance of a system.
+
+-- @Hull1935-bx
+
+## Four "essentials of sound scientific theory
+
+>The significant theorems of a truly scientific system must take the form of specific statements of the outcome of concrete experiments or observations. The experiments in question may be those which have already been performed, but of particular significance are those which have not previously been carried out or even planned. It is among these latter, especially, that crucial tests of a theoretical system
+will be found.
+
+-- @Hull1935-bx
+
+## Four "essentials of sound scientific theory
+
+>The theorems so deduced which concern phenomena not already known must be submitted to carefully controlled experiments. The outcome of these critical experiments, as well as of all previous ones, must agree with the corresponding theorems making up the system.
+
+-- @Hull1935-bx
+
+## "Is rigorous theory in psychology possible?"
+
+>If scientific theories are really impossible in psychology, the quicker we recognize it, the better. There are signs, however, that the beginnings of a genuinely scientific theory of mammalian behavior are already on their way.
+
+-- @Hull1935-bx
+
+## "Is rigorous theory in psychology possible?"
+
+>Extremely promising examples of such achievements in intimately related fields have been published...It is probably not accidental that all three of the above studies are essentially mathematical... 
+
+-- @Hull1935-bx
+
+## "Is rigorous theory in psychology possible?"
+
+>it serves to raise the important question as to whether rigorous logical deductions can be made on the basis of such quasi-mathematical concepts as have so far emerged from behavior experiments.
+
+-- @Hull1935-bx
+
+## "Is rigorous theory in psychology possible?"
+
+>It is a noteworthy event, in the present status of psychological theory, to have a deduction sufficiently anchored by logic to the postulates of the system that a collision with a stubborn experimental fact shall be able to force a revision of the system. It is reasonably safe to assume that the rarity of such collisions at present is not due to the infallibility of current theoretical constructs... 
+
+-- @Hull1935-bx
+
+## "Is rigorous theory in psychology possible?"
+
+>Until our systems become sufficiently clear and definite for this kind of event to be of fairly frequent occurrence, we may well suspect that what passes as theory among us is not really making contact with our experimental facts.
+
+-- @Hull1935-bx
+
+## Evaluating theories
+
+>it should be obvious that all mere systems of classification must be rejected. A dictionary may be systematic, but it can hardly be rated as a theoretical system even when the terms are largely of new coinage. 
+
+-- @Hull1935-bx
+
+## Evaluating theories
+
+>Some psychologists appear to have assumed that only principles incapable of direct observational verification should be admitted as postulates, whereas others may conceivably have assumed that only principles capable of direct observational verification should be admitted.
+
+--  @Hull1935-bx
+
+## Evaluating theories
+
+>...history of scientific practice so far shows that, in the main, the credentials of scientific postulates have consisted in what the postulates can do, rather than in some metaphysical quibble about where they came from.
+
+-- @Hull1935-bx
+
+## Evaluating theories
+
+>Let the psychological theorist begin with neurological postulates, or stimulusresponse postulates, or structural postulates, or functional postulates, or factor postulates, or organismic postulates, or Gestalt postulates, or sign-Gestalt postulates, or hormonic postulates, or mechanistic postulates, or dynamic postulates...
+
+-- @Hull1935-bx
+
+## Evaluating theories
+
+>or postulates concerned with the nature of consciousness, or the postulates of dialectical materialism, and no questions should be asked about his beginning save those of consistency and the principle of parsimony.
+
+-- @Hull1935-bx
+
+## Evaluating theories
+
+>In particular we must be on our guard against what might be called the 'anthropomorphic fallacy.' By this is meant a deduction the critical point of which turns out to be an implicit statement which, if made explicit, would be something like, "If I were a rat and were in that situation I would do so and so." 
+
+-- @Hull1935-bx
+
+## Evaluating theories
+
+>Such elements in a deduction make it a travesty because the very problem at issue is whether a system is able to deduce from its postulates alone what a normal man (or rat) would do under particular conditions. 
+
+-- @Hull1935-bx
+
+## Summing up @Hull1935-bx
+
+>Scientific theory in its best sense consists of the strict logical deduction from definite postulates of what should be observed under specified conditions^[Truth, for the purposes of the present paper, is to be understood as a theoretical deduction which has been verified by observation.].
+
+-- @Hull1935-bx
+
+## Summing up @Hull1935-bx
+
+>If the deductions are lacking or are logically invalid, there is no theory;
+
+::: {.fragment}
+>if the deductions involve conditions of observation which are impossible of attainment, the theory is metaphysical rather than scientific;
+
+:::
+
+::: {.fragment}
+> and if the deduced phenomenon is not observed when the conditions are fulfilled, the theory is false. 
+
+:::
+
+## Summing up @Hull1935-bx
+
+>...it is believed that the thing most urgently needed at the present moment is a clear statement of postulates with accompanying definitions of terms.
+
+## Glossary 
+
+**Connectionism**: An approach to modeling cognition based on the idea that the knowledge underlying cognitive activity is stored in the connections among neurons. In connectionist models, knowledge is acquired by using an experience-driven connection adjustment rule to alter the strengths of connections among neuron-like processing units.
+
+-- @McClelland2010-oz
+
+## Glossary
+
+**Dynamical field theory**: Originally formulated as a theory of movement preparation, in which movement parameters are represented by distributions of activation defined over metric spaces, the theory has recently been extended to address cognitive function. Dynamical fields are formalizations of how neural populations represent the continuous dimensions that characterize perceptual features, movements and cognitive decisions, and dynamical field theory specifies how activity in such neural populations evolves over time.
+
+-- @McClelland2010-oz
+
+## Glossary
+
+**Dynamical system**: A mathematical formalization that describes the time evolution of physical and cognitive states. Examples include the mathematical models that describe the swinging of a clock pendulum, the flow of water in a pipe, the movement of the limbs of a walking organism, and the drift that occurs in working memory towards or away from special points in the state
+space.
+
+-- @McClelland2010-oz
+
+## Glossary
+
+**Emergentist approaches**: Approaches to modeling cognition based on the idea that the structure seen in overt behavior and the patterns of change observed in behavior reflect the operation of subcognitive processes such as propagation of activation and inhibition among neurons and adjustment of strengths of connections between them. In contrast to emergentist approaches, symbolic approaches, including structured probabilistic models, model cognition directly at the level of manipulation of symbols and symbolic structures such as propositions and rules.
+
+-- @McClelland2010-oz
+
+## Glossary
+
+**Semantic cognition**: A cognitive domain encompassing knowledge of the properties of objects and their relationships to other objects, as well as the acquisition of such knowledge and its use in guiding inference.
+
+-- @McClelland2010-oz
+
+## Glossary
+
+**Structured probabilistic models**: Models that specify that cognitive activity involves the use of probabilistic information to select among and specify the parameters of particular structural forms that specify relationships among items represented by discrete symbols.
+
+-- @McClelland2010-oz
+
+## Glossary
+
+**Universal grammar**: A hypothetical construct that arose in the context of generative grammar. A universal grammar, if one existed, would be an idealized structured representation that captures properties shared by all natural languages.
+
+-- @McClelland2010-oz
+
+## Types of change
+
+```{r}
+#| label: fig-r-norm
+#| fig-cap: "Histogram of a random normal sample of $n$=1000."
+x <- rnorm(n = 1000, sd = 1)
+hist(x)
+```
+
+## Types of change
+
+```{r}
+#| label: fig-cdf
+#| fig-cap: "Cumulative distribution of x"
+x_cdf <- ecdf(x)
+plot(x_cdf)
+```
+
+## Psychometric function
+
+:::: {.columns}
+::: {.column width=50%}
+>...models the relationship between a given feature of a physical stimulus...and forced-choice responses of a human or animal test subject.
+
+-- @Wikipedia-contributors2024-jz
+:::
+::: {.column width=50%}
+![@Wikipedia-contributors2024-jz](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Psychometric_function_with_artificial_data.png/960px-Psychometric_function_with_artificial_data.png)
+:::
+::::
+
+## Psychometric function
+
+:::: {.columns}
+::: {.column width=50%}
+>The psychometric function therefore is a specific application of the generalized linear model (GLM) to psychophysical data.
+
+-- @Wikipedia-contributors2024-jz
+:::
+::: {.column width=50%}
+![@Wikipedia-contributors2024-jz](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Psychometric_function_with_artificial_data.png/960px-Psychometric_function_with_artificial_data.png)
+:::
+::::
+
+## Experience-expectant vs. experience-dependent
+
+>Experience-expectant information storage refers to incorporation of environmental information that is ubiquitous in the environment and common to all species members, such as the basic elements of pattem perception.
+
+-- @Greenough1987-or
+
+## Experience-expectant vs. experience-dependent
+
+>Experience-dependent information storage refers to incorporation of environmental information that is idiosyncratic, or unique to the individual, such as learning about one's specific physical environment or vocabulary.
+
+-- @Greenough1987-or
+
+## What is Darwin's theory?
+
+:::: {.columns}
+::: {.column width=60%}
+>The theory states that all species of organisms arise and develop through the natural selection of small, inherited variations that increase the individual's ability to compete, survive, and reproduce.
+
+-- @Wikipedia-contributors2025-rr
+:::
+::: {.column width=40%}
+![@Wikipedia-contributors2025-rr](https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Charles_Darwin_by_Julia_Margaret_Cameron%2C_c._1868.jpg/500px-Charles_Darwin_by_Julia_Margaret_Cameron%2C_c._1868.jpg){fig-align="right"}
+:::
+::::
+
+
+## What is Darwin's theory?
+
+1. More individuals are produced each generation than can survive. \
+2. Phenotypic variation exists among individuals and the variation is heritable. \
+3. Those individuals with heritable traits better suited to the environment will survive. \
+4. When reproductive isolation occurs new species will form.
+
+-- @Wikipedia-contributors2025-rr
+
+## Gilmore's version
+
+1. Individuals are mortal; individuals vary; some of the variation is heritable.
+2. Individuals have different reproductive outcomes; some reproductive outcomes relate to heritable factors.
+3. Differential reproductive outcomes across individuals result in selection of some heritable factors over generations.
+4. Heritable factors that *don't* affect reproductive outcomes are *not* subject to selection pressure.
+
+## Aristotle's four causes
+
+:::: {.columns}
+::: {.column width=50%}
+- material
+- formal
+- efficient
+- final
+:::
+::: {.column width=50%}
+![@Wikipedia-contributors2025-lr](https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Aristotle%27s_Four_Causes_of_a_Table.svg/960px-Aristotle%27s_Four_Causes_of_a_Table.svg.png)
+:::
+::::
+
+-- @Wikipedia-contributors2025-lr
+
+
+# Constructivism & its variants
+
+## Limitations of Piaget [@Newcombe2011-wd]
+
+- Piaget did *not* overcome the nativist-empiricist split
+  - "no clear evidence for stages and structuralism^[@Wikipedia-contributors2025-zu]"
+  - "insufficient attention to the gradualisms and localisms of cognitive progress"
+  - "excessive emphasis on verbal justifications of judgments"
+  
+## Postulates of nativism
+
+>Nativism solves the first of Piaget’s problems by definition—by postulating the richest starting points imaginable, ones that encompass all the ‘‘core knowledge’’ required to understand the world...
+
+-- @Newcombe2011-wd
+
+## Postulates of nativism
+
+> the mind, or brain, is organized into modules [@Fodor1983-dh] that are not only neurally specialized and present from the beginning but also do not accept information from each other...
+
+-- @Newcombe2011-wd
+
+## Postulates of nativism
+
+>solved the second of Piaget’s main problems (one that had shrunk to minuscule size by the hypothesized existence of so much innate knowledge) essentially by fiat—by postulating simple ‘‘triggers’’ that led children to select parameters or fill content into slots.
+
+-- @Newcombe2011-wd
+
+## Problems with the postulates of nativism
+
+>None of these postulates of nativism are, however, supported by the evidence. Starting points are strong, but infants are not tiny adults with insufficient control over their arms and legs.
+
+-- @Newcombe2011-wd
+
+## Problems with the postulates of nativism
+
+>There is much more conceptual change than nativists envision and strong evidence that environmental input is integral to cognitive development in complex ways that go far beyond triggering (Newcombe, 2002).
+
+-- @Newcombe2011-wd
+
+## Alternative approaches
+
+- Information processing
+  - "more initial competence than most such modelers were willing to contemplate"
+- Connectionist modeling
+  - "failed to use empirical information about the kind and sequence of environmental information to guide the models"
+- Vygotsky
+  - "concentrates too exclusively on social and cultural interaction"
+
+## *Neo*constructivism
+
+- "consider Piaget in a new light."
+
+>his fundamental idea seems now to have been absolutely right: that a biologically prepared mind interacts in biologically evolved ways with an expectable environment that nevertheless includes significant variation.
+
+-- @Newcombe2011-wd
+
+## Tenets of neoconstructivism
+
+::: {.incremental}
+1. Everyone is a Darwinist^[@Wikipedia-contributors2025-rr]
+2. Experience expectancy [@Greenough1987-or]
+3. World is richly structured [@Gibson1899-pt; @Gibson1966-qo]
+4. Learners compute probabilities [@Griffiths2010-ds], not just associations
+
+:::
+
+## Tenets of neoconstructivism
+
+::: {.incremental}
+5. Tenets 2-4 support selection among multiple info sources & inference making
+6. Action plays key role [@Gibson1899-pt; @Gibson1966-qo]
+7. Development $\sim$ (similar to) but $\neq$ learning
+8. Change qualitative or quantitative depending on granularity of observation
+
+:::
+
+## Tenets of neoconstructivism
+
+9. Analyses require formal, material, final, and efficient causes (Aristotle; @Wikipedia-contributors2025-lr)
+
+---
+
+>Formal cause is analogous to developmental description...
+
+>material cause is analogous to the neural substrate...
+
+>final cause is analogous to putting development in an evolutionary and adaptive context...
+
+>efficient cause is analogous to an analysis of the interactions of input with the neural substrate and the current cognitive state of the learner.
+
+---
+
+![@Newcombe2011-pn Table 1](../include/img/newcombe-2011-tbl-01.png)
+
+---
+
+![@Newcombe2013-qy Table 1](../include/img/newcombe-2013-tbl-1.png)
+
+---
+
+## Critique: @Mareschal2011-fw
+
+- Neoconstructivism asks how knowledge emerges & why
+- But no specific mention of the biological substrate
+
+## *Neuro*-constructivism
+
+>knowledge-related representations are context dependent. This is true at all levels of description.
+
+>*encellment*, whereby the functions that a neuron will eventually take on in the developing brain depend on the cellular and chemical context of its neighbors. 
+
+## *Neuro*-constructivism
+
+>*embrainment* embodies the idea that functional brain systems do not develop in isolation.
+
+>the developing child is both embodied and embedded within a specific environment
+
+-- @Mareschal2011-fw
+
+## *Neuro*-constructivism
+
+>partial representations, in which the outcome of context-dependent development is the emergence of representations that are just sufficient to support behavior, in the context of preexisting representations elsewhere in the brain and preexisting structures in the world.
+
+-- @Mareschal2011-fw
+
+## *Neuro*-constructivism
+
+>In other words, there is no need to develop complete representations that encode all the information about an event or object if part of that information is already present elsewhere in the neural-cognitive system or supported by structures in the world.
+
+-- @Mareschal2011-fw
+
+## Critique: @Spencer2011-fp
+
+- Empirical demonstrations do not stand alone
+- Need better grounded concepts and descriptions of process
+- "agree that the theoretical landscape in developmental science is in crisis"
+- Developmental science needs a "way out" of the "isms"
+
+## Critique: @Spencer2011-fp
+
+- Newcombe's tenets "muddy the water"
+- "Must collectively elevate our theoretical game"
+- Points to @Hull1935-bx for inspiration
+- Connectionism and dynamic systems theory reconsidered [@Spencer2009-ms]
+- "no more ‘isms’ until we eliminate one."
+
+## Response: @Newcombe2011-pn
+
+- Darwinism does *not* differentiate among theories
+- "...interest in the brain" doesn't either, hence not *neuro*-constructivism
+
+## Response: @Newcombe2011-pn
+
+![@Newcombe2011-pn Table 1](../include/img/newcombe-2011b-tbl-01.png)
+
+## Evolving comparisons
+
+:::: {.columns}
+::: {.column width=50%}
+![@Newcombe2011-pn Table 1](../include/img/newcombe-2011b-tbl-01.png)
+:::
+::: {.column width=50%}
+![@Newcombe2013-qy Table 1](../include/img/newcombe-2013-tbl-1.png)
+:::
+::::
+
+# Discussion
+
+## Core issues
+
+- Do we need another "ism"?
+- *Neo*- or *neuro*-constructivism?
+- Has developmental psychology fallen "into essentially unscientific practices..." [@Hull1935-bx]
+
+## Core issues
+
+- Are Hull's [-@Hull1935-bx] recommendations on point?
+  - If so, what are the definitions? Postulates? [@Hull1935-bx]
+- Are core knowledge theories covertly "anthropomorphic" [@Hull1935-bx]  
+- What role should evolutionary theory (and evidence) play?
+
+## Next time...
+
+- Constructivism: Deep dive
+  - *Student Presentation E*: How do developmental disorders inform our understanding of cognitive development? (*Presenter*: Katie Billetdeaux; *Discussant*: Pratt Srinivasan)
+    - *Read*: @Karmiloff-Smith1998-be
+  - *Student Presentation F*: The risks of generalization (*Presenter*: Olivia Bell; *Discussant*: Carlos Almeida)
+    - *Read*: @Packer2022-gn; @Kominsky2022-we; @Lucca2025-gy
+
+# Resources
+
+## About
+
+This talk was produced using [Quarto](https://quarto.org), using the [RStudio](https://posit.co/products/open-source/rstudio/)
+Integrated Development Environment (IDE), version 2025.5.1.513.
+
+The source files are in R and R Markdown, then rendered to HTML using the
+[revealJS](https://revealjs.com) framework.
+The HTML slides are hosted in a [GitHub repo](https://github.com/psu-psychology/psy-548-fall) and served by GitHub pages:
+<https://psu-psychology.github.io/psy-548-fall/>
+
+## References

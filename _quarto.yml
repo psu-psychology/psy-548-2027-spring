@@ -1,0 +1,90 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - "*.qmd"
+    - "slides/*.qmd"
+
+website:
+  title: "PSY 548"
+  # announcement: 
+  #   content: "Schedule updated to clarify that the Oyama reading only involves pp. 1-6." 
+  #   position: below-navbar
+  #   icon: info-circle
+  #   dismissable: true
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - index.qmd
+      - schedule.qmd
+      - evaluation.qmd
+      - policies.qmd
+      - section: "Slides"
+        # contents:
+        #   - text: "Wk 01 • Fri Aug 29"
+        #     href: slides/wk-01-intro.qmd
+        #   - text: "Wk 02 • Fri Sep 05"
+        #     href: slides/wk-02-piaget.qmd
+        #   - text: "Wk 04 • Fri Sep 19"
+        #     href: slides/wk-04-core-knowl-dev-sys.qmd
+        #   - text: "Wk 06 • Fri Oct 03"
+        #     href: slides/wk-06-constructivism.qmd
+        #   - text: "Wk 08 • Fri Oct 17"
+        #     href: slides/wk-08-dynamic-systems.qmd
+        #   - text: "Wk 10 • Fri Oct 31"
+        #     href: slides/wk-10-embodied-cognition.qmd
+        #   - text: "Wk 11 • Fri Nov 07"
+        #     href: slides/wk-11-sociocultural.qmd
+        #   - text: "Wk 13 • Fri Nov 21"
+        #     href: slides/wk-13-learning-from-others.qmd
+        #   - text: "Wk 14 • Fri Dec 05"
+        #     href: slides/wk-14-conceptual-development.qmd
+        #   - text: "Wk 15 • Fri Dec 12"
+        #     href: slides/wk-15-systems.qmd
+      - section: "Resources"
+        contents:
+          - resources/presentations.qmd
+          - resources/causal-relations.qmd
+          - resources/elkind-1961.qmd
+          - resources/looking-times.qmd
+          - resources/constructivism.qmd
+          - resources/lorenz-equation.qmd
+          - resources/a-not-b-models.qmd
+    
+  repo-url: https://github.com/psu-psychology/psy-548-2027-spring
+  repo-actions: [edit, issue]
+  repo-subdir: src
+  page-footer:
+    left: "Copyright © Rick Gilmore • [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+    center: "Built with [Quarto](https://quarto.org/)"
+    right: 
+      - icon: github
+        href: https://github.com/psu-psychology/psy-548-2027-spring
+    background: light
+    border: true
+  page-navigation: true
+  bread-crumbs: true
+  reader-mode: false
+
+format:
+  html:
+    theme: [cosmo, include/css/psu.scss]
+    toc: true
+    toc-depth: 4
+    fig-align: center
+    fontsize: 1.1em
+    number-sections: false
+    citations-hover: true
+    footnotes-hover: true
+    date-modified: last-modified
+    date: today
+    bibliography: include/bib/psy-548.bib
+    csl: include/bib/apa.csl
+    html-math-method: mathjax
+    code-fold: true
+    code-tools: true
+
+  # pdf:
+  #   documentclass: scrreprt
+    

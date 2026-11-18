@@ -1,0 +1,19 @@
+qs,qs_short
+Timestamp,timestamp
+Email Address,email
+A: How robust is the evidence for Piaget's trajectories?,rating_A
+B: When does object permanence emerge?,rating_B
+C. How does changing the task inform on the underlying construct(s) about physical knowledge?,rating_C
+D: Rich interpretation of group differences in infant looking-time paradigms: How rich is dangerous? Necessary? Productive?,rating_D
+E: How do developmental disorders inform our understanding of cognitive development?,rating_E
+F: The risks of generalization,rating_F
+G: A connectionist model to explain why infants seem so smart,rating_G
+H: Emergentism and variants of the A-not-B task,rating_H
+"I: Does development gate input to prevent a ""blooming, buzzing confusion?""",rating_I
+J: How AI & robotics inform developmental science?,rating_J
+K: Imitation in cultural learning,rating_K
+L: Gesture,rating_L
+M: Learning from testimony,rating_M
+N: Naive psychology,rating_N
+O: Poverty is bad for cognition,rating_O
+P: Poverty can be adaptive for cognition,rating_P

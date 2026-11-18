@@ -1,0 +1,388 @@
+---
+title: "Sociocultural Development"
+subtitle: 2025-11-07
+fig-align: "center"
+---
+
+# Prelude
+
+---
+
+{{< video https://youtu.be/uyGY2NfYpeE?si=dPaeCtZl87Cdz2mo width="100%" height="70%" >}}
+
+-- @RHINO2013-nj
+
+## Today's topics
+
+- Sociocultural development
+  - *Discuss*: @Siegler2021-py Chapter 4; @Tomasello2016-rx 
+
+# Sociocultural Development
+
+## Changing emphasis
+
+:::: {.columns}
+::: {.column width=50%}
+- Individual child
+- Piaget
+- Circular reactions
+:::
+::: {.column width=50%}
+
+```{mermaid}
+flowchart LR
+  W(world) ---> C(child)
+  C -->|assim/accom| C
+```
+
+::: {.fragment}
+```{mermaid}
+flowchart LR
+  W(world) ---> C(child)
+  C -->|assim/accom| C
+  C --> W
+```
+:::
+:::
+::::
+
+::: {.fragment}
+
+:::: {.columns}
+::: {.column width=50%}
+- Child in (social) context
+- Lev Vygotsky
+- Internalization of socially shared processes
+:::
+::: {.column width=50%}
+
+```{mermaid}
+flowchart LR
+  P(people) <-->|intermental| C(child)
+  W(artefacts) <---> C
+  C -->|intramental| C
+```
+
+:::
+::::
+
+:::
+
+## Vygotsky
+
+:::: {.columns}
+::: {.column width=60%}
+- Internalization of socially shared processes
+- *Intermental* (between social partners)
+- *Intramental* (within a child)
+- Zone of proximal development
+- Importance of cultural tools
+:::
+::: {.column width=40%}
+![@Wikipedia-contributors2025-ug](https://upload.wikimedia.org/wikipedia/en/7/7e/Lev_Vygotsky.jpg)
+:::
+::::
+
+## Vygotsky
+
+:::: {.columns}
+::: {.column width=60%}
+- Jewish
+- Child and adolescent during two Russian revolutions 
+- Home-schooled until age 11
+- Died at 34
+:::
+::: {.column width=40%}
+![@Wikipedia-contributors2025-ug](https://upload.wikimedia.org/wikipedia/en/7/7e/Lev_Vygotsky.jpg)
+:::
+::::
+
+## Vygotsky
+
+:::: {.columns}
+::: {.column width=60%}
+>This is the final thing I have done in psychology – and I will like Moses, die at the summit, having glimpsed the promised land but without setting foot on it. Farewell, dear creations. The rest is silence.
+
+-- Vygotsky from @Wikipedia-contributors2025-ug
+
+:::
+::: {.column width=40%}
+![@Wikipedia-contributors2025-ug](https://upload.wikimedia.org/wikipedia/en/7/7e/Lev_Vygotsky.jpg)
+:::
+::::
+
+## Components of social environment
+
+:::: {.columns}
+::: {.column width=50%}
+- People
+  - Characteristics
+  - Behaviors
+- Settings
+  - Artefacts
+:::
+::: {.column width=50%}
+![<https://databrary.org/volume/33>](../include/img/databrary-vol-33-mental-abacus.png)
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width=50%}
+{{< video "../private/vid/Physical-Abacus-Use.mp4" >}}
+:::
+::: {.column width=50%}
+{{< video "../private/vid/Mental-Abacus-Use.mp4" >}}
+:::
+::::
+
+-- @Frank2014-ir
+
+## Another mathematics-related artefact
+
+{{< video https://www.youtube.com/watch?v=g7PIURbaz3s width="100%" height="70%" >}}
+
+-- @The-Maths-Man2024-as
+
+## @Tomasello2016-rx
+
+:::: {.columns}
+::: {.column width=50%}
+- Imitative
+- Instructed
+- Collaborative
+:::
+::: {.column width=50%}
+![@Tomasello2016-rx Figure 1](../include/img/tomasello-2016-fig-01.png)
+:::
+::::
+
+## Imitative learning
+
+- Many animals
+  - Learn via imitation
+- Many primates
+  - Learn "...*because of* or *from*" others [@Tomasello2016-rx p. 643]
+- Only humans
+  - "...learn things *through* another individual" [@Tomasello2016-rx p. 644]
+
+## Imitative learning
+
+- == observational learning?
+  - Perceptual & attentive requirements for?
+- *Mimicry*
+  - Same means
+- *Emulation*
+  - Same end, different means
+  
+## Imitative learning
+
+- *Imitation*
+  - Observed actions + apparent inference about intentions
+  - plus motivation to imitate?
+  - plus heightened focus on specifics of action, e.g., "overimitation"
+- To signal group affiliation
+
+## Evolutionary perspectives
+
+:::: {.columns}
+::: {.column width=50%}
+![@Darwin2012-ht](https://pictures.abebooks.com/isbn/9780006387343-us.jpg)
+:::
+::: {.column width=50%}
+![@Konner2011-ja](https://pictures.abebooks.com/isbn/9780674062016-us.jpg)
+:::
+::::
+
+## Premises
+
+>Natural selection works with the materials of ontogeny which translate genome into phenotype, acting at every point from conception to senescence.
+
+>Human ontogeny cannot be understood except in relation to ancestral ontogenies and those that competed with them for the limited chances afforded living forms.
+
+-- @Konner2011-ja pp. 14-16
+
+## More premises
+
+>Human behavior and its development, include all of mental life, are in their entirety biological manifestations.
+
+>As with ontogeny, and because of it, the brain has evolved by accretion.
+
+>[No]...human trait can be understood except in terms of brain function.
+
+-- @Konner2011-ja pp. 14-16
+
+## Still more premises
+
+>Despite limits to plasticity, cultural influence on human development is strong because its power is biolgically assured...To solve the apparent paradox of the powers of biology and culture is a central task of developmental research.
+
+>Socialization is not the same as enculturation.
+
+-- @Konner2011-ja pp. 14-16
+
+## Human childhood is special
+
+- Unusually prolonged
+- Paralleled by protracted period of brain plasticity
+- Biologically selected for enculturation
+- @Konner2011-ja
+
+## What is universal? What is particular?
+
+## Universals of behavior and culture
+
+::: {.fragment}
+
+![@Konner2011-ja Table 29.1](../include/img/konner-tbl.29.1.jpeg)
+
+:::
+
+## Some universals {.scrollable}
+
+![@Konner2011-ja Table 29.2](../include/img/konner-tbl-29.2a.jpeg)
+
+## More universals {.scrollable}
+
+![@Konner2011-ja Table 29.2](../include/img/konner-tbl-29.2b.jpeg)
+
+## From Language Acquisition Device (LAD)
+
+:::: {.columns}
+::: {.column width=50%}
+- Referencing @Chomsky1965-bd
+:::
+::: {.column width=50%}
+![@Wikipedia-contributors2025-ig](https://upload.wikimedia.org/wikipedia/commons/8/86/Aspects_Grammar_Model.jpg)
+:::
+::::
+
+## To cultural acquisition device (CAD)
+
+![@Konner2011-ja Table 29.3](../include/img/konner-tbl-29.3.jpeg)
+
+# Stepping back
+
+## What is culture?
+
+## The social & physical environment
+
+- Who are the people?
+- What are their characteristics, roles, behaviors, beliefs & motivations?
+- What are culturally important artefacts?
+- How do these change across development?
+
+## Home environment
+
+- Example from PLAY project home walk through
+
+## On social interaction networks
+
+```{mermaid}
+flowchart TD
+  A@{ shape: circle, label: "Mom" }
+  B@{ shape: circle, label: "Me" }
+  C@{ shape: circle, label: "Michelle" }
+  D@{ shape: circle, label: "Sonny" }
+  E@{ shape: circle, label: "Tom" }
+  F@{ shape: circle, label: "Ellie" }
+  G@{ shape: rounded, label: "BN" }
+  Z@{ shape: rounded, label: "Z" }
+  A ---|texts| B
+  A ---|phones| B
+  A ---|mails| B
+  A ---|talks with| B
+  E ---|texts| B
+  E ---|phones| B
+  C ===|lives with| B
+  C ---|texts| B
+  C ---|phones| B
+  C ---|talks with| B
+  B ---|talks with| D
+  B -->|instructs| D
+  B -->|cares for| D
+  B ---|plays with| D
+  D -->|imitates| B
+  D -->|imitates| C
+  D -->|imitates| F
+  C ---|talks with| D
+  C -->|instructs| D
+  C -->|cares for| D
+  F ===|lives with| D
+  C ---|plays with| D
+  F ===|talks with| D
+  F ==>|instructs| D
+  F ==>|cares for| D
+  F ===|plays with| D
+  G ===|plays with| D
+  G ===|talks with| D
+  Z ===|plays with| D
+  Z ===|talks with| D
+  B ---|talks with| F
+  C ---|talks with| F
+  B ---|texts| F
+  C ---|texts| F
+  L{Lola} --->|sniffs| D
+  D --->|avoids| L
+```
+
+## The ~~social~~ human sciences
+
+:::: {.columns}
+::: {.column width=50%}
+- Psychology
+- Anthropology
+- Sociology
+:::
+::: {.column width=50%}
+- Political Science
+- Economics
+- Linguistics
+:::
+::::
+
+::: {.fragment}
+::: {.callout-important}
+What can psychology learn from its sibling fields?
+
+What can our sibling fields learn from psychology?
+:::
+:::
+
+## Blind men and an elephant
+
+![@Wikipedia-contributors2025-yz](https://enfocussolutions.com/wp-content/uploads/2014/07/6-blind-men-hans-1024x654.jpg){fig-align="center"}
+
+## Blind men and an elephant
+
+>Six blind elephants were discussing what men were like. After arguing they decided to find one and determine what it was like by direct experience. The first blind elephant felt the man and declared, 'Men are flat.' After the other blind elephants felt the man, they agreed.
+
+-- @Wikipedia-contributors2025-yz
+
+# Wrap-up
+
+## Next time...
+
+- Sociocultural development: Deep dive
+
+- *Student Presentation K*: Imitation in cultural learning (*Presenter*: Hanna Huang; *Discussant*: TBD)
+    - *Read*: @Legare2015-im; @Herrmann2013-rb; @Lyons2007-ng
+
+## Next time...
+
+- *Student Presentation L*: Gesture (*Presenter*: Jingyi He; *Discusant*: Katie Billedetdeaux)
+    - *Read*: @Novack2015-kl; @Wakefield2018-tq
+
+# Resources
+
+## About
+
+This talk was produced using [Quarto](https://quarto.org), using the [RStudio](https://posit.co/products/open-source/rstudio/)
+Integrated Development Environment (IDE), version 2025.5.1.513.
+
+The source files are in R and R Markdown, then rendered to HTML using the
+[revealJS](https://revealjs.com) framework.
+The HTML slides are hosted in a [GitHub repo](https://github.com/psu-psychology/psy-548-fall) and served by GitHub pages:
+<https://psu-psychology.github.io/psy-548-fall/>
+
+## References

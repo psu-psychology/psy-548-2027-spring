@@ -1,0 +1,16 @@
+---
+title: "Cognitive Development"
+subtitle: "PSY 548 Fall 2025"
+date: last-modified
+format: pdf
+bibliography:
+  - include/bib/psy-548.bib
+---
+
+{{< include _index.qmd >}}
+
+## Schedule
+
+{{< include _schedule.qmd >}}
+
+## References

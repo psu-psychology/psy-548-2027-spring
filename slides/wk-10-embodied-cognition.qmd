@@ -1,0 +1,366 @@
+---
+title: "Embodied Cognition"
+subtitle: 2025-10-31
+fig-align: "center"
+---
+
+# Prelude
+
+---
+
+::: {#fig-robot-dance}
+
+<iframe width="390" height="700" src="https://www.youtube.com/embed/crc_CWJ7blw" title="robot dance 🕺 #dance #dollgirl #robot" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+:::
+
+---
+
+
+## Today's topics
+
+- Embodied cognition
+  - *General Readings*: @Pfeifer2006-nx, Forward, Chapter 1, and Chapter 12; @Smith2018-nc
+  
+## Today's topics
+
+- *Student Presentation I*: Does development gate input to prevent a "blooming, buzzing confusion?" (*Presenter* Luke Debec: *Discussant*: Alyssa Swift)
+  - *Read*: @Kretch2014-ck; @Franchak2018-oj
+- *Student Presentation J*: How can AI & robotics inform developmental science? (*Presenter*: Pratt Srinivasan; *Discussant*: Hannah Huang)
+  - *Read*: @Ossmy2018-fr; @Ossmy2024-qj
+  
+# Embodied Cognition
+
+---
+
+>Development is a personal journey. The personal vantage point of the learner determines the data for learning for that individual. 
+
+-- @Smith2018-nc
+
+---
+
+![@Smith2018-nc Figure 1.](https://ars.els-cdn.com/content/image/1-s2.0-S1364661318300275-gr1_lrg.jpg)
+
+## Egocentric vision
+
+![@Smith2018-nc Figure 1.](https://ars.els-cdn.com/content/image/1-s2.0-S1364661318300275-gr1b1_lrg.jpg)
+
+## "Natural" statistics
+
+![@De-Cesarei2017-qu Figure 1.](https://ars.els-cdn.com/content/image/1-s2.0-S014976341630598X-gr1_lrg.jpg)
+
+## Illustrations
+
+- Sample head camera video: <https://databrary.org/volume/99/folder/9797>
+- Link to Jayaraman, Smith, & Gilmore Databrary volume: <https://databrary.org/volume/81>
+
+## Optic flow
+
+{{< video https://www.youtube.com/watch?v=o27tIdYggY0&t=25s width="100%" height="70%" >}}
+
+-- @Dan2015-yg
+
+## Types of optic flow
+
+![@Gilmore2015-oj](../include/img/optic-flow-types.png)
+
+---
+
+:::: {.columns}
+::: {.column width=50%}
+![](../include/img/bloomington.jpg){width="70%" fig-align="center"}
+:::
+::: {.column width=50%}
+![](../include/img/chennai.jpg){width="70%" fig-align="center"}
+:::
+::::
+
+---
+
+{{< video ../include/vid/Head-camera-with-optic-flow-overlay.mp4  >}}
+
+---
+
+{{< video ../include/vid/Head-camera-video-with-optic-flow-pattern-estimate.mp4 >}}
+
+---
+
+{{< video ../include/vid/Head-camera-video-with-optic-flow-speed-estimate.mp4 >}}
+
+---
+
+:::: {.columns}
+::: {.column width=50%}
+![@Gilmore2015-oj](../include/img/gilmore-epirob-2015-fig-03.png)
+:::
+::: {.column width=50%}
+![@Gilmore2015-oj](../include/img/gilmore-epirob-2015-fig-04.png)
+:::
+::::
+
+## Effects of locomotor posture
+
+:::: {.columns}
+::: {.column width=50%}
+![@Kretch2014-ck](../include/img/kretch-etal.png)
+
+![@Gilmore2015-oj](../include/img/gilmore-2015-eq-01.png)
+:::
+::: {.column width=50%}
+![](../include/img/gilmore-2015-fig-01ab.png)
+
+![@Gilmore2015-oj](../include/img/gilmore-2015-tbl-02.png)
+:::
+::::
+
+## Embodied cognition
+
+>By embodiment, we mean that intelligence always requires a body.
+
+-- @Pfeifer2006-nx
+
+## Challenges of embodied cognition
+
+- Cognition and computation
+- Degrees of freedom problem
+- Not all problems seem embodied
+
+## What is cognition without a body?
+
+::: {.incremental}
+- Computation
+- But what is computation?
+- Rule-based symbol manipulation
+- But what is rule-based symbol manipulation?
+:::
+
+## Turing machines
+
+:::: {.columns}
+::: {.column width=50%}
+Alan Turing
+
+![@Alan-Turing-2001-uw](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Alan_turing_header.jpg/500px-Alan_turing_header.jpg){width="55%"}
+
+:::
+::: {.column width=50%}
+![<https://web.mit.edu/manoli/turing/www/turing.html>](https://web.mit.edu/manoli/turing/www/turing.gif)
+
+- Readable/writeable memory
+- Rules for transitions between states
+:::
+::::
+
+## Universal Turing Machines (UTM)
+
+::: {.fragment}
+- Can compute any computable sequence
+- Modern digital computers are UTMs
+- Everything's a string of binary digits (bits): `00101100`
+  - Data
+  - Memory addresses
+  - Instructions (add, subtract, store, recall, etc.)
+  
+:::
+
+## Universal Turing Machines
+
+::: {.fragment}
+- Representation: Map from thing to binary string
+- High-level computer languages 
+  - Map human-readable codes to machine-readable binary strings
+- Human-readable computer languages $\rightarrow$ machine code via intepreters or compilers [@Resume2022-gn]
+
+:::
+
+## Examples
+
+```{r}
+#| echo: fenced
+#| code-fold: false
+a <- 4    # Assign the value 4 the name 'a'
+b <- 2    # Assign the value 2 the name 'b'
+c <- a^b  # Calculate a to the b power; assign the result to the name 'c'  
+c         # Show the value of 'c'
+```
+::: {.fragment}
+- Not just numbers
+
+```{r}
+#| echo: true
+#| code-fold: false
+some_letters <- c('A', 'b', 'c', 'D', 'e')
+some_letters %in% LETTERS # LETTERS is a variable in base R
+```
+:::
+
+## Symbols and operations
+
+- `{a, b, c}`: 'allowable' names for things in R
+- `<-`: a short symbol for the 'assign()' function
+
+::: {.fragment}
+```{r}
+#| echo: true
+#| code-fold: false
+assign('a', 4) == (a <- 4) # `==` is a symbol that tests for equality
+```
+:::
+
+::: {.fragment}
+- `^`: 'exponential' operator/symbol
+:::
+
+## From symbol manipulation to semantic networks
+
+![Source: https://www.researchgate.net/figure/Example-of-a-semantic-network-describing-animals-Source-own-work-A-new-vision-of-the_fig23_283328263](../include/img/semantic-network.png)
+
+- See also @Wikipedia-contributors2025-nl
+
+## To cognitive architectures
+
+:::: {.columns}
+::: {.column width=60%}
+- e.g., ACT-R [@Wikipedia-contributors2025-ot], see also @Newell1990-qr
+- Declarative memory ("Gilmore wears glasses")
+- Procedural memory (productions or rules to carry out actions)
+:::
+::: {.column width=40%}
+![@Wikipedia-contributors2025-ot](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Simplified_ACT-R_Schematic.png/250px-Simplified_ACT-R_Schematic.png)
+:::
+::::
+
+## Aren't we forgetting a body?
+
+:::: {.columns}
+::: {.column width=50%}
+::: {.fragment}
+![giphy.com](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmI3bW9pMjdyeXNlc2gyYWV2dmR3ZGRnNXJ6azZxZ2FlN3hkZGhuaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FD2cC2GGPA9ng0pbls/giphy.gif)
+:::
+:::
+::: {.column width=50%}
+::: {.fragment}
+```{mermaid}
+flowchart LR
+  A@{shape: rect, label: "person"}
+  B@{shape: rounded, label: "computer" }
+  A[person] -->|Types into| B
+  B -->|Prints text| A
+```
+:::
+::: {.fragment}
+```{mermaid}
+flowchart LR
+  A@{shape: rect, label: "person"}
+  B@{shape: rounded, label: "computer" }
+  C@{shape: rect, label: "developer"}
+  A[person] -->|Types into| B
+  B -->|Prints text| A
+  C -->|Programs| B
+```
+:::
+:::
+::::
+
+## [Degrees of freedom problem](@Wikipedia-contributors2025-ni)
+
+:::: {.columns}
+::: {.column width=50%}
+- Nikolai Bernstein
+
+![@Wikipedia-Bernstein](https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Bernstein_und_Sohn.jpg/500px-Bernstein_und_Sohn.jpg){width="40%"}
+:::
+::: {.column width=50%}
+![@Arimoto2005-sd](https://figures.semanticscholar.org/aefbf9d1664ffbe78f84ee4914e3e1c4656f1b4a/1-Figure1-1.png)
+:::
+::::
+
+## DFs to control human body
+
+:::: {.columns}
+::: {.column width=50%}
+- ~650 skeletal muscles
+- [Millions?](https://www.google.com/search?q=how+many+motor+neurons+are+in+the+somatic+nervous+system&rlz=1C5GCCM_en&oq=how+m&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIOCAEQRRgnGDsYgAQYigUyBggCEEUYQDIGCAMQRRg5MgYIBBBFGDwyBggFEEUYQTIGCAYQRRg8MgYIBxBFGDzSAQgyOTc0ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8) of motor neurons involved in control of somatic nervous system
+:::
+::: {.column width=50%}
+![@Tangen2007-pu](https://cdn.britannica.com/68/140268-050-BAFEDBCF/view-human-muscular-system.jpg?w=300)
+:::
+::::
+
+## Physical constraints can *reduce* DFs
+
+:::: {.columns}
+::: {.column width=50%}
+- Braitenberg [-@Braitenberg2021-fz] vehicles
+- Simple "anatomy", complex behavior
+:::
+::: {.column width=50%}
+![@Wikipedia-contributors2025-ik](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Braitenberg_Vehicle_2ab.png/500px-Braitenberg_Vehicle_2ab.png)
+:::
+::::
+
+## Braitenberg vehicle simulator
+
+<http://www.harmendeweerd.nl/braitenberg-vehicles/>
+
+## Benefits of embodied cognition
+
+- Body as enabler
+- Makes (some/many) tasks easier
+- Improves perception
+- Makes rapid/efficient movement possible
+- Synthetic methodology: Understanding by building
+
+-- @Pfeifer2006-nx
+
+## Cognition is embodied...
+
+- @Barsalou1999-zd
+- also embedded, enactive, and extended (4E) [@Newen2018-gt]
+
+>From the 4E perspective, cognition, affect, and behavior emerge from the body being embedded in environments that extend cognition, as agents enact situated action reflecting their current cognitive and affective states.
+
+-- @Barsalou2020-db
+
+## Challenges to embodied cognition
+
+- Origins of abstract concepts?
+  - e.g., mathematics, logic, philosophy
+- Procedural vs. declarative memory 
+  - Differently impaired in medial temporal lobe-associated amnesia [@Milner1970-yl]
+- Perceiving what vs. where [@Mishkin1983-px] or how [@Goodale1991-el; @De_Haan2011-hf]
+
+## Challenges to embodied cognition
+
+- Micro-theories or just-so stories
+- Vague terminology
+- Body as constituent not cause
+
+# Wrap-up
+
+## Main points
+
+- Individual-specific environments vary, between children & across time
+- Advantages to *measuring* them
+- "Development is a personal journey," but what are regularities?
+- Intelligence (so far) involves a body
+- Does embodiment close an interactive/predictive loop?
+
+## Next time...
+
+- Sociocultural development
+  - *Read*: @Siegler2021-py Chapter 4; @Tomasello2016-rx 
+
+# Resources
+
+## About
+
+This talk was produced using [Quarto](https://quarto.org), using the [RStudio](https://posit.co/products/open-source/rstudio/)
+Integrated Development Environment (IDE), version 2025.5.1.513.
+
+The source files are in R and R Markdown, then rendered to HTML using the
+[revealJS](https://revealjs.com) framework.
+The HTML slides are hosted in a [GitHub repo](https://github.com/psu-psychology/psy-548-fall) and served by GitHub pages:
+<https://psu-psychology.github.io/psy-548-fall/>
+
+## References

@@ -1,0 +1,487 @@
+---
+title: "Learning from others"
+subtitle: 2025-11-21
+fig-align: "center"
+---
+
+# Prelude
+
+## Today's topics
+
+- Learning from others
+  - *General Readings*: @Gelman2009-jg; @Sobel2013-lb
+  - *Student Presentation M*: Learning from testimony (*Presenter*: TBD; *Discussant*: Luke Debec)
+    - *Read*: @Harris2018-eh; @Jaswal2010-dz
+    
+# Learning from others
+
+## What is learned?
+
+- How
+  - Actions
+- What & why
+  - Concepts
+
+## What are concepts?
+
+>mental representations that organize experience...
+
+>mental representations that correspond to categories of things in the world, such as dogs or
+chairs (Margolis 1994), I would broaden the set to include properties (green, happy), events
+or states (jumping, wet), individuals (Daddy, Lassie), and abstract ideas (goodness, liberty)...
+
+-- @Gelman2009-jg
+
+## What are concepts?
+
+>concepts are also embedded in larger knowledge structures (Gelman, 1996). Concepts therefore cannot be understood wholly as isolated components.
+
+-- @Gelman2009-jg
+
+## Where do concepts come from?
+
+- Children's
+  - Observations
+  - Actions
+  - Ideas
+  
+## Where do concepts come from?
+
+- **Children's**
+  - **Observations**
+  - **Actions**
+  - **Ideas**
+- Others'
+  - Speech
+  - Actions
+  
+## Recall
+
+>...we believe that humans are endowed with a small number of separable systems of core knowledge. New, flexible skills and belief systems build on these core foundations.
+
+-- @Spelke2007-ts
+
+## Core knowledge domains
+
+- Objects
+- Numbers
+- Agents
+- Social partners
+- Space
+- Shapes
+
+## Core knowledge domains
+
+- Objects
+- Numbers
+- **Agents**
+- **Social partners**
+- Space
+- Shapes
+
+## From perception to cognition 1
+
+```{mermaid}
+flowchart LR
+  W[World] --->|perception| C(Child)
+  C --->|action| W
+```
+
+::: {.fragment}
+```{mermaid}
+flowchart LR
+  W[World] --->|perception| C(Child)
+  C --->|action| W
+  C --->|cognition| C
+```
+:::
+
+## From perception to cognition 2
+
+```{mermaid}
+flowchart LR
+  E[Episode_1] ---> O[Object]
+  O ---> S((Shape))
+  O ---> L((Color))
+  O ---> D((Distance))
+  O ---> M((Motion))
+  O ---> N((Sound))
+  S ---> C(Child)
+  D ---> C
+  L ---> C
+  M ---> C
+  N ---> C
+  C --->|perceives| P{Properties}
+  P --->|stores| Y{Memory_1}
+```
+
+## Store perceptual features
+
+```{mermaid}
+flowchart TD
+  Y{Memory_1} --->|Shape is| S(("round"))
+  Y --->|Color is| L(("red"))
+  Y --->|Distance is| D(("within arms reach"))
+  Y --->|Motion is| M(("rolling along floor"))
+  Y --->|Sound made| N(("none"))
+```
+
+## Next episode
+
+```{mermaid}
+flowchart LR
+  E[Episode_2] ---> O[Object]
+  O ---> S((Shape))
+  O ---> L((Color))
+  O ---> D((Distance))
+  O ---> M((Motion))
+  O ---> N((Sound))
+  S ---> C(Child)
+  D ---> C
+  L ---> C
+  M ---> C
+  N ---> C
+  C --->|perceives| P{Properties}
+  P --->|stores| Y{Memory_2}
+```
+
+## Are memories ==?
+
+```{mermaid}
+flowchart TD
+  Y{Memory_1} --->|Shape is| S(("round"))
+  Y --->|Color is| L(("red"))
+  Y --->|Distance is| D(("within arms reach"))
+  Y --->|Motion is| M(("rolling along floor"))
+  Y --->|Sound made| N(("none"))
+  Z{Memory_2} --->|Shape is| S
+  Z --->|Color is| L
+  Z --->|Distance is| E(("out of arms reach"))
+  Z --->|Motion is| M(("rolling along floor"))
+  Z --->|Sound made| N(("none"))
+```
+
+::: {.incremental}
+- Do features match (mostly)
+- Some features vary more often than others
+:::
+
+## Create "conceptual" placeholder
+
+```{mermaid}
+flowchart LR
+  C{{"Round-Red-Rollie-Thing"}} ---|is| Y{Memory_1}
+  C ---|is| Z{Memory_2}
+  Y <---> Z
+```
+
+## Assign perceptual properties
+
+```{mermaid}
+flowchart TD
+  C{{"Round-Red-Rollie-Thing"}} --->|Shape is| S(("round"))
+  C --->|Color is| L(("red"))
+  C --->|Distance is| D(("within or outside arms reach"))
+  C --->|Motion is| M(("rolling along floor"))
+  C --->|Sound made| N(("none"))
+```
+
+- Distance can vary, but color, shape, sound do not
+- Motion?
+
+## From associative learning to semantic networks
+
+![@Wikipedia-contributors2025-nl](https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Semantic_Net.svg/2560px-Semantic_Net.svg.png)
+
+---
+
+![https://wordnet.princeton.edu/](../include/img/wordnet-homepage.png)
+[@fellbaum2005]
+
+## Where do concepts come from?
+
+::: {.incremental}
+- Children's own actions & observations
+- **Others'**
+  - **Speech**
+  - Actions
+  - Inferred mental states, including intentions
+:::
+  
+## Next episode
+
+```{mermaid}
+flowchart LR
+  E[Episode_3] ---> O[Object]
+  E ---> P[Person]
+  P --->|says 'ball' to| C(Child)
+  O ---> C
+```
+
+::: {.fragment}
+
+```{mermaid}
+flowchart LR
+  P[Person] --->|says 'ball' to| C(Child)
+  O[Object] ---> C
+  C --->|hears| B{'ball'}
+  C --->|perceives| D{Object properties}
+  D --->|activates placeholder for| E{{"Round-Red-Rollie-Thing"}} 
+```
+:::
+
+## Heard word linked to placeholder
+
+```{mermaid}
+flowchart TD
+  E{{"Round-Red-Rollie-Thing"}} --->|Name for is| B{'ball'}
+  E --->|Color is| L(("red"))
+  E --->|Distance is| D(("within or outside arms reach"))
+  E --->|Motion is| M(("rolling along floor"))
+  E --->|Sound made| N(("none"))
+  E --->|Shape is| S(("round"))
+```
+
+---
+
+![@BraginskyUnknown-xg](../include/img/wordbank.png)
+
+## Wordbank: Vocabulary norms 
+
+![<https://wordbank.stanford.edu/data/?name=vocab_norms>](../include/img/wordbank-vocab_norms.png)
+
+## Wordbank: Item trajectories
+
+![<https://wordbank.stanford.edu/data/?name=item_trajectories>](../include/img/wordbank-ball-bed-alligator.png)
+
+## Why word learning matters
+
+- Lexicalization
+  - Process of labelling concepts with words
+  - Map from non-linguistic $\rightarrow$ linguistic
+  - Word_1 $\neq$ Word_2 $\rightarrow$ Concept_1 $\neg$ Concept_2
+  - Implies "more stable, enduring, unchanging construal..." [@Gelman2009-jg p. 121]
+- Contexts in which words are used, features of words, pragmatics of speaker
+
+## Where do concepts come from?
+
+- Children's own actions & observations
+- Others'
+  - Speech
+    - **What is said, by whom, to whom, where, when, & how, etc.**
+    - i.e., **Testimony**
+    
+---
+
+![https://www.merriam-webster.com/dictionary/testimony](../include/img/testimony-definition.png)
+
+---
+
+![https://www.merriam-webster.com/thesaurus/testimony](../include/img/testimony-synonyms.png)
+
+## Testimony
+
+```{mermaid}
+flowchart TD
+  T{{"Testimony"}} ---|is| S("Speech")
+  B["Source"] ---|from| S
+  B --- Y("Trustworthiness")
+  S ---|in a| Z("Situation")
+  Z ---|coincident with| P("Perceived physical properties")
+  Z ---|coincident with| C("Cognitive state")
+  P --- V("Visual")
+  P --- D("Acoustic")
+  C --- E("Attention")
+  C --- F("Memories")
+  C --- G("Concepts")
+```    
+
+## Covert and implicit categories
+
+- Non-linguistic examples?
+
+## Essentialism
+
+- Some categories have *essential* properties
+- Cultures vary in 
+  - what categories have essential features
+  - degree of views about essentialism
+
+## Language cues to essentialism
+
+- Appearance vs. reality
+- Highlighting categorical differences
+- Broad descriptive statements about category
+- Generics ("Professors are absent-minded" vs. "My professor is scatter-brained.")
+- Labeling in one context but not another
+
+## Where do concepts come from?
+
+- Children's own actions & observations
+  - and **concepts**
+  - and **questions**
+- Others'
+  - Speech
+    - What is said, by whom, to whom, where, when, & how, etc.
+    - i.e., Testimony
+    
+## Example: Questions
+
+- On their weekly drive home, Sonny notices and comments on a big apartment building.
+- Mimi describes it as a place where big kids live that has many smaller houses inside.
+
+::: {.fragment}
+>That's a big house where big kids live. (Sonny)
+:::
+
+::: {.fragment}
+>Yes, that's a building where big kids live. There are small houses inside. (Mimi)
+:::
+
+## Questions 2
+
+>I want to see it. (Sonny)
+
+::: {.fragment}
+>We can't go in there. (Mimi)
+:::
+
+::: {.fragment}
+>Why? (Sonny)
+:::
+
+::: {.fragment}
+>Only the people who live there and their friends can go inside. (Mimi)
+:::
+
+## Learning abstract concepts 1
+
+- At dinner time, Mommy puts grapes in the section of Sonny's plate where they usually put noodles.
+
+::: {.fragment}
+>That's not kind, Mommy. (Sonny)
+:::
+
+::: {.fragment}
+- Mommy suppresses laughter. Later tells Grandpa the story.
+:::
+
+## Learning abstract concepts 2
+
+```{mermaid}
+flowchart LR
+  E(Ellie) --->|reads book about kindness to| S(Sonny)
+  S --->|infers properties of| K{kindness}
+```
+
+::: {.fragment}
+```{mermaid}
+flowchart LR
+  Z(Zander) --->|pushes| S(Sonny)
+  E(Ellie) --->|says Z wasn't kind| S
+  S --->|infers properties of| N{not-kindness}
+  N ---|is the opposite of| K{kindness}
+```
+:::
+
+## Learning abstract concepts 3
+
+```{mermaid}
+flowchart TD
+  S(Sonny) --->|infers properties of| N{not-kindness}
+  N ---|involves| P[a person's behavior]
+  N ---|is| E[surprising]
+  N ---|evokes| H[negative feelings]
+```
+
+## Learning abstract concepts 4
+
+```{mermaid}
+flowchart LR
+  E(Ellie) --->|puts grapes in noodle place| S(Sonny)
+  S --->|feels| H[negative feelings]
+  S --->|perceives| F[surprise]
+  H --- N{not-kindness}
+  F --- N
+```
+
+## Learning abstract concepts 5
+
+```{mermaid}
+flowchart LR
+  N{not-kindness} --->|provides label for feelings for| S(Sonny)
+  S(Sonny) --->|says| K(("that's not kind"))
+  K --->|directed to| E(Ellie)
+```
+
+## Coexistence of conceptual systems 1
+
+![](../include/img/fitzgerald-first-rate-intelligence-quotation.png){fig-align="center"}
+
+## Coexistence of conceptual systems 2
+
+![](../include/img/doublethink-orwell.png){fig-align="center" width="125%"}
+
+---
+
+:::: {.columns}
+::: {.column width=50%}
+>...bullshit is speech intended to persuade without regard for truth. The liar cares about the truth and attempts to hide it; the bullshitter doesn't care whether what they say is true or false.
+
+-- @Wikipedia-contributors2025-mf
+:::
+::: {.column width=50%}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/On_Bullshit_cover.jpeg/960px-On_Bullshit_cover.jpeg){width="60%" fig-align="right"}
+:::
+::::
+
+## Learning from testimony
+
+- Speaker characteristics
+  - Reliability
+  - Knowledge about domain
+  - Age
+  - How say (pragmatics, grammatical features), not just what
+  - Social characteristics (linguistic similarity)
+- @Sobel2013-lb
+
+## Psychological characteristics
+
+- When child knowledge uncertain, irrelevant speaker characteristics can influence
+- Biases to trust familiar adults
+
+---
+
+```{mermaid}
+flowchart TD
+  I[informant] ---|is-a| P(("person"))
+  I ---|is| F(("familiar|unfamiliar"))
+  I ---|has-a| A(("age"))
+  I ---|has| D(("domain knowledge"))
+  I ---|has been| R(("reliable"))
+  I ---|speaks-with| C("confidence")
+  I ---|speaks-with| E("familiar accent")
+```
+
+# Wrap-up
+
+## Next time...
+
+- Conceptual development
+  - *General Readings*: @Siegler2021-py Chapter 8; @Mandler1992-vb
+  - *Student Presentation N*: Naive psychology (*Presenter*: Jiayi Fan : *Discussant*: Suzy Su)
+    - *Read*: @Onishi2005-co; @Wellman2012-ny; @Ding2015-bp
+
+# Resources
+
+## About
+
+This talk was produced using [Quarto](https://quarto.org), using the [RStudio](https://posit.co/products/open-source/rstudio/)
+Integrated Development Environment (IDE), version 2025.5.1.513.
+
+The source files are in R and R Markdown, then rendered to HTML using the
+[revealJS](https://revealjs.com) framework.
+The HTML slides are hosted in a [GitHub repo](https://github.com/psu-psychology/psy-548-fall) and served by GitHub pages:
+<https://psu-psychology.github.io/psy-548-fall/>
+
+## References

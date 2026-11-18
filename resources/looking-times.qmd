@@ -1,0 +1,78 @@
+---
+title: "Looking Times"
+format: html
+---
+
+## About
+
+The following represents Rick Gilmore's explorations with the [Mermaid](https://www.mermaidchart.com) diagramming feature within [Quarto](https://quarto.org) version 1.8.24.
+
+The figures use the [`sequenceDiagram` type](https://docs.mermaidchart.com/mermaid-oss/syntax/sequenceDiagram.html) to reflect the structure of a simple looking time experiment.
+
+The figures are relevant for work we did in class on Weeks [03](../schedule.qmd#week-03), [04](../schedule.qmd#week-04), and [05](../schedule.qmd#week-05).
+
+::: {.callout-note}
+
+These are in no way illustrative or definitive. They simply represent Gilmore's efforts to learn more about Mermaid while trying to create diagrams that reflect his understanding of the underlying processes and mechanisms at work in looking time studies.
+
+:::
+
+## Version 1
+
+```{mermaid}
+sequenceDiagram
+  participant Display
+  actor Infant
+  participant Away
+  Display-->>Infant: Event
+  loop Where to look next
+    Infant->>Infant: Look until I'm sick of this sh*t
+    alt is novel
+      Infant->>Display: Look
+      Display->>Infant: Info
+    else is familiar
+      Infant->>Away: Look
+      Away->>Infant: Info
+    end
+  end
+```
+
+## Version 2
+
+```{mermaid}
+sequenceDiagram
+  participant World
+  actor Infant
+  participant Knowledge
+  World -->> Infant: Info
+  Infant -->> World: Look
+  loop Where to look next
+    Infant -->> Knowledge: Perception
+    note right of Knowledge: Each look adds to knowledge
+    Knowledge -->> Infant: Prediction
+      alt is Perception != Prediction
+        Infant->>World: Keep Looking
+        World->>Infant: More Info
+      else is Perception == Prediction
+        Infant->>World: Look elsewhere
+        World->>Infant: New Info
+      end
+    end
+```
+
+## On core knowledge
+
+```{mermaid}
+sequenceDiagram
+  participant Perception
+  participant Episodic_Memory
+  participant Core_Knowledge
+  Perception -->> Episodic_Memory: Recent events
+  Episodic_Memory -->> Episodic_Memory: Accumulate info
+  Episodic_Memory -->> Episodic_Memory: Compare to stored info
+  Episodic_Memory -->> Perception: Novel = f(Recent - Stored)
+  Perception -->> Core_Knowledge: Seeing now
+  Core_Knowledge -->> Core_Knowledge: Compare to principles
+  Core_Knowledge -->> Perception: Violation = f(Recent - Principles)
+```
+

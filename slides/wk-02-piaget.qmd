@@ -1,0 +1,405 @@
+---
+title: "On Piaget"
+subtitle: 2025-09-05
+fig-align: "center"
+---
+
+# Prelude
+
+---
+
+{{< video https://www.youtube.com/watch?v=6p-lDYPR2P8&list=RD6p-lDYPR2P8&start_radio=1 height ="70%" width="100%">}}
+
+-- @Madonna2017-bv
+
+## Today's topics
+
+- Check-in on hierarchical task analyses (HTA)
+- Presentation [schedule](../resources/presentations.qmd)
+- Background ideas
+- Theoretical foundations: Piaget
+  - *General Readings*: @Siegler2021-py Chapter 2; @Piaget1952-dm; @Newcombe2013-qy
+  
+## Check-in on HTA
+
+- Relevance?
+- Utility?
+- Do task demands/abilities change across development?
+- What are the tasks of the infant, toddler, pre-schooler, etc.?
+
+# Background ideas
+
+## Gilmore's influences
+
+::: {.incremental}
+- Chomsky [@Chomsky1959-ef]: nativist psycholinguistics
+- Marr [@Marr1980-cu]: neurally inspired computational modeling
+- Gibson [@Gibson1966-qo; @Gibson1986-ya]: Perception & action, ecological approach
+- Johnson [@Johnson2001-yy]: Developmental cognitive neuroscience
+- Ph.D. Committee members: Bob Siegler, Jay McClelland, Marlene Behrmann, Daniel Simons
+:::
+
+## Gilmore's influences
+
+![@Newcombe2013-qy Table 1](../include/img/newcombe-2013-tbl-1.png)
+
+## On mechanism
+
+:::: {.columns}
+::: {.column width=50%}
+![](https://m.media-amazon.com/images/I/71ls8e3DCTL._SY522_.jpg){width="60%" fig-align="center"}
+:::
+::: {.column width=50%}
+![](https://mitp.silverchair-cdn.com/mitp/content_public/books/1824/book/4/m_9780262256650-cover.jpeg?Expires=1758980052&Signature=3d03CUSSrOXiniGR3x5Yu6OzLfM1qAf8P7PNcAdcRKGmf2Y2lARDacOkm4z7WeCLGY5RrY9PUXU1miFocE8XZyzaEwDoTKQi7mwZCRInzFviNCRNv07W6wjdvZ5OvNeG8q-HZ-H83oQrs4MnzXJRDkJkDhuBD9YRVp1UO7CgQuyyt4qqx5uYl2n2koF3rOht3CtUys6VkFzOIzbAOGM3SVwbx4Vb7jMYaZ2rwtgbmwZ3JAMXvB-lilApd9r-YH41dsVYQGa9HAURT8CI-FdBf4~BBhwLdMeXu~Nh0gcAPB6stP9gPtj7g1oZeLPRAgXYjd23VIhQ1pIAJM-D92JmVg__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA){width="60%" fig-align="center"}
+:::
+::::
+
+## On mechanism
+
+:::: {.columns}
+::: {.column width=50%}
+- Physical devices subject to physical laws
+- The automata [@Wikipedia-contributors2025-sa] metaphor in psychology
+- Mind, brain, body problem [@Wikipedia-contributors2025-ww]
+:::
+::: {.column width=50%}
+![@Wikipedia-contributors2025-ww](https://upload.wikimedia.org/wikipedia/commons/8/8f/Digesting_Duck.jpg)
+:::
+::::
+
+## On mechanism
+
+:::: {.columns}
+::: {.column width=50%}
+- Is the human mind/brain/body a machine?
+- What are the parts?
+- How do they connect and interact?
+- What do they do?
+:::
+::: {.column width=50%}
+![@Descartes2001-ma](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg/500px-Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg){width="60%" fig-align="right"}
+:::
+::::
+
+## On state spaces
+
+>...a mathematical model of a physical system that uses state variables to track how inputs shape system behavior over time.
+
+>...These state variables change based on their current values and inputs, while outputs depend on the states and sometimes the inputs too.
+
+-- @Wikipedia-contributors2025-hc
+
+## On state spaces
+
+>...The internal state variables are the smallest possible subset of system variables that can represent the entire state of the system at any given time...
+
+![@Wikipedia-contributors2025-hc](https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Typical_State_Space_model.svg/944px-Typical_State_Space_model.svg.png)
+
+## On state spaces
+
+>In computer science, a state space is a discrete space representing the set of all possible configurations of a system...State spaces are useful in computer science as a simple model of machines. 
+
+-- @Wikipedia-contributors2025-zs
+
+## On state spaces
+
+- Representations $\rightarrow$ states ($s$)
+- Processes $\rightarrow$ changes in state across time
+  - $s_{next}=s_{now}+\delta s$, where $\delta s$ is a change in state.
+- Time scale of states, changes?
+  - $s(t+1)=F(s(t))$
+
+## On state spaces
+
+- What is the state of the child's mind/brain/body at time *t*?
+- How does that state change over some time interval?
+  - Short term: behavior
+  - Longer term: learning or adaptation or development
+  - *Really* long term: evolution
+
+## On state spaces
+
+```{mermaid}
+%%| label: fig-body-nervous-system-simplest
+%%| fig-cap: "A simple state space for the nervous system"
+flowchart LR
+  A(Body) -->|Sensation| B(Nervous System)
+  B -->|Response| A
+```
+
+```{mermaid}
+%%| label: fig-body-nervous-system
+%%| fig-cap: "A slightly more complicated state space for the nervous system."
+flowchart LR
+  A(Body) -->|Sensation| B(Nervous System)
+  B --> B
+  B -->|Response| A
+```
+
+## On state spaces
+
+```{mermaid}
+%%| label: fig-body-nervous-system
+%%| fig-cap: "A more complete state space for the nervous system"
+flowchart TD
+  W(World) --> W
+  W -->|Experience| B(Body)
+  B -->|Behavior| W
+  B --> B
+  B -->|Sensation| N(Nervous system)
+  N -->|Response| B
+  N -->|Cognition| N
+```
+
+## On state spaces
+
+![@Swanson2025-ke](https://larrywswanson.com/wp-content/uploads/2015/06/4-systems-network.jpg)
+
+::: {.fragment}
+- Separable but interacting neural pathways
+- Input (from world and body state)
+- Output (to body and world)
+:::
+
+## On reflexes
+
+>In biology, a reflex, or reflex action, is an involuntary, unplanned sequence or action and nearly instantaneous response to a stimulus...
+
+>A reflex occurs via neural pathways in the nervous system called reflex arcs...
+
+-- @Wikipedia-contributors2025-cf
+
+## On reflexes
+
+>These neural signals do not always travel to the brain, so many reflexes are an automatic response to a stimulus that does not receive or need conscious thought.
+
+-- @Wikipedia-contributors2025-cf
+
+::: {.fragment}
+- "Reflect" events from the world to the nervous system
+- Idea credited to Descartes [@Descartes2001-ma] and Hall [@Wikipedia-contributors2025-xl]
+- Earliest to emerge behaviors
+:::
+
+## On reflexes
+
+{{< video https://www.youtube.com/watch?v=rHYk1sYsge0&t=62s height="70%" width="100%" >}}
+
+-- @RegisteredNurseRN2020-ny
+
+## On reflexes
+
+- What is the input? What is the output?
+- What purpose(s) do reflexes serve?
+
+## The vestibulo-ocular reflex (VOR)
+
+{{< video https://www.youtube.com/watch?v=j_R0LcPnZ_w height="70%" width="100%" >}}
+
+-- @Castilla2007-cq
+
+## The vestibulo-ocular reflex (VOR)
+
+![@Wikipedia-contributors2025-lq](https://upload.wikimedia.org/wikipedia/commons/5/58/Simple_vestibulo-ocular_reflex.PNG)
+
+- Stabilizes gaze in allocentric coordinates
+- Within ~10 ms
+
+## On reflexes
+
+::: {.incremental}
+- Sensations and responses temporally linked
+  - Causally (mechanically) linked via
+  - Specialized neural circuits
+- Sensation $\rightarrow$ Response $\rightarrow$ (New) Sensation
+- Imagine a mechanism that "records" these links
+- (Random) Response $\rightarrow$ Sensation
+  - Sensation $\sim$ (Recorded prior) Sensation
+:::
+
+## Aside: Vestibulo-ocular reflex (VOR)
+
+- One of many behavior systems that reduce "noise", improve reliability in input
+- Input "reliability" improves over long time span
+
+## Visual acuity in young children *not* adult-like
+
+![@Gilmore2025-fz](https://github.com/gilmore-lab/vss-2025-poster/blob/main/include/generated/fig-typical-group-by-age-paper-group-trend-scaled-weight-n-no-classic-1.png?raw=true){width="70%"}
+
+## Background ideas: Summary
+
+::: {.incremental}
+- Mind/brain/body as a mechanism
+- State space formalism aids specifying states and transitions
+- Reflexes as simple, early emerging sensorimotor behaviors
+- Reflex arcs [@Wikipedia-contributors2025-xl] $\rightarrow$ Piaget's "circular reactions"
+- Perceiving "sameness" of sensations & actions critical
+:::
+
+# On Piaget
+
+## Link to student commentary
+
+- [Comments & questions](https://docs.google.com/document/d/1eAo1FqM-WRg73ascICbfRFNu7pLBvF_s0GGzHIYzSck/edit?tab=t.0#heading=h.mqmwmakspm4l)
+
+---
+
+![Jean Piaget from @Wikipedia-contributors2025-cq](https://upload.wikimedia.org/wikipedia/commons/6/67/Jean_Piaget_in_Ann_Arbor.png)
+
+## Core ideas
+
+- Origins of knowledge (epistemology)
+- Categories of knowledge
+  - Space, time, classes/categories, causality
+- Reflexes innate
+- Child as "scientist", solving "problems"
+
+## Core ideas
+
+- Stages (and sub-stages)
+  - Sensorimotor (0-24 mos)
+  - Preoperational (2 - 6 or 7 years)
+  - Concrete operations (6 or 7 - 11 or 12 years)
+  - Formal operations (11 or 12 - 14 or 15 years)
+  
+## Core ideas
+
+- *Schema* [@Wikipedia-contributors2025-ad]
+
+>...describes a pattern of thought or behavior that organizes categories of information and the relationships among them. It can also be described as a mental structure of preconceived ideas, a framework representing some aspect of the world, or a system of organizing and perceiving new information.
+  
+## Core ideas
+
+- *Assimilation* 
+
+>fitting new information into pre-existing cognitive schemas [@Wikipedia-contributors2025-cq]
+
+::: {.fragmewnt}
+- *Accommodation* 
+
+>taking new information in one's environment and altering pre-existing schemas in order to fit in the new information [@Wikipedia-contributors2025-cq]
+:::
+
+## Core ideas
+
+- *Equilibration*
+
+>integrating individual pieces of knowledge into a unified whole. [@Siegler2021-py p. 24]
+
+## Core ideas
+
+- Means (how to do/actions)
+- Ends (what to do/goals)
+- Means-ends analysis central to AI and the science of problem solving [@Wikipedia-contributors2023-nd]
+  
+## Core ideas
+
+- [*Primary circular reactions*](https://dictionary.apa.org/primary-circular-reaction){preview-link="true"}
+  - Repetition of a volitional, non-reflexive act [@APAdictionary-vt]
+- [*Secondary circular reactions*](https://dictionary.apa.org/secondary-circular-reaction){preview-link="true"}
+  - Actions taken for their effects on the environment [@APAdictionary-vt]
+  
+## Core approach
+
+![Figure 2-1 from @Siegler2021-py](../include/img/siegler-alibali-fig-2-1.png)
+
+## Core ideas
+
+- Detecting "sameness" 
+
+>To be able to recognize the same thing again as it evidences itself to one's senses in a multiplicity of ways, thus affording multiple opportunities to accumulate and apply information about it is, I believe, the most central challenge there is for cognition -- @Millikan2017-to
+
+## Core ideas
+
+- Tasks that require the detection of some sort of sameness
+  - Object permanence
+  - Conservation of number, solid & liquid quantity
+  - Perspective taking
+  - Number
+
+## Core approach
+
+- Qualitative observations of behavior
+- In experimenter-chosen situations or tasks
+- Observations $\rightarrow$ inferences about unseen mental processes
+- Inductive reasoning [@Wikipedia-contributors2025-wz]
+- Inspired by semiotics [@Wikipedia-contributors2025-ej]?
+
+## Questions
+
+- How does Piaget view the question of cognitive continuity vs. discontinuity?
+- Are the relations among sensations and actions described in @Piaget1952-dm clearly specified that you could write out the schema?
+- Gilmore's attempt to unpack the [causal relations](../resources/causal-relations.qmd) at work in the situation of the infant in the bassinet
+  - Do developmental scientists need to "complexify" our phenomena before we simplify them?
+
+## Notable comments
+
+>To assimilate a sensorial image or an object, whether through simple assimilation, recognition, or generalizing extension, is to insery it in a system of schemata, in other words, to give it a "meaning".
+
+-- @Piaget1952-dm, p. 189
+
+## Notable comments
+
+>Secondary circular reaction, in so far as it is a reproduction of an interesting result fortuitously obtained, is, effect, far from constituting a behavior pattern peculiar to the child. An adult, unacquainted with machinery, does not behave differently from the baby when, having by chance touched part of a motor, he does not understand the effect produced and repeats the action which set it in motion.
+
+-- @Piaget1952-dm, p. 207
+
+## Evaluating Piaget
+
+>There are several problems with Piaget's approach to cognitive development...the various capabilities did not cohere in the way that Piaget's stage theory had envisioned...children frequently achieved competence in some of the stage-relevant tasks while lagging behind on other stage-relevant tasks...
+
+-- @Newcombe2013-qy p. 481
+
+## Evaluating Piaget
+
+>...Piaget seriously underestimated the cognitive competence of infants and young children...A large amount of research beginning in the 1970s and proceeding apace to this day has shown...that infants and young children have far more substantial abilities than Piaget had observed.
+
+-- @Newcombe2013-qy p. 481
+
+## Piaget
+
+>...Piaget talke in general terms about the process of developmental change as being the operation of equilibration...Many investigators argued that a more detailed specification of the mechanisms of change was needed.
+
+-- @Newcombe2013-qy p. 481
+
+## Evaluating Piaget
+
+>Piaget's theory is...'too monumental to embrace, and at the same time, too omnipresent to detect (Beilin, 1992)'
+
+-- @Siegler2021-py p. 48
+
+::: {.fragment}
+>Some of the reasons for its influence and its lasting appeal are the important acquisitions it describes, the large span of childhood it encompasses, and the reliability and charm of many of its observations.
+
+-- @Siegler2021-py p. 48
+:::
+
+## Evaluating Piaget
+
+>[Piaget's] trait descriptions thus seem to be in the right ballpark, but to gloss over exceptions. More generally, Piaget's theory continues to be of interest because it communicates a good feel for children's thinking and it asks the right questions.
+
+-- @Siegler2021-py p. 49
+
+# Wrap-up
+
+## Next time...
+
+- Piaget: Deep dive
+  - *Student presentation A*: How robust is the evidence for Piaget's trajectories?
+    - *Skim*: @Elkind1961-ns; @Gelman1972-we
+  - *Student presentation B*: When does object permanence emerge?
+    - *Skim*: @Baillargeon1985-vl; @Baillargeon2008-gz
+
+# Resources
+
+## About
+
+This talk was produced using [Quarto](https://quarto.org), using the [RStudio](https://posit.co/products/open-source/rstudio/)
+Integrated Development Environment (IDE), version 2025.5.1.513.
+
+The source files are in R and R Markdown, then rendered to HTML using the
+[revealJS](https://revealjs.com) framework.
+The HTML slides are hosted in a [GitHub repo](https://github.com/psu-psychology/psy-548-fall) and served by GitHub pages:
+<https://psu-psychology.github.io/psy-548-fall/>
+
+## References

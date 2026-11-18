@@ -4,3 +4,6 @@
 .Ruserdata
 private
 psy-548-2027-spring.Rproj
+
+/.quarto/
+**/*.quarto_ipynb

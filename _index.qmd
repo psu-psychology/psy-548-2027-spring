@@ -1,0 +1,38 @@
+## Instructor {-}
+
+Rick O. Gilmore, Ph.D. \
+Professor of Psychology \
+rog1 AT-SIGN psu PERIOD edu \
+
+Schedule an appointment: <https://doodle.com/mm/rickgilmore/book-a-time></br>
+
+Lab web site: <https://gilmore-lab.github.io>
+
+## Meeting time & location {-}
+
+Friday, 9:00a - 12:00p \
+444 Moore Building
+
+## Textbook
+
+:::: {.columns}
+::: {.column width=60%}
+Siegler, R.S. & Alibali, M.W. (2020), *Children's Thinking (5th ed.)*, Pearson: Hoboken, NJ.
+
+[Pearson site for the text](https://www.pearson.com/en-us/subject-catalog/p/childrens-thinking-the/P200000003072/9780137516773)
+:::
+::: {.column width=5%}
+:::
+::: {.column width=35%}
+![](https://www.pearson.com/store//pmccommercewebservices/v2/medias/size-W370-A1030-00-26-03-A103000260389-A103000260389-Lrg.jpg?context=bWFzdGVyfGltYWdlc3w4MjQ3M3xpbWFnZS9qcGVnfHN5cy1tYXN0ZXIvaW1hZ2VzL2gxNS9oNTQvMTQyNDE5Mzg2Njk1OTgvc2l6ZV9XMzcwXy9BMTAzMC8wMC8yNi8wMy9BMTAzMDAwMjYwMzg5L0ExMDMwMDAyNjAzODlfTHJnLmpwZ3xhNzIwODg2YjBlMTllNzRiNTZiNDE5MGE5NmZhOTY1MDI3NDc4MGZiMWNlZDVlZWZjYWNhMGEyMTJjN2RmNjk2&imwidth=3840)
+:::
+::::
+
+## Articles
+
+Many of the articles are available via the Penn State Libraries, but there is also a Canvas folder that can be found [here](https://psu.instructure.com/courses/2416683/files/folder/pdf). Access is restricted to registered students in PSY 548.
+
+## Syllabus
+
+This website is the best and most up-to-date source for syllabus-related information. 
+A [PDF](psy-548-cognitive-development-2025-fall.qmd) version is also available.

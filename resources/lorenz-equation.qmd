@@ -1,0 +1,90 @@
+---
+title: "Dynamic systems"
+format: html
+---
+
+## About
+
+This page provides some supplemental information for the discussion about dynamic systems.
+
+It shows a simulation of the Lorenz system.
+The code is drawn from @Wikipedia-contributors2025-ew.
+
+It also provides a link to an excellent video about convolution, a core operation in many areas of psychology and neuroscience.
+
+## Lorenz System
+
+### Equations
+
+$$\dot{x} = \sigma(y-x) $$
+$$\dot{y} = \rho x - y - xz $$
+$$\dot{z} = -\beta z + xy $$
+
+### Simulation
+
+Quietly load required libraries.
+
+```{r}
+suppressPackageStartupMessages(library(deSolve))
+suppressPackageStartupMessages(library(plotly))
+```
+
+Simulate *n*=`{r} 100*100` time points
+
+```{r}
+#|  label: fig-lorenz-system-r
+#|  fig-cap: "A simulation of the Lorenz system in R."
+
+
+# parameters
+prm <- list(sigma = 10, rho = 28, beta = 8/3)
+# initial values
+varini <- c(
+  X = 1,
+  Y = 1, 
+  Z = 1
+)
+
+Lorenz <- function (t, vars, prm) {
+  with(as.list(vars), {
+    dX <- prm$sigma*(Y - X)
+    dY <- X*(prm$rho - Z) - Y
+    dZ <- X*Y - prm$beta*Z
+    return(list(c(dX, dY, dZ)))
+   })
+}
+
+times <- seq(from = 0, to = 100, by = 0.01)
+# call ode solver
+out <- ode(y = varini, times = times, func = Lorenz,
+           parms = prm)
+```
+
+Plot data.
+
+```{r}
+# to assign color to points
+gfill <- function (repArr, long) {
+  rep(repArr, ceiling(long/length(repArr)))[1:long]
+}
+
+dout <- as.data.frame(out)
+
+dout$color <- gfill(rainbow(10), nrow(dout))
+
+# Graphics production with Plotly:
+plot_ly(
+  data=dout, x = ~X, y = ~Y, z = ~Z,
+  type = 'scatter3d', mode = 'lines',
+  opacity = 1, line = list(width = 6, color = ~color, reverscale = FALSE)
+)
+```
+
+## On convolution
+
+Convolution is a fundamental operation in statistics, and it is a core operation found in Dynamic Field Theory and connectionist models.
+Here's an excellent video to explain what convolution is about and how it works.
+
+{{< video https://www.youtube.com/watch?v=KuXjwB4LzSA >}}
+
+-- @3Blue1Brown2022-mx

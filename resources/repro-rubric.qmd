@@ -1,0 +1,52 @@
+---
+title: "Evaluating Rigor, Reproducibility, & Transparency"
+number-sections: true
+---
+
+::: {.callout-warning}
+## Under construction
+
+This page is in a very early and rough state.
+
+Do not rely upon it.
+:::
+
+## About
+
+This page describes a rubric for evaluating the rigor, reproducibility, and transparency of empirical articles in cognitive development.
+
+Gilmore is considering whether students would like to add an evaluation of these factors to the classwork we do together on the days when students present.
+
+## Components
+
+### Reproducibility
+
+#### Can the paper's main reported findings be reproduced exactly?
+
+1. Are the data shared?
+2. Is any analysis or visualization code shared?
+3. If 1. and 2. are true, does the analysis and visualization code run?
+4. If 3., are the results the same as those the paper reports?
+
+
+### Transparency
+
+#### Was the study pre-registered?
+
+### Recombinability
+
+#### Does the paper report effect sizes or information that can be used to compute effect sizes so that these results can be combined with other reports in a meta-analysis?
+
+### Replicability
+
+#### Have exact replications of the paper's main findings been published?
+#### Has a systematic review or meta-analysis been published?
+#### How thorough is the methods section?
+##### Displays
+
+1. If computer-generated displays were used, is the computer code to generate them shared?
+2. Are videos of the displays shared?
+
+
+##### Procedures
+##### Samples

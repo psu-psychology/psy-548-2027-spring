@@ -1,0 +1,57 @@
+---
+title: "Models of A-not-B"
+format: html
+lightbox: true
+---
+
+## About
+
+This page provides some additional information relevant to the discussion about @Smith1999-xz and @Munakata1997-zx.
+
+## @Thelen2001-dz
+
+Thelen, Smith and colleagues followed up on their empirical work in @Smith1999-xz with a dynamic field model described in @Thelen2001-dz.
+
+The modeling effort begins with a task analysis as described in Figure 1.
+
+![@Thelen2001-dz Figure 1](include/img/thelen-2001-fig-01.png){width="60%"}
+
+The model begins by describing a movement field.
+
+![@Thelen2001-dz Figure 6](include/img/thelen-2001-fig-06.png){width="60%"}
+
+The movement field receives task input and specific input from a separate input field shown below and a memory field (not shown).
+
+![@Thelen2001-dz Figure 8](include/img/thelen-2001-fig-08.png){width="60%"}
+
+Figures 10 and 11 show illustrations of how the input and memory fields evolve with repeated trials at the A location.
+
+![@Thelen2001-dz Figures 10 and 11](include/img/thelen-2001-fig-10-11.png){width="60%"}
+
+## @Munakata1997-zx
+
+This figure shows the basic architecture of the network.
+
+![@Munakata1997-zx Figure 7.](include/img/munakata-1997-fig-07.png){width="60%"}
+
+This figure shows how the model's input maps to the sequence of events that occur in the behavioral task.
+
+![@Munakata1997-zx Figure 8.](include/img/munakata-1997-fig-08.png){width="60%"}
+
+This figure shows how the difference in activation evolves with each epoch of training.
+
+![@Munakata1997-zx Figure 9.](include/img/munakata-1997-fig-09.png){width="60%"}
+
+>This is illustrated in Figure 9, where we graph the magnitude of a network's sensitivity to an occluded object reappearing from behind a barrier as a function of training experience and length of occlusion period. The sensitivity depends on the extent to which the network distinguishes between events with and without balls and is defined as the network's predicted activation for the ball unit at the time step when the ball should reappear (when there is in fact a ball behind the occluder), minus the network's predicted activation for the ball unit at the same time step, when a ball should not reappear (when in fact no ball was present before the occluder moved in).
+
+-- @Munakata1997-zx p. 699
+
+The following two figures show the activation of the internal units in different phases of the simulation.
+
+![@Munakata1997-zx Figure 11.](include/img/munakata-1997-fig-11.png){width="60%"}
+
+![@Munakata1997-zx Figure 12.](include/img/munakata-1997-fig-12.png){width="60%"}
+
+## Models as maps
+
+$$y_i=A+B+A*B+\epsilon_i$$

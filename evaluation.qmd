@@ -1,0 +1,59 @@
+---
+title: "Evaluation"
+---
+
+## Article presentations
+
+Every student will have an opportunity to prepare and deliver a 10-12 min oral presentation about a set of articles at one point in the semester. These presentation opportunities are indicated in the [schedule](schedule.qmd) with the following format: "Student Presentation A". There are 16 such opportunities, A-P.
+
+This presentation will be worth 45 points or 45% your overall grade.
+
+The presenter must read the target article(s) thoroughly and the general readings in order to link the target papers to the overall themes we are discussing. 
+
+### Guidance for presentations
+
+For theoretical papers, discuss how the authors' ideas and arguments relate to the big questions posed in class and how they differ from or are similar to the ideas of other authors we have discussed. What are the key steps in the authors' argument? What are the most important take-homes?
+
+For empirical papers, describe what the authors did, what they found, what the authors think the findings mean, and what are the implications for broader issues we discuss in class.
+
+### Presentation tips
+
+- As Gilmore's AP English teacher advised, "be terse, pithy, and pregnant", meaning be efficient in what you say and say important things.
+- You will get a 10 min warning and be cut-off at 12 min. So, practice your presentation and time it.
+- Fewer words and more figures are better.
+- Fewer slides are better. Realistically, a 10-12 min talk shouldn't have more than 5-8 slides.
+
+::: {.callout-warning}
+I continue to struggle to implement these tips myself.
+:::
+
+## Article discussion
+
+Every student will have an opportunity to serve as a discussion leader for one of the article presentations. The 10-12 min discussion will follow the presentation. Except in rare cases, you will serve as a discussion leader on a different article from the one you present. The discussion leader must write 3-4 questions and be ready to present them at the end of the presentation to start the discussion.
+
+Since there are 16 student presentations, there should be an opportunity for everyone to present and discuss an article.
+
+Leading a discussion will be worth 40 points or 40% your overall grade.
+
+::: {.callout-important}
+
+To ensure that you understand and are covering the material well, you are *strongly encouraged* to get feedback on your draft presentations during Rick's office hours on Tuesday, 11-11:45 or at another time scheduled separately via Rick's [scheduler](https://doodle.com/mm/rickgilmore/book-a-time).
+
+Students presenting an article may contact and coordinate with the person scheduled to discuss it. If these consultations occur, please indicate them in the presentation.
+
+:::
+
+## General reading discussion questions and class participation
+
+Everyone should closely review the general readings to get an overview of the material and to be prepared for the subsequent presentations and discussions. Every student should write one 1-2 sentence question or comment about each of the general readings by Thursday at noon on the day before class. Submit your questions or comments to this shared Google doc:
+
+<https://docs.google.com/document/d/1eAo1FqM-WRg73ascICbfRFNu7pLBvF_s0GGzHIYzSck/edit?usp=sharing>
+
+If you’re not a presenter or discussion leader, you should read the prompts for the article presentations, but you can skim the presented readings. If you have a burning question you want to ask about a specific paper, add it to the Google doc.
+
+Participation in class discussions and the submission of discussion questions or comments is worth 15 points or 15% of your overall grade. 
+
+<!-- ### Possible group project -->
+
+<!-- I would like to make use of some of the time we have on days when we are largely discussing empirical articles to evaluate their rigor, reproducibility, and transparency. The rubric for this evaluation is in an [early draft form](repro-rubric.qmd). I invite student feedback on this idea. -->
+

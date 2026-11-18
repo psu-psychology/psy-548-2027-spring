@@ -1,0 +1,200 @@
+---
+title: "Schedule"
+---
+
+::: {.callout-important}
+### Access to readings
+
+Please try to retrieve readings from the library, using the citation and links in the schedule below. Doing so gives the library a more accurate count of article and book usage, and that helps in negotiations with publishers. If
+
+Some readings will not be readily available. I am working my way through the reading list to make PDFs of these available via Canvas. So, please bear with me. The Canvas folder is [here](https://psu.instructure.com/courses/2416683/files/folder/pdf).
+:::
+
+::: {.callout-note}
+Karen Adolph shared the graduate cognitive development syllabus they used with NYU graduate students in Spring 2025.
+I have adopted considerable portions of their readings and assignment ideas.
+:::
+
+## Week 01
+
+### Fri, August 29, 2025
+
+#### Topics & Readings
+
+- Introduction to the course
+- The cognitive sensibility
+- *General Readings*: @Siegler2021-py Chapters 1 & 3; @Bayne2019-ot; @Simmering2010-ba; @Ritter2014-eq Chapter 11
+- *Slides*: | [html](slides/wk-01-intro.qmd) |
+
+#### Assignment
+
+- Complete presentation preference [survey](https://forms.gle/ZDg45gjWQhjfjT669). (Sign-in with your PSU access ID, e.g., rog1).
+
+## Week 02
+
+### Fri, September 5, 2025
+
+#### Topics & Readings
+
+- Theoretical foundations: Piaget
+  - *General Readings*: @Siegler2021-py Chapter 2; @Piaget1952-dm Chapter III | [pdf on Canvas](https://psu.instructure.com/courses/2416683/files/folder/pdf?preview=180988843) | ; @Newcombe2013-qy
+  - *Slides*: | [html](slides/wk-02-piaget.qmd) |
+
+## Week 03
+
+### Fri, September 12, 2025
+
+#### Topics
+
+- Piaget: Deep dive
+  - *Student presentation A*: How robust is the evidence for Piaget's trajectories? (*Presenter*: Alyssa Swift; *Discussant*: Jingyi He)
+    - *Read*: @Elkind1961-ns; @Gelman1972-we
+  - *Student presentation B*: When does object permanence emerge? (*Presenter*: Makenna Luzenski; *Discussant*: Zeynep Sülün)
+    - *Read*: @Baillargeon1985-vl; @Baillargeon2008-gz
+
+## Week 04
+
+### Fri, September 19, 2025
+
+#### Topics & Readings
+
+- Nativism, core knowlege, and its discontents
+  - *General Readings*: @Spelke2007-ts; @Spencer2009-jo; @Spelke2009-xx; @Landau2009-jl; @Spencer2009-xu
+  - *Slides*: | [html](slides/wk-04-core-knowl-dev-sys.qmd) |
+  
+## Week 05
+
+### Fri, September 26, 2025
+
+#### Topics & Readings
+
+<!-- Pratt Srinivasan religious holiday absence -->
+
+- Nativism and Core Knowledge: Deep dive
+  - *Student Presentation C*: How does changing the task inform on the underlying construct(s) about physical knowledge? (*Presenter*: Carlos Almeida; *Discussant*: Yeonjin Kim)
+    - *Read*: @Spelke1992-re; @Hood2000-yd; @Keen2003-vj
+  - *Student Presentation D*: Rich interpretation of group differences in infant looking-time paradigms: How rich is dangerous? Necessary? Productive? (*Presenter*: Suzy Su; *Discussant*: Makenna Luzeknski)
+    - *Read*: @Aslin2007-yt; @Paulus2022-fg; @Stahl2022-fy; @Haith1998-vu
+  
+## Week 06
+
+### Fri, October 3, 2025
+
+#### Topics & Readings
+
+- Constructivism & its variants
+  - *General Readings*: @Newcombe2011-wd; @Mareschal2011-fw; @Spencer2011-fp; @Newcombe2011-pn
+  - *Slides*: | [html](slides/wk-06-constructivism.qmd) |
+
+## Week 07
+
+### Fri, October 10, 2025
+
+- Constructivism: Deep dive
+  - *Student Presentation E*: How do developmental disorders inform our understanding of cognitive development? (*Presenter*: Katie Billetdeaux; *Discussant*: Pratt Srinivasan)
+    - *Read*: @Karmiloff-Smith1998-be; @Karmiloff-Smith2009-zs
+
+## Week 08
+
+### Fri, October 17, 2025
+
+#### Topics & Readings
+
+- *Student Presentation F*: The risks of generalization (*Presenter*: Gilmore; *Discussant*: Carlos Almeida)
+    <!-- - *Watch*: @Treeincement2010-en, @innovation2014-kj -->
+    - *Read*: @Packer2022-gn; @Kominsky2022-we; @Lucca2025-gy
+    - *Supplemental*: [Constructivism](resources/constructivism.qmd)
+- Emergentism & dynamic systems
+  - *General Readings*: @Thelen2003-tt; @Perone2017-qb OR @Thelen2007-df
+  - *Supplemental*: [Lorenz System](resources/lorenz-equation.qmd)
+  - *Slides*: | [html](slides/wk-08-dynamic-systems.qmd) | 
+
+## Week 09
+
+### Fri, October 24, 2025
+
+#### Topics & Readings
+
+- Emergentism & dynamic systems: Deep dive
+  - *Student Presentation G*: A connectionist model to explain why infants seem so smart
+    - *Read*: @Munakata1997-zx (*Presenter*: Zeynep Sülün; *Discussant*: 
+Caesar Liu)
+  - *Student Presentation H*: Emergentism and variants of the A-not-B task
+    - *Read*: @Smith1999-xz (*Presenter*: Natalie Byrd; *Discussant*: Jiayi Fan)
+    
+## Week 10
+
+### Fri, October 31, 2025
+
+#### Topics & Readings
+
+- Embodied cognition
+  - *General Readings*: @Pfeifer2006-nx, Forward, Chapter 1, and Chapter 12; @Smith2018-nc
+  - *Slides*: | [html](slides/wk-10-embodied-cognition.qmd) |
+- *Student Presentation I*: Does development gate input to prevent a "blooming, buzzing confusion?" (*Presenter* Luke Debec: *Discussant*: Alyssa Swift)
+  - *Read*: @Kretch2014-ck; @Franchak2018-oj
+- *Student Presentation J*: How can AI & robotics inform developmental science? (*Presenter*: Pratt Srinivasan; *Discussant*: Hannah Huang)
+  - *Read*: @Ossmy2018-fr; @Ossmy2024-qj
+  
+## Week 11
+
+### Fri, November 7, 2025
+
+#### Topics & Readings
+
+- Sociocultural development
+  - *Read*: @Siegler2021-py Chapter 4; @Tomasello2016-rx 
+  - *Slides*: | [html](slides/wk-11-sociocultural.qmd) | 
+  
+## Week 12
+
+### Fri, November 14, 2025
+
+#### Topics & Readings
+
+- Sociocultural development: Deep dive
+  - *Student Presentation K*: Imitation in cultural learning (*Presenter*: Hanna Huang; *Discussant*: TBD)
+    - *Read*: @Legare2015-im; @Herrmann2013-rb; @Lyons2007-ng
+  - *Student Presentation L*: Gesture (*Presenter*: Jingyi He; *Discusant*: Katie Billetdeaux)
+    - *Read*: @Novack2015-kl; @Wakefield2018-tq
+
+## Week 13
+
+### Fri, November 21, 2025
+
+#### Topics & Readings
+
+- Learning from others
+  - *General Readings*: @Gelman2009-jg; @Sobel2013-lb
+      - *Slides*: | [html](slides/wk-13-learning-from-others.qmd) | 
+  - *Student Presentation M*: Learning from testimony (*Presenter*: TBD; *Discussant*: Luke Debec)
+    - *Read*: @Harris2018-eh; @Jaswal2010-dz
+
+## Thanksgiving Break
+
+**NO CLASS**
+
+## Week 14
+
+### Fri, December 5, 2025
+
+#### Topics & Readings
+
+- Conceptual development
+  - *General Readings*: @Siegler2021-py Chapter 8; @Mandler1992-vb
+  - *Student Presentation N*: Naive psychology (*Presenter*: Jiayi Fan : *Discussant*: Suzy Su)
+    - *Read*: @Onishi2005-co; @Wellman2012-ny; @Ding2015-bp
+
+## Week 15
+
+### Fri, December 12, 2025
+
+#### Topics & Readings
+
+- Systems
+  - *Read*: @Bronfenbrenner1977-cm, @Oyama2001-cf pp. 1-6, @Hartley2022-dd
+  - *Student Presentation O*: Poverty is bad for cognition. (*Presenter*: Yeonjin Kim; *Discussant*: TBD)
+    - *Read*: @Taylor2020-dp, [supplemental materials](include/pdf/taylor-2020-suppl.pdf); @Amso2020-jo
+  - *Student Presentation P*: Poverty can be adaptive for cognition. (*Presenter*: Caesar Liu; *Discussant*: Natalie Byrd)
+    - *Read*: @Frankenhuis2016-wl; @Frankenhuis2020-ld
+  

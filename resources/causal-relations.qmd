@@ -1,0 +1,204 @@
+---
+title: "Unpacking causality"
+format: html
+---
+
+## About
+
+This page provides some supporting material related to the problem of what causal relationships the infants described by Piaget [Chapter III from @Piaget1952-dm] could have inferred given the circumstances they confronted.
+
+## Background
+
+Piaget describes multiple observations of his children's behavior while they were lying supine in a bassinet.
+Various objects, including rattles, were attached to the bassinet at different times.
+In some circumstances, ribbons attached to these objects were placed in the child's hand or tied to their limb.
+When the child grasped the ribbon or it was tied to their limb, certain hand or limb movements could make the objects move and make noise.
+
+## Components
+
+Let's describe in detail the various components of this situation and their causal links.
+For simplicity, we'll focus on a rattle tied to the bassinet handle by a ribbon, with an additional ribbon long enough for the child to grasp or be tied to their limb.
+
+The components external to the infant are as follows:
+
+```{mermaid}
+%%| label: fig-baby-in-bassinet
+%%| fig-cap: "Physical state of the infant's world in the bassinet."
+flowchart TD
+  A[bassinet] <-- connected_to --> B[rattle]
+  B <-- connected_to --> C[ribbon]
+```
+
+```{mermaid}
+%%| label: fig-baby-state
+%%| fig-cap: "Physical state of the infant."
+flowchart TD
+  D(trunk) <-- connected_to --> E(leg_r)
+  D <-- connected_to --> H(leg_l)
+  D <-- connected_to --> I(arm_r)
+  D <-- connected_to --> J(arm_l)
+  F(head) <-- connected_to --> D
+  G(eyes) <-- connected_to --> F
+  K(ears) <-- connected_to --> F
+```
+
+These `connected_to` relationships are physical and bidirectional.
+This means that movements of one entity can move a connected entity.
+When the infant moves her trunk, the arms and legs often move, as well.
+
+So, when the ribbon is tied around the infant's right leg, for example, we have the following situation:
+
+```{mermaid}
+%%| label: fig-baby-bassinet-state
+%%| fig-cap: "Physical state of the infant and bassinet."
+flowchart TD
+  A[bassinet] <-- connected_to --> B[rattle]
+  B <-- connected_to --> C[ribbon]
+  C <-- connected_to --> E
+  D(trunk) <-- connected_to --> E(leg_r)
+  D <-- connected_to --> H(leg_l)
+  D <-- connected_to --> I(arm_r)
+  D <-- connected_to --> J(arm_l)
+  F(head) <-- connected_to --> D
+  G(eyes) <-- connected_to --> F
+  K(ears) <-- connected_to --> F  
+```
+
+This *physical* situation sets up an interesting *psychological* situation that Piaget's observations focus on.
+
+To get there, let's talk about the flow of sensory information.
+The ribbon is likely to generate tactile stimulation on the skin of the right leg whether or not the leg is moving.
+The rattle and ribbon can be seen, if the infant's trunk, head, and eyes are in the right position to see it.
+The rattle makes sounds if it is moving.
+These sensory signals project to the nervous system in a one-way, directed flow.
+
+```{mermaid}
+%%| label: fig-info-flow-to-infant
+%%| fig-cap: "Information flow from the environment to the infant's nervous system."
+flowchart TD
+  C[ribbon] ---| tactile_info | I(arm_r)
+  B[rattle] ---| auditory_info | K(ears)
+  C ---| visual_info | G(eyes)
+  B ---| visual_info | G
+  I --> N((nervous_system))
+  G --> N
+  K --> N
+```
+
+Next, let's show some of the outflow relationships that have the reverse direction of flow.
+
+```{mermaid}
+%%| label: fig-info-outflow
+%%| fig-cap: "Information flow from the infant's nervous system to the environment."
+flowchart TD
+  N((nervous_system)) ---|moves| G(eyes)
+  N ---|moves| F(head)
+  F ---|moves| K(ears)
+  F ---|moves| G
+  N ---|moves| I(arm_r)
+  I ---|moves| C[ribbon]
+  C ---|moves| B[rattle]
+```
+
+::: {.callout-note}
+We do not show here that moving the head and arm can also move the trunk due to the physical connection between body parts. These movements can occur *without* specific signals from the nervous system.
+
+These movements are usually small and not especially important for the story we are telling here.
+:::
+
+Movements caused by the nervous system have sensory consequences in different forms, sometimes called modalities.
+
+```{mermaid}
+%%| label: fig-info-flow-resulting-from-infant-movement
+%%| fig-cap: "Information flow resulting from the infant's movement."
+
+flowchart TD
+  B[rattle] ---|auditory_info| K(ears)
+  C[ribbon] ---| tactile_info | I(arm_r)
+  B ---| visual_info | G(eyes)
+  C ---| visual_info | G(eyes)
+  I --- N((nervous_system))
+  K --- N
+  G --- N
+```
+
+We're now ready to show a full perception-action-perception cycle that is the precursor of the secondary circular reactions that so fascinated Piaget.
+We start with the sensory flow before the infant moves and we assume that the rattle and ribbon can be seen.
+
+```{mermaid}
+%%| label: fig-phase-I-before-rattling
+%%| fig-caption: "Information flow before the infant moves her arm and makes the rattle rattle."
+flowchart TD
+  B[rattle] ---| visual_info | G(eyes)
+  C[ribbon] ---| visual_info | G
+  C[ribbon] ---| tactile_info | I(arm_r)
+  G --- N((nervous_system))
+  I --- N((nervous_system))
+```
+
+The child moves his right arm and the rattle shakes. The eyes remain fixed on the rattle and ribbon.
+
+```{mermaid}
+%%| label: fig-phase-II-after-rattling
+%%| fig-caption: "Information flow from the child that causes the rattle to move."
+flowchart TD
+  N((nervous_system)) ---| moves | I(arm_r)
+  I ---|moves| C[ribbon]
+  C ---|moves| B[rattle]
+```
+
+The rattle rattles and causes a flow of information back to the nervous system.
+
+```{mermaid}
+%%| label: fig-phase-III-flows-resulting-from-rattling
+%%| fig-caption: "Information flow resulting from the rattling rattle."
+flowchart TD
+  B[rattle] ---|auditory_info| K(ears)
+  C[ribbon] ---| tactile_info | I(arm_r)
+  B ---| visual_info | G(eyes)
+  C ---| visual_info | G(eyes)
+  I --- N((nervous_system))
+  K --- N
+  G --- N
+```
+
+So, the nervous system activity that caused the arm movement also caused the rattle to shake.
+The cognitive task for the infant is to learn what prior perceptual states (@fig-phase-I-before-rattling) and what action(s) (@fig-phase-II-after-rattling) cause this fortuitous result (@fig-phase-III-flows-resulting-from-rattling).
+That learning involves some change in the `nervous_system` that links the prior perceptual states and the generated actions together in what Piaget might call a *schema*.
+
+In the figure below, the **bold** links represent the first perception flow, unbolded links the action flow, and dotted links the subsequent perception flow.
+
+```{mermaid}
+%%| label: fig-phases-combined
+%%| fig-caption: "The three phases combined. Bold links represent the pre-movement state, plain links the action flow, and dotted links the subsequent flow of perceptual information that results from the movement."
+flowchart TD
+  B[rattle] ===| visual_info | G(eyes)
+  C[ribbon] ===| visual_info | G
+  C[ribbon] ===| tactile_info | I(arm_r)
+  G ===| informs | N((nervous_system))
+  I ===| informs| N((nervous_system))
+  N ---| moves | I(arm_r)
+  I ---| moves | C[ribbon]
+  C ---| moves | B[rattle]
+  B -.-| auditory_info | K(ears)
+  K -.-| informs | N
+```
+
+## Your thoughts
+
+Do these kind of causal flow diagrams help you see the complexity of the situation in a more tractable way?
+
+Gilmore has been experimenting with them to help him see what is often hidden or glossed over in many accounts of behavior, psychological phenomena, and neural substrates. While these efforts seem to complicate things initially, they can reveal underlying processes more completely. More complete specification of information flows can lead to better, more useful models.
+
+```{mermaid}
+flowchart LR
+  W[world] <---> B(body)
+  B <---> N((nervous_system))
+```
+
+Would these diagrams make it easier to generate a hierarchical task analysis for the infant in the bassinet? What is the task? Is it different before the infant learns to move the rattle vs. afterward?
+
+## Afterword
+
+Gilmore finds it useful to be able to make reproducible box and arrow type diagrams.
+It's one of many reasons he spends so much time working in [Quarto](https://quarto.org).
